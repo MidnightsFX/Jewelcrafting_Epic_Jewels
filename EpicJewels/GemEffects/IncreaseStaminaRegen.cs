@@ -1,0 +1,34 @@
+﻿using HarmonyLib;
+using JetBrains.Annotations;
+using Jewelcrafting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EpicJewels.GemEffects
+{
+    public static class IncreaseStaminaRegen
+    {
+        [PublicAPI]
+        public struct Config
+        {
+            [InverseMultiplicativePercentagePower] public float Power;
+        }
+
+        [HarmonyPatch(typeof(SEMan), nameof(SEMan.ModifyStaminaRegen))]
+        public static class IncreasePlayerStaminaRegen
+        {
+            public static void Postfix(SEMan __instance, ref float staminaMultiplier)
+            {
+                if (__instance.m_character.IsPlayer() && Player.m_localPlayer.GetEffectPower<Config>("IncreaseStaminaRegen").Power > 0)
+                {
+                    float regen_multiplier = Player.m_localPlayer.GetEffectPower<Config>("IncreaseStaminaRegen").Power;
+                    if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"stamina regen multiplied by {regen_multiplier}"); }
+                    staminaMultiplier *= regen_multiplier;
+                }
+            }
+        }
+    }
+}
