@@ -30,7 +30,7 @@ namespace EpicJewels.GemEffects
                         if (player.GetEffectPower<Config>("PoisonResistance").Power > 0)
                         {
                             float dmg_reduce = ((100f - player.GetEffectPower<Config>("PoisonResistance").Power) / 100f);
-                            if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Poison Resistance is reducing poison damage {(1 - dmg_reduce)}"); }
+                            EpicJewels.EJLog.LogDebug($"Poison Resistance is reducing poison damage {(1 - dmg_reduce)}");
                             hit.m_damage.m_poison *= dmg_reduce;
                         }
                     }

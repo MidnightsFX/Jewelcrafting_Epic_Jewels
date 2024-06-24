@@ -25,7 +25,7 @@ namespace EpicJewels.GemEffects
                         if (player.GetEffectPower<Config>("FireResistance").Power > 0)
                         {
                             float dmg_reduce = ((100f - player.GetEffectPower<Config>("FireResistance").Power) / 100f);
-                            if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Fire Resistance is reducing fire damage {(1 - dmg_reduce)}"); }
+                            EpicJewels.EJLog.LogDebug($"Fire Resistance is reducing fire damage {(1 - dmg_reduce)}");
                             hit.m_damage.m_fire *= dmg_reduce;
                         }
                     }

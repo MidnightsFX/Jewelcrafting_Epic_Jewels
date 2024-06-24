@@ -27,7 +27,7 @@ Adds 6 new gems and ~40 new effects.
 ![garnet gemstone descriptions](https://i.postimg.cc/vBjHFMD6/image.png)
 
 ### Opal
-![opal gemstone descriptions](https://i.postimg.cc/43ymrWwq/image.png)
+![opal gemstone descriptions](https://i.postimg.cc/HscTHCV1/image.png)
 
 ### Amethyst
 ![amethyst gemstone descriptions](https://i.postimg.cc/w3YqMVXq/image.png)

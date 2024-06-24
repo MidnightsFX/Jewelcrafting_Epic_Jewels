@@ -1,7 +1,6 @@
 ﻿using EpicJewels.Common;
 using HarmonyLib;
 using Jewelcrafting;
-using Jotunn;
 
 namespace EpicJewels.EffectHelpers
 {
@@ -28,13 +27,10 @@ namespace EpicJewels.EffectHelpers
                 {
                     float added_fire_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power / 100);
                     hit.m_damage.m_fire += added_fire_dmg;
-                    if (Config.EnableDebugMode.Value) { Logger.LogInfo($"Inferno activated, added fire damage: {added_fire_dmg}"); }
+                    EpicJewels.EJLog.LogDebug($"Inferno activated, added fire damage: {added_fire_dmg}");
                 }
                 
-                if (Config.EnableDebugMode.Value)
-                {
-                    Logger.LogInfo($"Added Damage {sum_of_added_dmg} = blunt:{added_blunt_dmg} slash:{added_slash_dmg} pierce:{added_pierce_dmg} lightning: {added_lightning_dmg} spirit: {added_spirit_dmg} pickaxe: {added_pickaxe_dmg} original_total_dmg {original_total_dmg}");
-                }
+                EpicJewels.EJLog.LogDebug($"Added Damage {sum_of_added_dmg} = blunt:{added_blunt_dmg} slash:{added_slash_dmg} pierce:{added_pierce_dmg} lightning: {added_lightning_dmg} spirit: {added_spirit_dmg} pickaxe: {added_pickaxe_dmg} original_total_dmg {original_total_dmg}");
                 // hit.m_damage.m_damage += added_true_dmg;
                 // hit.m_damage.m_damage += sum_of_added_dmg;
                 hit.m_damage.m_blunt += added_blunt_dmg;

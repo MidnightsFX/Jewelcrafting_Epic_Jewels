@@ -26,7 +26,7 @@ namespace EpicJewels.GemEffects
                 if (__instance.IsPlayer() && Player.m_localPlayer.GetEffectPower<Config>("BlockReduceStamina").Power > 0)
                 {
                     float block_stamina_multiplier = 100f / (100f + Player.m_localPlayer.GetEffectPower<Config>("BlockReduceStamina").Power);
-                    if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Multiplying block stamina cost by {block_stamina_multiplier}"); }
+                    EpicJewels.EJLog.LogDebug($"Multiplying block stamina cost by {block_stamina_multiplier}");
                     __instance.m_blockStaminaDrain *= block_stamina_multiplier;
                 }
             }

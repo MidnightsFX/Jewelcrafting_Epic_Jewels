@@ -17,13 +17,13 @@ namespace EpicJewels.GemEffects
         {
             public static void Postfix(ref float __result)
             {
-                // Jotunn.Logger.LogInfo("Starting weight reduce check");
+                // EJLog.LogInfo("Starting weight reduce check");
                 if (Player.m_localPlayer == null) { return; }
                 // if (__result <= 10) { return; } // Only make this work on bigger items?
                 if (Player.m_localPlayer.GetEffectPower<Config>("ReduceWeight").Power > 0)
                 {
                     float weightReduceMultiplier = 100f / (Player.m_localPlayer.GetEffectPower<Config>("ReduceWeight").Power + 100f);
-                    // Jotunn.Logger.LogInfo($"Multiplying Item Weight by {weightReduceMultiplier}");
+                    // EJLog.LogInfo($"Multiplying Item Weight by {weightReduceMultiplier}");
                     __result *= weightReduceMultiplier;
                 }
             }

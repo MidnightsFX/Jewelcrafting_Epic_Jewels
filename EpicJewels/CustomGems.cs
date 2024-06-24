@@ -153,6 +153,10 @@ namespace EpicJewels
             sb.AppendLine("  slot: legs");
             sb.AppendLine("  gem: opel");
             sb.AppendLine("  power: [1, 3, 5]");
+            sb.AppendLine("CoverOfDarkness:");
+            sb.AppendLine("  slot: cloak");
+            sb.AppendLine("  gem: opel");
+            sb.AppendLine("  power: [10, 15, 30]");
             sb.AppendLine("AddSpiritDamage:");
             sb.AppendLine("  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']");
             sb.AppendLine("  gem: amethyst");

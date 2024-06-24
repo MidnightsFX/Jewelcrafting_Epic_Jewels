@@ -31,22 +31,22 @@ namespace EpicJewels.GemEffects
                 {
                     if (Player.m_localPlayer.GetEffectPower<Config>("WaterResistant").Power > 0)
                     {
-                        // if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Water Resistance activated."); }
+                        // EpicJewels.EJLog.LogInfo($"Water Resistance activated.");
                         if (delayWetTill == 0)
                         {
                             delayWetTill = Time.time + Player.m_localPlayer.GetEffectPower<Config>("WaterResistant").Power;
-                            if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Set water resistance timeout: {delayWetTill}"); }
+                            EpicJewels.EJLog.LogDebug($"Set water resistance timeout: {delayWetTill}");
                             return false;
                         }
                         if (delayWetTill < Time.time)
                         {
-                            if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Water resistance is expired."); }
+                            EpicJewels.EJLog.LogDebug($"Water resistance is expired.");
                             // if the delay wet timer is more than a few seconds past, we should reset it and avoid being wet right now
                             // this happens when the player tried getting wet, but then stopped having the wet effect applied before the resistance wore off
                             // eg: the delay wet timer is from an old application of wetness
                             if ((delayWetTill + 2) < Time.time)
                             {
-                                if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Reset water resistance."); }
+                                EpicJewels.EJLog.LogDebug($"Reset water resistance.");
                                 delayWetTill = 0;
                                 return false;
                             }
