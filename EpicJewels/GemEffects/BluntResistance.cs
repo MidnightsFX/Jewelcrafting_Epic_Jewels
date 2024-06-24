@@ -24,7 +24,7 @@ namespace EpicJewels.GemEffects
                     if (hit.m_damage.m_blunt > 0 && player.GetEffectPower<Config>("BluntResistance").Power > 0)
                     {
                         float dmg_reduce = ((100f - player.GetEffectPower<Config>("BluntResistance").Power) / 100f);
-                        if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Blunt Resistance is reducing Blunt damage {(1 - dmg_reduce)}"); }
+                        EpicJewels.EJLog.LogDebug($"Blunt Resistance is reducing Blunt damage {(1 - dmg_reduce)}");
                         hit.m_damage.m_slash *= dmg_reduce;
                     }
                 }

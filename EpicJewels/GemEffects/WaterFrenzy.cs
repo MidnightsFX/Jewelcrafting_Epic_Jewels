@@ -23,11 +23,11 @@ namespace EpicJewels.GemEffects
                 if (hit.GetAttacker() is Player)
                 {
                     bool thisVikingisWet = Player.m_localPlayer.GetSEMan().HaveStatusEffect(wetstatus);
-                    if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Frenzy checking for wet viking {thisVikingisWet}"); }
+                    EpicJewels.EJLog.LogDebug($"Frenzy checking for wet viking {thisVikingisWet}");
                     if (thisVikingisWet)
                     {
                         float wet_damage_bonus = (Player.m_localPlayer.GetEffectPower<Config>("WaterFrenzy").Power + 100) / 100;
-                        if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"WetDogViking Damage multiplier {wet_damage_bonus}"); }
+                        EpicJewels.EJLog.LogDebug($"WetDogViking Damage multiplier {wet_damage_bonus}");
                         hit.m_damage.m_blunt *= wet_damage_bonus;
                         hit.m_damage.m_pierce *= wet_damage_bonus;
                         hit.m_damage.m_pierce *= wet_damage_bonus;

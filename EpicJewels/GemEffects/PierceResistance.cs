@@ -26,7 +26,7 @@ namespace EpicJewels.GemEffects
                         if (player.GetEffectPower<Config>("PierceResistance").Power > 0)
                         {
                             float dmg_reduce = ((100f - player.GetEffectPower<Config>("PierceResistance").Power) / 100f);
-                            if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Pierce Resistance is reducing Pierce damage {(1 - dmg_reduce)}"); }
+                            EpicJewels.EJLog.LogDebug($"Pierce Resistance is reducing Pierce damage {(1 - dmg_reduce)}");
                             hit.m_damage.m_pierce *= dmg_reduce;
                         }
                     }

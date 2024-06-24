@@ -46,6 +46,7 @@ namespace EpicJewels.GemEffects
             API.AddGemEffect<ExpertShieldbearer.Config>("ExpertShieldbearer", "Increase Block skill", "Your block skill is $1% higher.");
             API.AddGemEffect<ExpertSprinter.Config>("ExpertSprinter", "Increase Run skill", "Your run skill is $1% higher.");
             API.AddGemEffect<ReduceWeight.Config>("ReduceWeight", "Reduces Weight of items you carry", "Carried items are $1% lighter.");
+            API.AddGemEffect<CoverOfDarkness.Config>("CoverOfDarkness", "Summon bats when fighting", "15% Chance to summon a bat that fights for you for $1% seconds, stronger bats with higher levels.");
         }
     }
 }

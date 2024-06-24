@@ -1,5 +1,4 @@
-﻿using EpicJewels.EffectHelpers;
-using HarmonyLib;
+﻿using HarmonyLib;
 using JetBrains.Annotations;
 using Jewelcrafting;
 using System.Linq;
@@ -28,7 +27,7 @@ namespace EpicJewels.GemEffects
                     float coin_hoarder_powerlevel = Player.m_localPlayer.GetEffectPower<Config>("CoinHoarder").Power;
                     float coinHoarderBonus = inv_coins * (coin_hoarder_powerlevel / 100);
                     float damage_multiplier = (coinHoarderBonus + 100f) / 100f;
-                    if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Coinhorder bonus multipler {damage_multiplier} coinhorder bonus: {coinHoarderBonus} inv coins: {inv_coins} coinhorder power: {coin_hoarder_powerlevel}"); }
+                    EpicJewels.EJLog.LogDebug($"Coinhorder bonus multipler {damage_multiplier} coinhorder bonus: {coinHoarderBonus} inv coins: {inv_coins} coinhorder power: {coin_hoarder_powerlevel}");
                     // We modify each of the various possible damage types, because 0 * 1.01 is still 0
                     // This ensures the total damage and each types get the bonus
                     hit.m_damage.m_blunt *= damage_multiplier;

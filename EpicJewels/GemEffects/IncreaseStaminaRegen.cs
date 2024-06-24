@@ -25,7 +25,7 @@ namespace EpicJewels.GemEffects
                 if (__instance.m_character.IsPlayer() && Player.m_localPlayer.GetEffectPower<Config>("IncreaseStaminaRegen").Power > 0)
                 {
                     float regen_multiplier = Player.m_localPlayer.GetEffectPower<Config>("IncreaseStaminaRegen").Power;
-                    if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"stamina regen multiplied by {regen_multiplier}"); }
+                    EpicJewels.EJLog.LogDebug($"stamina regen multiplied by {regen_multiplier}");
                     staminaMultiplier *= regen_multiplier;
                 }
             }

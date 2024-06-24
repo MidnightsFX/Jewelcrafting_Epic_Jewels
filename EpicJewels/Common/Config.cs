@@ -18,10 +18,9 @@ namespace EpicJewels.Common
         private void CreateConfigValues(ConfigFile Config)
         {
             // Debugmode
-            EnableDebugMode = Config.Bind("Client config", "EnableDebugMode", false,
-                new ConfigDescription("Enables Debug logging for Recipe Manager. This is client side and is not syncd with the server.",
-                null,
-                new ConfigurationManagerAttributes { IsAdminOnly = false, IsAdvanced = true }));
+            //EnableDebugMode = Config.Bind("Client config", "EnableDebugMode", false,
+            //    new ConfigDescription("Enables Debug logging for Recipe Manager. This is client side and is not syncd with the server.",
+            //    null));
         }
     }
 }

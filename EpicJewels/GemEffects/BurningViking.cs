@@ -1,12 +1,6 @@
-﻿using EpicJewels.EffectHelpers;
-using HarmonyLib;
+﻿using HarmonyLib;
 using JetBrains.Annotations;
 using Jewelcrafting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EpicJewels.GemEffects
 {
@@ -25,7 +19,7 @@ namespace EpicJewels.GemEffects
             private static void Postfix(Player __instance, ref float __result)
             {
                 bool thisVikingisOnFIRE = Player.m_localPlayer.GetSEMan().HaveStatusEffect(burningstatus);
-                // if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Walking check for burning viking {thisVikingisOnFIRE}"); }
+                // EJLog.LogInfo($"Walking check for burning viking {thisVikingisOnFIRE}");
                 if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("BurningViking").Power > 0)
                 {
                     __result *= ((__instance.GetEffectPower<Config>("BurningViking").Power + 100) / 100f);
@@ -40,7 +34,7 @@ namespace EpicJewels.GemEffects
             private static void Postfix(Player __instance, ref float __result)
             {
                 bool thisVikingisOnFIRE = Player.m_localPlayer.GetSEMan().HaveStatusEffect(burningstatus);
-                // if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Running check for burning viking {thisVikingisOnFIRE}"); }
+                // EJLog.LogInfo($"Running check for burning viking {thisVikingisOnFIRE}");
                 if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("BurningViking").Power > 0)
                 {
                     __result *= ((__instance.GetEffectPower<Config>("BurningViking").Power + 100) / 100f);

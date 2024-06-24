@@ -1,12 +1,6 @@
-﻿using EpicJewels.EffectHelpers;
-using HarmonyLib;
+﻿using HarmonyLib;
 using JetBrains.Annotations;
 using Jewelcrafting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EpicJewels.GemEffects
 {
@@ -27,8 +21,8 @@ namespace EpicJewels.GemEffects
                 {
                     if (Player.m_localPlayer.GetEffectPower<Config>("WeaponReducedStamina").Power > 0)
                     {
-                        float weapon_usage_stamina_multiplier = 1 - (100 / player.GetEffectPower<Config>("WeaponReducedStamina").Power);
-                        if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Stamina Reduction multipler: {weapon_usage_stamina_multiplier}"); }
+                        float weapon_usage_stamina_multiplier = (100f / (player.GetEffectPower<Config>("WeaponReducedStamina").Power + 100f));
+                        EpicJewels.EJLog.LogDebug($"Stamina Reduction multipler: {weapon_usage_stamina_multiplier}");
                         __result *= weapon_usage_stamina_multiplier;
                     }
                 }

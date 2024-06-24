@@ -26,7 +26,7 @@ namespace EpicJewels.GemEffects
                         if (player.GetEffectPower<Config>("SlashResistance").Power > 0)
                         {
                             float dmg_reduce = ((100f - player.GetEffectPower<Config>("SlashResistance").Power) / 100f);
-                            if (Common.Config.EnableDebugMode.Value) { Jotunn.Logger.LogInfo($"Slash Resistance is reducing Slash damage {(1 - dmg_reduce)}"); }
+                            EpicJewels.EJLog.LogDebug($"Slash Resistance is reducing Slash damage {(1 - dmg_reduce)}");
                             hit.m_damage.m_slash *= dmg_reduce;
                         }
                     }
