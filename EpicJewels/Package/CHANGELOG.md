@@ -1,3 +1,15 @@
+ **0.2.3**
+---
+```
+- Visual display of skill increase percentages from skill gems
+```
+
+ **0.2.2**
+---
+```
+- Null check for Coingreed to prevent error on player spawn/respawn
+```
+
  **0.2.1**
 ---
 ```
