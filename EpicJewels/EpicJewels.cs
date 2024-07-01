@@ -11,7 +11,7 @@ namespace EpicJewels
     {
         public const string PluginGUID = "MidnightsFX.EpicJewels";
         public const string PluginName = "EpicJewels";
-        public const string PluginVersion = "0.2.1";
+        public const string PluginVersion = "0.2.2";
 
         public static readonly ManualLogSource EJLog = BepInEx.Logging.Logger.CreateLogSource(PluginName);
 

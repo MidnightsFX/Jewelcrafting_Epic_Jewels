@@ -29,10 +29,8 @@ namespace EpicJewels.GemEffects
             [UsedImplicitly]
             private static void Postfix(Character __instance)
             {
-                if (__instance.m_lastHit.GetAttacker() != Player.m_localPlayer)
-                {
-                    return;
-                }
+                if (Player.m_localPlayer == null) { return; }
+                if (__instance.m_lastHit.GetAttacker() != Player.m_localPlayer) { return; }
                 float coin_greed = Player.m_localPlayer.GetEffectPower<Config>("CoinGreed").Power;
                 EpicJewels.EJLog.LogDebug($"Coingreed enabled? {coin_greed > 0}");
                 if (coin_greed > 0)
