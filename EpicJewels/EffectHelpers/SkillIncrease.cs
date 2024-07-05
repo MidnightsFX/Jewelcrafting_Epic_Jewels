@@ -146,6 +146,7 @@ namespace EpicJewels.EffectHelpers
             }
 
             float final_skill_increase = (skill_increase + 100) / 100;
+            EpicJewels.EJLog.LogDebug($"Total skill increase {final_skill_increase}");
             return (current_skill_level * final_skill_increase);
         }
 

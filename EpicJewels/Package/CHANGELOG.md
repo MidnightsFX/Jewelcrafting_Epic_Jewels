@@ -1,3 +1,19 @@
+ **0.2.5**
+---
+```
+- Fix Chop damage adjustment being applied correctly
+- Add UI feedback for direct bonus damage effects added by this mod
+- Changed coingreed to spawn coins in a singular stack
+```
+
+ **0.2.4**
+---
+```
+- Fix stamina regen to be a fraction increase
+- Adjusting gem colors to reduce crystal whiteness
+- Increased base stamina regeneration bonuses from crystals
+```
+
  **0.2.3**
 ---
 ```

@@ -361,6 +361,7 @@
     <Compile Include="Common\Config.cs" />
     <Compile Include="CustomGems.cs" />
     <Compile Include="EffectHelpers\AddDamages.cs" />
+    <Compile Include="EffectHelpers\ItemDisplay.cs" />
     <Compile Include="EffectHelpers\SkillIncrease.cs" />
     <Compile Include="GemEffects\AddBluntDamage.cs" />
     <Compile Include="GemEffects\AddChopDamage.cs" />

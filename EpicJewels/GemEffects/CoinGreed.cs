@@ -42,10 +42,8 @@ namespace EpicJewels.GemEffects
                     {
                         float greedAmount = UnityEngine.Random.Range(1, Math.Max(1, coin_greed));
                         EpicJewels.EJLog.LogDebug($"coingreed drop {(int)greedAmount}");
-                        for (int i = 0; i <= (int)greedAmount; i++)
-                        {
-                            UnityEngine.Object.Instantiate(ObjectDB.instance.GetItemPrefab("Coins"), __instance.gameObject.transform.position, __instance.gameObject.transform.rotation);
-                        }
+                        GameObject coin = UnityEngine.Object.Instantiate(ObjectDB.instance.GetItemPrefab("Coins"), __instance.gameObject.transform.position, __instance.gameObject.transform.rotation);
+                        coin.GetComponent<ItemDrop>().m_itemData.m_stack = (int)greedAmount;
                     }
                 }
                 

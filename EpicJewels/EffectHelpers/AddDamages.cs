@@ -12,7 +12,7 @@ namespace EpicJewels.EffectHelpers
         {
             if (hit.GetAttacker() is Player attacker)
             {
-                float original_total_dmg = hit.m_damage.m_blunt + hit.m_damage.m_pierce + hit.m_damage.m_slash + hit.m_damage.m_fire + hit.m_damage.m_lightning + hit.m_damage.m_frost + hit.m_damage.m_spirit + hit.m_damage.m_poison;
+                float original_total_dmg = hit.m_damage.GetTotalDamage();
                 float added_blunt_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("AddBluntDamage").Power / 100);
                 float added_slash_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("AddSlashDamage").Power / 100);
                 float added_pierce_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("AddPierceDamage").Power / 100);
@@ -20,7 +20,7 @@ namespace EpicJewels.EffectHelpers
                 float added_lightning_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("AddLightningDamage").Power / 100);
                 float added_spirit_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("AddSpiritDamage").Power / 100);
                 float added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("AddPickaxeDamage").Power / 100);
-                float added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("AddPickaxeDamage").Power / 100);
+                float added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("AddChopDamage").Power / 100);
                 float sum_of_added_dmg = added_blunt_dmg + added_slash_dmg + added_pierce_dmg + added_lightning_dmg + added_spirit_dmg + added_pickaxe_dmg;
 
                 if (UnityEngine.Random.value < 0.2f && Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0)

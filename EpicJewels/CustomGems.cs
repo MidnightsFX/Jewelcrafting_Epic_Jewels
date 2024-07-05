@@ -10,12 +10,12 @@ namespace EpicJewels
     {
         public static void AddGems()
         {
-            API.AddGems("Jade", "jade", new Color(0.031f, 0.69f, 0.043f));
-            API.AddGems("Amber", "amber", new Color(1f, 0.776f, 0.071f));
-            API.AddGems("Aquamarine", "aquamarine", new Color(0.259f, 0.663f, 1f, 0.71f));
+            API.AddGems("Jade", "jade", new Color(0.031f, 0.69f, 0.043f, 1f));
+            API.AddGems("Amber", "amber", new Color(1f, 0.776f, 0.071f, 1f));
+            API.AddGems("Aquamarine", "aquamarine", new Color(0.259f, 0.663f, 0.71f, 1f));
             API.AddGems("Garnet", "garnet", new Color(1f, 0.141f, 0.039f));
-            API.AddGems("Opal", "opel", new Color(0.945f, 0.988f, 0.988f));
-            API.AddGems("Amethyst", "amethyst", new Color(0.784f, 0.302f, 0.98f));
+            API.AddGems("Opal", "opel", new Color(0.945f, 0.988f, 0.988f, 1f));
+            API.AddGems("Amethyst", "amethyst", new Color(0.784f, 0.302f, 0.98f, 1f));
             StringBuilder sb = new();
             sb.AppendLine("AddSlashDamage:");
             sb.AppendLine("  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']");
@@ -76,7 +76,7 @@ namespace EpicJewels
             sb.AppendLine("IncreaseStaminaRegen:");
             sb.AppendLine("  slot: head");
             sb.AppendLine("  gem: amber");
-            sb.AppendLine("  power: [5, 10, 15]");
+            sb.AppendLine("  power: [9, 18, 27]");
             sb.AppendLine("PierceResistance:");
             sb.AppendLine("  slot: chest");
             sb.AppendLine("  gem: aquamarine");

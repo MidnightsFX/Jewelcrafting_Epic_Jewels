@@ -1,9 +1,26 @@
 ﻿using Jewelcrafting;
+using System.Collections.Generic;
 
 namespace EpicJewels.GemEffects
 {
     public static class EffectList
     {
+        // Firestarter,
+        // Iceheart,
+        // Snakebite,
+        public enum DmgEffect
+        {
+            AddBluntDamage,
+            AddPierceDamage,
+            AddSlashDamage,
+            AddSpiritDamage,
+            AddLightningDamage,
+            AddPickaxeDamage,
+            AddChopDamage
+        }
+        
+        // public static IReadOnlyList<T> GetDmgValues<T>() { return (T[])DmgEffect.GetValues(typeof(T)); }
+
         public static void AddGemEffects()
         {
             API.AddGemEffect<BluntResistance.Config>("BluntResistance", "Reduces taken blunt damage.", "Reduces blunt damage taken by $1%.");
@@ -27,7 +44,7 @@ namespace EpicJewels.GemEffects
             API.AddGemEffect<WeaponReducedStamina.Config>("WeaponReducedStamina", "Reduces stamina cost for attacking.", "Reduces stamina attack cost by $1%.");
             API.AddGemEffect<CoinGreed.Config>("CoinGreed", "Enemies may drop coins", "Enemies have a 15% chance to drop 1-$1 coins.");
             API.AddGemEffect<CoinHoarder.Config>("CoinHoarder", "Increase your damage by carrying coins", "Increase all of your damage based on $1% of the total coins you carry.");
-            API.AddGemEffect<WaterResistant.Config>("WaterResistant", "Prevents wetness for a period of time", "Prevents becoming wet if you are not exposed to water for more than $1% seconds.");
+            API.AddGemEffect<WaterResistant.Config>("WaterResistant", "Prevents wetness for a period of time", "Prevents becoming wet if you are not exposed to water for more than $1 seconds.");
             API.AddGemEffect<WaterFrenzy.Config>("WaterFrenzy", "Increases damage when wet", "You deal $1% percent more damage when wet.");
             API.AddGemEffect<WaterSwiftness.Config>("WaterSwiftness", "Increases speed when wet", "You move $1% percent faster when wet.");
             API.AddGemEffect<BurningViking.Config>("BurningViking", "Increases speed when burning", "You move $1% percent faster when burning.");
