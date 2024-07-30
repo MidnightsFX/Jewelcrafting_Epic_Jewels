@@ -1,6 +1,6 @@
-﻿using EpicJewels.Common;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Jewelcrafting;
+using UnityEngine;
 
 namespace EpicJewels.EffectHelpers
 {
@@ -23,7 +23,12 @@ namespace EpicJewels.EffectHelpers
                 float added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("AddChopDamage").Power / 100);
                 float sum_of_added_dmg = added_blunt_dmg + added_slash_dmg + added_pierce_dmg + added_lightning_dmg + added_spirit_dmg + added_pickaxe_dmg;
 
-                if (UnityEngine.Random.value < 0.2f && Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0)
+
+                float inferno_chance = Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Chance;
+                // Bonus from intenseFire
+                if (Player.m_localPlayer.GetEffectPower<GemEffects.IntenseFire.Config>("IntenseFire").Power > 0) { inferno_chance = inferno_chance * 1.5f; }
+
+                if (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0 && Random.value < inferno_chance)
                 {
                     float added_fire_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power / 100);
                     hit.m_damage.m_fire += added_fire_dmg;

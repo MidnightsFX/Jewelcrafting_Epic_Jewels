@@ -1,0 +1,230 @@
+AddSlashDamage:
+  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
+  gem: jade
+  power: [3, 6, 9]
+AddChopDamage:
+  slot: tool
+  gem: jade
+  power: [6, 9, 12]
+CoinHoarder:
+  slot: cloak
+  gem: jade
+  power: [1, 2.5, 5]
+CoinGreed:
+  slot: utility
+  gem: jade
+  power:
+    power: [5, 10, 20]
+    chance: [5, 10, 15]
+SlashResistance:
+  slot: chest
+  gem: jade
+  power: [1, 3, 5]
+ExpertAcrobat:
+  slot: legs
+  gem: jade
+  power: [5, 7, 12]
+ExpertDaggers:
+  slot: head
+  gem: jade
+  power: [5, 7, 12]
+BluntResistance:
+  slot: legs
+  gem: amber
+  power: [1, 3, 5]
+ExpertSmasher:
+  slot: chest
+  gem: amber
+  power: [5, 7, 12]
+AddBluntDamage:
+  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
+  gem: amber
+  power: [3, 6, 9]
+ExpertSpearmaiden:
+  slot: cloak
+  gem: amber
+  power: [5, 7, 12]
+BlockReduceStamina:
+  slot: shield
+  gem: amber
+  power: [10, 15, 20]
+WeaponReducedStamina:
+  slot: utility
+  gem: amber
+  power: [5, 10, 15]
+IncreaseStaminaRegen:
+  slot: head
+  gem: amber
+  power: [9, 18, 27]
+PierceResistance:
+  slot: chest
+  gem: aquamarine
+  power: [1, 3, 5]
+ExpertSprinter:
+  slot: head
+  gem: aquamarine
+  power: [5, 7, 12]
+AddPierceDamage:
+  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
+  gem: aquamarine
+  power: [3, 6, 9]
+WaterSwiftness:
+  slot: legs
+  gem: aquamarine
+  power: [1, 3, 5]
+WaterFrenzy:
+  slot: utility
+  gem: aquamarine
+  power: [6, 9, 18]
+WaterResistant:
+  slot: cloak
+  gem: aquamarine
+  power: [15, 30, 60]
+FireResistance:
+  slot: legs
+  gem: garnet
+  power: [1, 3, 5]
+ExpertAxemaster:
+  slot: chest
+  gem: garnet
+  power: [5, 7, 12]
+ExpertMage:
+  slot: head
+  gem: garnet
+  power: [5, 7, 12]
+Inferno:
+  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
+  gem: garnet
+  power:
+    power: [20, 40, 60]
+    chance: [5, 10, 15]
+AddPickaxeDamage:
+  slot: tool
+  gem: garnet
+  power: [6, 9, 12]
+BurningFrenzy:
+  slot: utility
+  gem: garnet
+  power: [6, 9, 18]
+BurningViking:
+  slot: cloak
+  gem: garnet
+  power: [5, 15, 30]
+AddLightningDamage:
+  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
+  gem: opel
+  power: [6, 9, 12]
+ExpertFisher:
+  slot: head
+  gem: opel
+  power: [5, 7, 12]
+ExpertHarvester:
+  slot: tool
+  gem: opel
+  power: [5, 7, 12]
+ExpertPolearms:
+  slot: chest
+  gem: opel
+  power: [5, 7, 12]
+ReduceWeight:
+  slot: utility
+  gem: opel
+  power: [2, 4, 6]
+LightningResistance:
+  slot: legs
+  gem: opel
+  power: [1, 3, 5]
+CoverOfDarkness:
+  slot: cloak
+  gem: opel
+  power:
+    power: [10, 15, 30]
+    chance: [10, 12, 15]
+Retribution:
+  slot: shield
+  gem: opel
+  power:
+    power: [30, 45, 55]
+    chance: [15, 25, 35]
+AddSpiritDamage:
+  slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
+  gem: amethyst
+  power: [9, 12, 18]
+ExpertSwordsman:
+  slot: chest
+  gem: amethyst
+  power: [5, 7, 12]
+IncreaseStamina:
+  slot: utility
+  gem: amethyst
+  power: [6, 9, 15]
+IncreaseEitr:
+  slot: head
+  gem: amethyst
+  power: [6, 9, 15]
+ExpertBrawler:
+  slot: legs
+  gem: amethyst
+  power: [5, 7, 12]
+PoisonResistance:
+  slot: cloak
+  gem: amethyst
+  power: [1, 3, 5]
+EitrConversion:
+  slot: shield
+  gem: amethyst
+  power:
+    power: [2, 4, 6]
+    chance: [20, 30, 40]
+gems:
+  meadows:
+    aquamarine: 0.1
+    amber: 0.1
+    jade: 0.3
+  black forest:
+    jade: 0.1
+    garnet: 0.1
+    opel: 0.1
+  swamp:
+    amber: 0.2
+    garnet: 0.2
+    opel: 0.1
+  mountain:
+    aquamarine: 0.4
+    jade: 0.2
+    amethyst: 0.1
+  plains:
+    amber: 0.4
+    garnet: 0.4
+    opel: 0.1
+  mistlands:
+    aquamarine: 0.2
+    amethyst: 0.4
+    opel: 0.1
+  ash lands:
+    amethyst: 0.2
+    garnet: 0.4
+    opel: 0.1
+Have opel = amethyst > 3 of each:
+  conditions:
+    - opel > 3
+    - amethyst > 3
+    - opel = amethyst
+  effect:
+    CombatSpirit: 40
+Have at least 7 garnets:
+  conditions:
+    - garnet > 6
+  effect:
+    IntenseFire: 25
+Have 6 amber and 6 jade:
+  conditions:
+    - amber = 6
+    - jade = 6
+  effect:
+    WeaponMaster: 15
+Have at least 7 aquamarine:
+  conditions:
+    - aquamarine > 6
+  effect:
+    SlipperyWhenWet: 25

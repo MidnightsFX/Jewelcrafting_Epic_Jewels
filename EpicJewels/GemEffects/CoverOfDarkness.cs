@@ -11,6 +11,7 @@ namespace EpicJewels.GemEffects
         public struct Config
         {
             [InverseMultiplicativePercentagePower] public float Power;
+            [InverseMultiplicativePercentagePower] public float Chance;
         }
 
         // public static Dictionary<float, GameObject> spawnedBats;
@@ -25,7 +26,7 @@ namespace EpicJewels.GemEffects
                 {
                     if (Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Power > 0)
                     {
-                        if (Random.value < 0.15f)
+                        if (Random.value < (Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Chance/ 100))
                         {
                             EpicJewels.EJLog.LogDebug($"Cover of darkness triggered darkness power: {Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Power}");
                             int bat_stars = 1; // 1 = 0 stars, 2 = 1 star etc

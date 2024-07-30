@@ -1,3 +1,23 @@
+ **0.7.0**
+---
+```
+- Updated powers with multiple values to no longer be static for the secondary values
+- Added new gem powers
+	- Retribution, a chance to return some of the blocked damage (can be significant)
+	- EitrConversion, a chance to restore Eitr on block
+- Added Synergies
+	- CombatSpirit - Summon a spirit wolf to aid you when you enter combat, lives for a moderate time and has a respawn cooldown.
+	- WeaponMaster - Increase all of the physical weapon skill levels.
+	- SlipperyWhenWet - Significant increase to speed when wet
+	- IntenseFire - Increases fire resistance and chance to trigger Inferno.
+```
+
+ **0.2.6**
+---
+```
+- Updated crystal materials
+```
+
  **0.2.5**
 ---
 ```

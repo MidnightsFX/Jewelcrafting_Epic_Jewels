@@ -4,9 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.XR;
-using static EpicJewels.GemEffects.EffectList;
-using static Skills;
 
 namespace EpicJewels.EffectHelpers
 {

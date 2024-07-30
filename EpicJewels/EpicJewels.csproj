@@ -45,32 +45,35 @@
     <StartWorkingDirectory>$(VALHEIM_INSTALL)</StartWorkingDirectory>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="assembly_googleanalytics_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_googleanalytics_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_guiutils_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_guiutils_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_lux_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_lux_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_postprocessing_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_postprocessing_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_simplemeshcombine_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_simplemeshcombine_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_steamworks_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_steamworks_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_sunshafts_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_sunshafts_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="assembly_utils_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_utils_publicized.dll</HintPath>
+    </Reference>
     <Reference Include="assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_valheim_publicized.dll</HintPath>
     </Reference>
     <Reference Include="0Harmony, Version=2.10.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HarmonyX.2.10.2\lib\net45\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_googleanalytics">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_googleanalytics.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_guiutils">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\assembly_guiutils.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_lux">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_lux.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_postprocessing">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\assembly_postprocessing.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_steamworks">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\assembly_steamworks.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_sunshafts">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\assembly_sunshafts.dll</HintPath>
-    </Reference>
-    <Reference Include="assembly_utils">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\assembly_utils.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx, Version=5.4.22.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -83,6 +86,10 @@
     <Reference Include="JewelcraftingAPI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\JewelcraftingAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalizationManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\LocalizationManager.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.dll</HintPath>
@@ -104,6 +111,9 @@
     </Reference>
     <Reference Include="MonoMod.Utils, Version=22.3.23.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MonoMod.Utils.22.3.23.4\lib\net452\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftReferenceableAssets_publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\SoftReferenceableAssets_publicized.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -356,6 +366,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="YamlDotNet, Version=16.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.16.0.0\lib\net47\YamlDotNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Config.cs" />
@@ -365,7 +378,9 @@
     <Compile Include="EffectHelpers\SkillIncrease.cs" />
     <Compile Include="GemEffects\AddBluntDamage.cs" />
     <Compile Include="GemEffects\AddChopDamage.cs" />
+    <Compile Include="GemEffects\CombatSpirit.cs" />
     <Compile Include="GemEffects\CoverOfDarkness.cs" />
+    <Compile Include="GemEffects\EitrConversion.cs" />
     <Compile Include="GemEffects\Inferno.cs" />
     <Compile Include="GemEffects\AddLightningDamage.cs" />
     <Compile Include="GemEffects\AddPickaxeDamage.cs" />
@@ -387,7 +402,6 @@
     <Compile Include="GemEffects\ExpertMage.cs" />
     <Compile Include="GemEffects\ExpertFisher.cs" />
     <Compile Include="GemEffects\ExpertPolearms.cs" />
-    <Compile Include="GemEffects\ExpertShieldbearer.cs" />
     <Compile Include="GemEffects\ExpertSmasher.cs" />
     <Compile Include="GemEffects\ExpertSpearmaiden.cs" />
     <Compile Include="GemEffects\ExpertSprinter.cs" />
@@ -396,14 +410,19 @@
     <Compile Include="GemEffects\IncreaseEitr.cs" />
     <Compile Include="GemEffects\IncreaseStamina.cs" />
     <Compile Include="GemEffects\IncreaseStaminaRegen.cs" />
+    <Compile Include="GemEffects\IntenseFire.cs" />
     <Compile Include="GemEffects\LightningResistance.cs" />
     <Compile Include="GemEffects\PierceResistance.cs" />
     <Compile Include="GemEffects\PoisonResistance.cs" />
+    <Compile Include="GemEffects\PracticedGemcutter.cs" />
     <Compile Include="GemEffects\ReduceWeight.cs" />
+    <Compile Include="GemEffects\Retribution.cs" />
     <Compile Include="GemEffects\SlashResistance.cs" />
+    <Compile Include="GemEffects\SlipperyWhenWet.cs" />
     <Compile Include="GemEffects\WaterFrenzy.cs" />
     <Compile Include="GemEffects\WaterResistant.cs" />
     <Compile Include="GemEffects\WaterSwiftness.cs" />
+    <Compile Include="GemEffects\WeaponMaster.cs" />
     <Compile Include="GemEffects\WeaponReducedStamina.cs" />
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="EpicJewels.cs" />
@@ -411,12 +430,49 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <EmbeddedResource Include="AssetsEmbedded\epicjewels" />
+    <EmbeddedResource Include="AssetsEmbedded\EJConfig.yaml" />
     <None Include="DoPrebuild.props" />
     <None Include="Environment.props" />
     <None Include="ILRepack.targets" />
+    <EmbeddedResource Include="translations\English.json" />
     <None Include="packages.config" />
     <None Include="Package\CHANGELOG.md" />
     <None Include="README.md" />
+    <EmbeddedResource Include="translations\Bulgarian.json" />
+    <EmbeddedResource Include="translations\Chinese.json" />
+    <EmbeddedResource Include="translations\Chinese_Trad.json" />
+    <EmbeddedResource Include="translations\Croatian.json" />
+    <EmbeddedResource Include="translations\Czech.json" />
+    <EmbeddedResource Include="translations\Danish.json" />
+    <EmbeddedResource Include="translations\Dutch.json" />
+    <EmbeddedResource Include="translations\Finnish.json" />
+    <EmbeddedResource Include="translations\French.json" />
+    <EmbeddedResource Include="translations\Georgian.json" />
+    <EmbeddedResource Include="translations\German.json" />
+    <EmbeddedResource Include="translations\Greek.json" />
+    <EmbeddedResource Include="translations\Hindi.json" />
+    <EmbeddedResource Include="translations\Hungarian.json" />
+    <EmbeddedResource Include="translations\Icelandic.json" />
+    <EmbeddedResource Include="translations\Italian.json" />
+    <EmbeddedResource Include="translations\Japanese.json" />
+    <EmbeddedResource Include="translations\Korean.json" />
+    <EmbeddedResource Include="translations\Latvian.json" />
+    <EmbeddedResource Include="translations\Lithuanian.json" />
+    <EmbeddedResource Include="translations\Macedonian.json" />
+    <EmbeddedResource Include="translations\Norwegian.json" />
+    <EmbeddedResource Include="translations\Polish.json" />
+    <EmbeddedResource Include="translations\Portuguese_Brazilian.json" />
+    <EmbeddedResource Include="translations\Portuguese_European.json" />
+    <EmbeddedResource Include="translations\Romanian.json" />
+    <EmbeddedResource Include="translations\Russian.json" />
+    <EmbeddedResource Include="translations\Serbian.json" />
+    <EmbeddedResource Include="translations\Slovak.json" />
+    <EmbeddedResource Include="translations\Spanish.json" />
+    <EmbeddedResource Include="translations\Swedish.json" />
+    <EmbeddedResource Include="translations\Thai.json" />
+    <EmbeddedResource Include="translations\Turkish.json" />
+    <EmbeddedResource Include="translations\Ukrainian.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Package\plugins\" />
@@ -451,5 +507,9 @@
   <PropertyGroup>
     <PostBuildEvent>
     </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "C:\Users\carls\Documents\projects\Valheim_Stuff\Unity_Valheim_mod_data\JotunnModUnity\AssetBundles\StandaloneWindows\epicjewels" "$(ProjectDir)AssetsEmbedded\epicjewels" /q /y /i
+</PreBuildEvent>
   </PropertyGroup>
 </Project>

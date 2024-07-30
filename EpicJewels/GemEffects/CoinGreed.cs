@@ -20,7 +20,7 @@ namespace EpicJewels.GemEffects
         public struct Config
         {
             [AdditivePowerAttribute] public float Power;
-            //[InverseMultiplicativePercentagePower] public float Chance;
+            [InverseMultiplicativePercentagePower] public float Chance;
         }
 
         [HarmonyPatch(typeof(Character), nameof(Character.OnDeath))]
@@ -35,7 +35,7 @@ namespace EpicJewels.GemEffects
                 EpicJewels.EJLog.LogDebug($"Coingreed enabled? {coin_greed > 0}");
                 if (coin_greed > 0)
                 {
-                    float greedChance = 0.15f;
+                    float greedChance = (Player.m_localPlayer.GetEffectPower<Config>("CoinGreed").Chance / 100);
                     float chance_roll = UnityEngine.Random.value;
                     EpicJewels.EJLog.LogDebug($"Coingreed: {chance_roll} < {greedChance} = {chance_roll < greedChance}");
                     if (chance_roll < greedChance)
