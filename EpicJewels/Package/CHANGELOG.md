@@ -10,6 +10,7 @@
 	- WeaponMaster - Increase all of the physical weapon skill levels.
 	- SlipperyWhenWet - Significant increase to speed when wet
 	- IntenseFire - Increases fire resistance and chance to trigger Inferno.
+- Added translation support for many languages.
 ```
 
  **0.2.6**
