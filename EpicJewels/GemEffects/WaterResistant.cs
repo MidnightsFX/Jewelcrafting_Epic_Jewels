@@ -29,12 +29,12 @@ namespace EpicJewels.GemEffects
             {
                 if (__instance.m_character.IsPlayer() && nameHash == wet_hash)
                 {
-                    if (Player.m_localPlayer.GetEffectPower<Config>("WaterResistant").Power > 0)
+                    if (Player.m_localPlayer.GetEffectPower<Config>("Water Resistant").Power > 0)
                     {
                         // EpicJewels.EJLog.LogInfo($"Water Resistance activated.");
                         if (delayWetTill == 0)
                         {
-                            delayWetTill = Time.time + Player.m_localPlayer.GetEffectPower<Config>("WaterResistant").Power;
+                            delayWetTill = Time.time + Player.m_localPlayer.GetEffectPower<Config>("Water Resistant").Power;
                             EpicJewels.EJLog.LogDebug($"Set water resistance timeout: {delayWetTill}");
                             return false;
                         }

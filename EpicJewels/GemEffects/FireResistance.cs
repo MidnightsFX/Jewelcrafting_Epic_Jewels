@@ -22,9 +22,9 @@ namespace EpicJewels.GemEffects
                 {
                     if (hit.m_damage.m_fire > 0)
                     {
-                        if (player.GetEffectPower<Config>("FireResistance").Power > 0 || player.GetEffectPower<Config>("IntenseFire").Power > 0)
+                        if (player.GetEffectPower<Config>("Fire Resistance").Power > 0 || player.GetEffectPower<Config>("Intense Fire").Power > 0)
                         {
-                            float dmg_reduce = ((100f - (player.GetEffectPower<Config>("FireResistance").Power + player.GetEffectPower<Config>("IntenseFire").Power)) / 100f);
+                            float dmg_reduce = ((100f - (player.GetEffectPower<Config>("Fire Resistance").Power + player.GetEffectPower<Config>("Intense Fire").Power)) / 100f);
                             EpicJewels.EJLog.LogDebug($"Fire Resistance is reducing fire damage {(1 - dmg_reduce)}");
                             hit.m_damage.m_fire *= dmg_reduce;
                         }

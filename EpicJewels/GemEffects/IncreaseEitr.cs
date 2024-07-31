@@ -17,7 +17,7 @@ namespace EpicJewels.GemEffects
         {
             public static void Postfix(Player __instance, ref float eitr)
             {
-                eitr += __instance.GetEffectPower<Config>("IncreaseEitr").Power;
+                eitr += __instance.GetEffectPower<Config>("Increase Eitr").Power;
             }
         }
     }

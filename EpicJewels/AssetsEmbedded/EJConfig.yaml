@@ -1,94 +1,94 @@
-AddSlashDamage:
+Add Slash Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: jade
   power: [3, 6, 9]
-AddChopDamage:
+Add Chop Damage:
   slot: tool
   gem: jade
   power: [6, 9, 12]
-CoinHoarder:
+Coin Hoarder:
   slot: cloak
   gem: jade
   power: [1, 2.5, 5]
-CoinGreed:
+Coin Greed:
   slot: utility
   gem: jade
   power:
     power: [5, 10, 20]
     chance: [5, 10, 15]
-SlashResistance:
+Slash Resistance:
   slot: chest
   gem: jade
   power: [1, 3, 5]
-ExpertAcrobat:
+Expert Acrobat:
   slot: legs
   gem: jade
   power: [5, 7, 12]
-ExpertDaggers:
+Expert Daggers:
   slot: head
   gem: jade
   power: [5, 7, 12]
-BluntResistance:
+Blunt Resistance:
   slot: legs
   gem: amber
   power: [1, 3, 5]
-ExpertSmasher:
+Expert Smasher:
   slot: chest
   gem: amber
   power: [5, 7, 12]
-AddBluntDamage:
+Add Blunt Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: amber
   power: [3, 6, 9]
-ExpertSpearmaiden:
+Expert Spearmaiden:
   slot: cloak
   gem: amber
   power: [5, 7, 12]
-BlockReduceStamina:
+Block Reduce Stamina:
   slot: shield
   gem: amber
   power: [10, 15, 20]
-WeaponReducedStamina:
+Weapon Reduced Stamina:
   slot: utility
   gem: amber
   power: [5, 10, 15]
-IncreaseStaminaRegen:
+Increase Stamina Regen:
   slot: head
   gem: amber
   power: [9, 18, 27]
-PierceResistance:
+Pierce Resistance:
   slot: chest
   gem: aquamarine
   power: [1, 3, 5]
-ExpertSprinter:
+Expert Sprinter:
   slot: head
   gem: aquamarine
   power: [5, 7, 12]
-AddPierceDamage:
+Add Pierce Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: aquamarine
   power: [3, 6, 9]
-WaterSwiftness:
+Water Swiftness:
   slot: legs
   gem: aquamarine
   power: [1, 3, 5]
-WaterFrenzy:
+Water Frenzy:
   slot: utility
   gem: aquamarine
   power: [6, 9, 18]
-WaterResistant:
+Water Resistant:
   slot: cloak
   gem: aquamarine
   power: [15, 30, 60]
-FireResistance:
+Fire Resistance:
   slot: legs
   gem: garnet
   power: [1, 3, 5]
-ExpertAxemaster:
+Expert Axemaster:
   slot: chest
   gem: garnet
   power: [5, 7, 12]
-ExpertMage:
+Expert Mage:
   slot: head
   gem: garnet
   power: [5, 7, 12]
@@ -98,79 +98,79 @@ Inferno:
   power:
     power: [20, 40, 60]
     chance: [5, 10, 15]
-AddPickaxeDamage:
+Add Pickaxe Damage:
   slot: tool
   gem: garnet
   power: [6, 9, 12]
-BurningFrenzy:
+Burning Frenzy:
   slot: utility
   gem: garnet
   power: [6, 9, 18]
-BurningViking:
+Burning Viking:
   slot: cloak
   gem: garnet
   power: [5, 15, 30]
-AddLightningDamage:
+Add Lightning Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
-  gem: opel
+  gem: opal
   power: [6, 9, 12]
-ExpertFisher:
+Expert Fisher:
   slot: head
-  gem: opel
+  gem: opal
   power: [5, 7, 12]
-ExpertHarvester:
+Expert Harvester:
   slot: tool
-  gem: opel
+  gem: opal
   power: [5, 7, 12]
-ExpertPolearms:
+Expert Polearms:
   slot: chest
-  gem: opel
+  gem: opal
   power: [5, 7, 12]
-ReduceWeight:
+Reduce Weight:
   slot: utility
-  gem: opel
+  gem: opal
   power: [2, 4, 6]
-LightningResistance:
+Lightning Resistance:
   slot: legs
-  gem: opel
+  gem: opal
   power: [1, 3, 5]
-CoverOfDarkness:
+Cover of Darkness:
   slot: cloak
-  gem: opel
+  gem: opal
   power:
     power: [10, 15, 30]
     chance: [10, 12, 15]
 Retribution:
   slot: shield
-  gem: opel
+  gem: opal
   power:
     power: [30, 45, 55]
     chance: [15, 25, 35]
-AddSpiritDamage:
+Add Spirit Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: amethyst
   power: [9, 12, 18]
-ExpertSwordsman:
+Expert Swordsman:
   slot: chest
   gem: amethyst
   power: [5, 7, 12]
-IncreaseStamina:
+Increase Stamina:
   slot: utility
   gem: amethyst
   power: [6, 9, 15]
-IncreaseEitr:
+Increase Eitr:
   slot: head
   gem: amethyst
   power: [6, 9, 15]
-ExpertBrawler:
+Expert Brawler:
   slot: legs
   gem: amethyst
   power: [5, 7, 12]
-PoisonResistance:
+Poison Resistance:
   slot: cloak
   gem: amethyst
   power: [1, 3, 5]
-EitrConversion:
+Eitr Conversion:
   slot: shield
   gem: amethyst
   power:
@@ -184,11 +184,11 @@ gems:
   black forest:
     jade: 0.1
     garnet: 0.1
-    opel: 0.1
+    opal: 0.1
   swamp:
     amber: 0.2
     garnet: 0.2
-    opel: 0.1
+    opal: 0.1
   mountain:
     aquamarine: 0.4
     jade: 0.2
@@ -196,35 +196,35 @@ gems:
   plains:
     amber: 0.4
     garnet: 0.4
-    opel: 0.1
+    opal: 0.1
   mistlands:
     aquamarine: 0.2
     amethyst: 0.4
-    opel: 0.1
+    opal: 0.1
   ash lands:
     amethyst: 0.2
     garnet: 0.4
-    opel: 0.1
-Have opel = amethyst > 3 of each:
+    opal: 0.1
+Have opal = amethyst > 3 of each:
   conditions:
-    - opel > 3
+    - opal > 3
     - amethyst > 3
-    - opel = amethyst
+    - opal = amethyst
   effect:
-    CombatSpirit: 40
+    Combat Spirit: 40
 Have at least 7 garnets:
   conditions:
     - garnet > 6
   effect:
-    IntenseFire: 25
+    Intense Fire: 25
 Have 6 amber and 6 jade:
   conditions:
     - amber = 6
     - jade = 6
   effect:
-    WeaponMaster: 15
+    Weapon Master: 15
 Have at least 7 aquamarine:
   conditions:
     - aquamarine > 6
   effect:
-    SlipperyWhenWet: 25
+    Slippery When Wet: 25

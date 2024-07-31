@@ -25,7 +25,7 @@ namespace EpicJewels
             API.AddGems("Amber", "amber", amber, new Color(1f, 0.776f, 0.071f, 1f));
             API.AddGems("Aquamarine", "aquamarine", aquamarine, new Color(0.259f, 0.663f, 0.71f, 1f));
             API.AddGems("Garnet", "garnet", garnet, new Color(1f, 0.141f, 0.039f));
-            API.AddGems("Opal", "opel", opal, new Color(0.945f, 0.988f, 0.988f, 1f));
+            API.AddGems("Opal", "opal", opal, new Color(0.945f, 0.988f, 0.988f, 1f));
             API.AddGems("Amethyst", "amethyst", amethyst, new Color(0.784f, 0.302f, 0.98f, 1f));
 
             API.AddGemConfig(EpicJewels.LoadEmbeddedAssetToString("EJConfig.yaml"));

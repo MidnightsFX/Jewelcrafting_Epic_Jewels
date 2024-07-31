@@ -17,7 +17,7 @@ namespace EpicJewels.GemEffects
         {
             public static void Postfix(Player __instance, ref float stamina)
             {
-                stamina += __instance.GetEffectPower<Config>("IncreaseStamina").Power;
+                stamina += __instance.GetEffectPower<Config>("Increase Stamina").Power;
             }
         }
     }

@@ -49,38 +49,38 @@ namespace EpicJewels.EffectHelpers
                     case "$inventory_damage":
                         break;
                     case "$inventory_blunt":
-                        if (player_damage_modifiers_active.ContainsKey("AddBluntDamage"))
+                        if (player_damage_modifiers_active.ContainsKey("Add Blunt Damage"))
                         {
-                            player_damage_modifiers_active["AddBluntDamage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_blunt, min, max, player_damage_modifiers_active["AddBluntDamage"].power); 
+                            player_damage_modifiers_active["Add Blunt Damage"].added = true;
+                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_blunt, min, max, player_damage_modifiers_active["Add Blunt Damage"].power); 
                         }
                         break;
                     case "$inventory_slash":
-                        if (player_damage_modifiers_active.ContainsKey("AddSlashDamage"))
+                        if (player_damage_modifiers_active.ContainsKey("Add Slash Damage"))
                         {
-                            player_damage_modifiers_active["AddSlashDamage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_slash, min, max, player_damage_modifiers_active["AddSlashDamage"].power);
+                            player_damage_modifiers_active["Add Slash Damage"].added = true;
+                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_slash, min, max, player_damage_modifiers_active["Add Slash Damage"].power);
                         }
                         break;
                     case "$inventory_pierce":
-                        if (player_damage_modifiers_active.ContainsKey("AddPierceDamage"))
+                        if (player_damage_modifiers_active.ContainsKey("Add Pierce Damage"))
                         {
-                            player_damage_modifiers_active["AddPierceDamage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_pierce, min, max, player_damage_modifiers_active["AddPierceDamage"].power);
+                            player_damage_modifiers_active["Add Pierce Damage"].added = true;
+                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_pierce, min, max, player_damage_modifiers_active["Add Pierce Damage"].power);
                         }
                         break;
                     case "$inventory_lightning":
-                        if (player_damage_modifiers_active.ContainsKey("AddLightningDamage"))
+                        if (player_damage_modifiers_active.ContainsKey("Add Lightning Damage"))
                         {
-                            player_damage_modifiers_active["AddLightningDamage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_lightning, min, max, player_damage_modifiers_active["AddLightningDamage"].power);
+                            player_damage_modifiers_active["Add Lightning Damage"].added = true;
+                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_lightning, min, max, player_damage_modifiers_active["Add Lightning Damage"].power);
                         }
                         break;
                     case "$inventory_spirit":
-                        if (player_damage_modifiers_active.ContainsKey("AddSpiritDamage"))
+                        if (player_damage_modifiers_active.ContainsKey("Add Spirit Damage"))
                         {   
-                            player_damage_modifiers_active["AddSpiritDamage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_spirit, min, max, player_damage_modifiers_active["AddSpiritDamage"].power);
+                            player_damage_modifiers_active["Add Spirit Damage"].added = true;
+                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_spirit, min, max, player_damage_modifiers_active["Add Spirit Damage"].power);
                         }
                         break;
                 } 
@@ -110,25 +110,25 @@ namespace EpicJewels.EffectHelpers
         private static Dictionary<String, DmgModDetails> DetermineCharacterDamageModifiers()
         {
             Dictionary<String, DmgModDetails> set_damage_modifiers = new Dictionary<String, DmgModDetails>();
-            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("AddSpiritDamage").Power > 0)
+            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Power > 0)
             {
-                set_damage_modifiers.Add("AddSpiritDamage", new DmgModDetails() { added = false, localizedName = "$inventory_spirit", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("AddSpiritDamage").Power });
+                set_damage_modifiers.Add("Add Spirit Damage", new DmgModDetails() { added = false, localizedName = "$inventory_spirit", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Power });
             }
-            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("AddLightningDamage").Power > 0)
+            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("Add Lightning Damage").Power > 0)
             {
-                set_damage_modifiers.Add("AddLightningDamage", new DmgModDetails() { added = false, localizedName = "$inventory_lightning", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("AddLightningDamage").Power });
+                set_damage_modifiers.Add("Add Lightning Damage", new DmgModDetails() { added = false, localizedName = "$inventory_lightning", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("Add Lightning Damage").Power });
             }
-            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("AddPierceDamage").Power > 0)
+            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("Add Pierce Damage").Power > 0)
             {
-                set_damage_modifiers.Add("AddPierceDamage", new DmgModDetails() { added = false, localizedName = "$inventory_pierce", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("AddPierceDamage").Power });
+                set_damage_modifiers.Add("Add Pierce Damage", new DmgModDetails() { added = false, localizedName = "$inventory_pierce", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("Add Pierce Damage").Power });
             }
-            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("AddSlashDamage").Power > 0)
+            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("Add Slash Damage").Power > 0)
             {
-                set_damage_modifiers.Add("AddSlashDamage", new DmgModDetails() { added = false, localizedName = "$inventory_slash", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("AddSlashDamage").Power });
+                set_damage_modifiers.Add("Add Slash Damage", new DmgModDetails() { added = false, localizedName = "$inventory_slash", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("Add Slash Damage").Power });
             }
-            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("AddBluntDamage").Power > 0)
+            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Power > 0)
             {
-                set_damage_modifiers.Add("AddBluntDamage", new DmgModDetails() { added = false, localizedName = "$inventory_blunt", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("AddBluntDamage").Power });
+                set_damage_modifiers.Add("Add Blunt Damage", new DmgModDetails() { added = false, localizedName = "$inventory_blunt", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Power });
             }
             return set_damage_modifiers;
         }

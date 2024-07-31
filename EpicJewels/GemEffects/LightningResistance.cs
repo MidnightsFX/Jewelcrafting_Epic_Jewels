@@ -27,9 +27,9 @@ namespace EpicJewels.GemEffects
                 {
                     if (hit.m_damage.m_lightning > 0)
                     {
-                        if (player.GetEffectPower<Config>("LightningResistance").Power > 0)
+                        if (player.GetEffectPower<Config>("Lightning Resistance").Power > 0)
                         {
-                            float dmg_reduce = ((100f - player.GetEffectPower<Config>("LightningResistance").Power) / 100f);
+                            float dmg_reduce = ((100f - player.GetEffectPower<Config>("Lightning Resistance").Power) / 100f);
                             EpicJewels.EJLog.LogDebug($"Lightning Resistance is reducing lightning damage {(1 - dmg_reduce)}");
                             hit.m_damage.m_fire *= dmg_reduce;
                         }

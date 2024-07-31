@@ -24,7 +24,7 @@ namespace EpicJewels.GemEffects
         {
             private static void Postfix(Player __instance, bool sensed, bool alerted)
             {
-                if (Player.m_localPlayer.GetEffectPower<Config>("CombatSpirit").Power > 0 && __instance == Player.m_localPlayer && sensed && alerted)
+                if (Player.m_localPlayer.GetEffectPower<Config>("Combat Spirit").Power > 0 && __instance == Player.m_localPlayer && sensed && alerted)
                 {
                     if (wolf == null)
                     {
@@ -87,7 +87,7 @@ namespace EpicJewels.GemEffects
                         spirit.AddComponent<CharacterTimedDestruction>();
                         Character spirit_char = wolf.GetComponent<Character>();
                         spirit.GetComponent<CharacterTimedDestruction>().m_character = spirit_char;
-                        spirit.GetComponent<CharacterTimedDestruction>().Trigger(Player.m_localPlayer.GetEffectPower<Config>("CombatSpirit").Power);
+                        spirit.GetComponent<CharacterTimedDestruction>().Trigger(Player.m_localPlayer.GetEffectPower<Config>("Combat Spirit").Power);
                     }
                 }
             }

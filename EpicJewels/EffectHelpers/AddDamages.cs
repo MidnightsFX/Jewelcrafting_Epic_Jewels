@@ -13,20 +13,20 @@ namespace EpicJewels.EffectHelpers
             if (hit.GetAttacker() is Player attacker)
             {
                 float original_total_dmg = hit.m_damage.GetTotalDamage();
-                float added_blunt_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("AddBluntDamage").Power / 100);
-                float added_slash_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("AddSlashDamage").Power / 100);
-                float added_pierce_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("AddPierceDamage").Power / 100);
+                float added_blunt_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Power / 100);
+                float added_slash_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("Add Slash Damage").Power / 100);
+                float added_pierce_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("Add Pierce Damage").Power / 100);
                 // float added_true_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddStaggerDamage.Config>("AddTrueDamage").Power / 100);
-                float added_lightning_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("AddLightningDamage").Power / 100);
-                float added_spirit_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("AddSpiritDamage").Power / 100);
-                float added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("AddPickaxeDamage").Power / 100);
-                float added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("AddChopDamage").Power / 100);
+                float added_lightning_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("Add Lightning Damage").Power / 100);
+                float added_spirit_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Power / 100);
+                float added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
+                float added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
                 float sum_of_added_dmg = added_blunt_dmg + added_slash_dmg + added_pierce_dmg + added_lightning_dmg + added_spirit_dmg + added_pickaxe_dmg;
 
 
                 float inferno_chance = Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Chance;
                 // Bonus from intenseFire
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.IntenseFire.Config>("IntenseFire").Power > 0) { inferno_chance = inferno_chance * 1.5f; }
+                if (Player.m_localPlayer.GetEffectPower<GemEffects.IntenseFire.Config>("Intense Fire").Power > 0) { inferno_chance = inferno_chance * 1.5f; }
 
                 if (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0 && Random.value < inferno_chance)
                 {

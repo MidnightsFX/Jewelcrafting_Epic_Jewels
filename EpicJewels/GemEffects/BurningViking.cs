@@ -20,9 +20,9 @@ namespace EpicJewels.GemEffects
             {
                 bool thisVikingisOnFIRE = Player.m_localPlayer.GetSEMan().HaveStatusEffect(burningstatus);
                 // EJLog.LogInfo($"Walking check for burning viking {thisVikingisOnFIRE}");
-                if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("BurningViking").Power > 0)
+                if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("Burning Viking").Power > 0)
                 {
-                    __result *= ((__instance.GetEffectPower<Config>("BurningViking").Power + 100) / 100f);
+                    __result *= ((__instance.GetEffectPower<Config>("Burning Viking").Power + 100) / 100f);
                 }
 
             }
@@ -35,9 +35,9 @@ namespace EpicJewels.GemEffects
             {
                 bool thisVikingisOnFIRE = Player.m_localPlayer.GetSEMan().HaveStatusEffect(burningstatus);
                 // EJLog.LogInfo($"Running check for burning viking {thisVikingisOnFIRE}");
-                if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("BurningViking").Power > 0)
+                if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("Burning Viking").Power > 0)
                 {
-                    __result *= ((__instance.GetEffectPower<Config>("BurningViking").Power + 100) / 100f);
+                    __result *= ((__instance.GetEffectPower<Config>("Burning Viking").Power + 100) / 100f);
                 }
             }
         }

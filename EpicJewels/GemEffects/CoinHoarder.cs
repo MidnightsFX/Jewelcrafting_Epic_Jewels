@@ -24,7 +24,7 @@ namespace EpicJewels.GemEffects
                     // Check if the user has coins, if they do not, we don't give a bonus
                     if (mcoins.Length == 0) { return; }
                     float inv_coins = mcoins[0].m_stack;
-                    float coin_hoarder_powerlevel = Player.m_localPlayer.GetEffectPower<Config>("CoinHoarder").Power;
+                    float coin_hoarder_powerlevel = Player.m_localPlayer.GetEffectPower<Config>("Coin Hoarder").Power;
                     float coinHoarderBonus = inv_coins * (coin_hoarder_powerlevel / 100);
                     float damage_multiplier = (coinHoarderBonus + 100f) / 100f;
                     EpicJewels.EJLog.LogDebug($"Coinhorder bonus multipler {damage_multiplier} coinhorder bonus: {coinHoarderBonus} inv coins: {inv_coins} coinhorder power: {coin_hoarder_powerlevel}");

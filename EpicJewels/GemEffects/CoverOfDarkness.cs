@@ -24,13 +24,13 @@ namespace EpicJewels.GemEffects
             {
                 if (hit.GetAttacker() is Player)
                 {
-                    if (Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Power > 0)
+                    if (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power > 0)
                     {
-                        if (Random.value < (Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Chance/ 100))
+                        if (Random.value < (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Chance/ 100))
                         {
-                            EpicJewels.EJLog.LogDebug($"Cover of darkness triggered darkness power: {Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Power}");
+                            EpicJewels.EJLog.LogDebug($"Cover of darkness triggered darkness power: {Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power}");
                             int bat_stars = 1; // 1 = 0 stars, 2 = 1 star etc
-                            switch (Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Power)
+                            switch (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power)
                             {
                                 // Ordering here increases stars based on the first power level curve point
                                 case float power when power > 70f:
@@ -44,7 +44,7 @@ namespace EpicJewels.GemEffects
                                     break;
                             }
                             // Spawn an extra bat above 90 power
-                            if (Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Power > 90)
+                            if (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power > 90)
                             {
                                 SpawnBat(bat_stars);
                                 SpawnBat(bat_stars);
@@ -93,7 +93,7 @@ namespace EpicJewels.GemEffects
             // Set this creatures lifetime
             creature.AddComponent<CharacterTimedDestruction>();
             creature.GetComponent<CharacterTimedDestruction>().m_character = creature_character;
-            creature.GetComponent<CharacterTimedDestruction>().Trigger(Player.m_localPlayer.GetEffectPower<Config>("CoverOfDarkness").Power);
+            creature.GetComponent<CharacterTimedDestruction>().Trigger(Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power);
         }
     }
 

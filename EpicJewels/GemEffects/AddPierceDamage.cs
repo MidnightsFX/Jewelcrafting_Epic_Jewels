@@ -20,7 +20,7 @@ namespace EpicJewels.GemEffects
         //    {
         //        if (hit.GetAttacker() is Player attacker)
         //        {
-        //            hit.m_damage.m_blunt += attacker.GetEffectPower<Config>("AddPierceDamage").Power;
+        //            hit.m_damage.m_blunt += attacker.GetEffectPower<Config>("Add Pierce Damage").Power;
         //        }
         //    }
         //}

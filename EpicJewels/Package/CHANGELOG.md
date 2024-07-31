@@ -1,3 +1,10 @@
+ **0.7.1**
+ ---
+ ```
+ - Spaces all gem effects
+ - fix misspelling of opal
+ ```
+
  **0.7.0**
 ---
 ```

@@ -19,9 +19,9 @@ namespace EpicJewels.GemEffects
             {
                 if (__instance.m_character is Player player)
                 {
-                    if (Player.m_localPlayer.GetEffectPower<Config>("WeaponReducedStamina").Power > 0)
+                    if (Player.m_localPlayer.GetEffectPower<Config>("Weapon Reduced Stamina").Power > 0)
                     {
-                        float weapon_usage_stamina_multiplier = (100f / (player.GetEffectPower<Config>("WeaponReducedStamina").Power + 100f));
+                        float weapon_usage_stamina_multiplier = (100f / (player.GetEffectPower<Config>("Weapon Reduced Stamina").Power + 100f));
                         EpicJewels.EJLog.LogDebug($"Stamina Reduction multipler: {weapon_usage_stamina_multiplier}");
                         __result *= weapon_usage_stamina_multiplier;
                     }
