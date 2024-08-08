@@ -3,7 +3,7 @@
 require "json"
 
 language_files = Dir["EpicJewels/translations/*"]
-keys_to_remove = %w[wild_shrine_mistlands_request wild_shrine_plains_request wild_shrine_mountain_request wild_shrine_swamp_request wild_shrine_blackforest_request wild_shrine_green_request]
+keys_to_remove = %w[EJ_lightning_dmg_header]
 
 language_files.each do |lang_file|
   next if lang_file == "EpicJewels/translations/English.json"

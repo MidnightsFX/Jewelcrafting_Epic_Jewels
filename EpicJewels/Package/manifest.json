@@ -1,7 +1,7 @@
 ﻿{
   "name": "EpicJewels",
   "description": "More Jewels for all your jewelcrafting needs.",
-  "version_number": "0.7.1",
+  "version_number": "0.7.3",
   "website_url": "https://discord.gg/Dmr9PQTy9m",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2202",

@@ -122,7 +122,7 @@ Please note that not all synergies currently show up in the UI. The first two wi
 
 |Name|Requirements|Details|
 |----|----|----|
-|Combat Spirit| opel > 3 & amethyst > 3 & opel = amethyst|A wolf spirit joins you in combat for a short period, it respawns after a cooldown.|
+|Combat Spirit| opal > 3 & amethyst > 3 & opal = amethyst|A wolf spirit joins you in combat for a short period, it respawns after a cooldown.|
 |Intense Fire| garnet > 6 |You are more fire resistant and have a higher chance to trigger Inferno. |
 |Weapon Master| amber = 6 & jade = 6 | Your skill with all weapons is increased. |
 |Slippery When Wet| aquamarine > 6 | You are much faster when wet. |
@@ -130,7 +130,7 @@ Please note that not all synergies currently show up in the UI. The first two wi
 ### Translations
 I welcome community translations! If you would like to improve an existing translation please reach out on discord. I provide an up-to-date English translation, others are approximations.
 
-Translation overrides are also supported! Place an overide file anywhere within your Bepinex folder. The override file must use the language and the modname.
+Translation overrides are also supported! Place an override file anywhere in the Bepinex directory. The override file must use the language and the modname.
 eg: `EpicJewels.English.json`. Existing translations can be found on [github](https://github.com/MidnightsFX/Jewelcrafting_Epic_Jewels/tree/master/EpicJewels/translations).
 
 ## Roadmap

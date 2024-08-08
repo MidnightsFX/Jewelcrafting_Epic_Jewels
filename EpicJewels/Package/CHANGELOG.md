@@ -1,3 +1,16 @@
+ **0.7.3**
+ ---
+ ```
+ - Stop localizing some instances of gem names
+ ```
+
+ **0.7.2**
+ ---
+ ```
+ - Adds localization to gem names
+ - Adds localization to gem socket names
+ ```
+
  **0.7.1**
  ---
  ```

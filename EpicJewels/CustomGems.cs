@@ -1,7 +1,4 @@
-﻿using EpicJewels.GemEffects;
-using Jewelcrafting;
-using System;
-using System.Text;
+﻿using Jewelcrafting;
 using UnityEngine;
 
 namespace EpicJewels
