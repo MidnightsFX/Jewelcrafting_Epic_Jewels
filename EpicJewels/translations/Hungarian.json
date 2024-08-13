@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Erős tűz.",
   "jc_effect_intense_fire_desc_detail": "1% -kal tűzálló vagy, és nagyobb esélyed van arra, hogy kiváltod a Tűzvihart.",
   "jc_effect_weapon_master": "Fegyvermester",
-  "jc_effect_weapon_master_desc_detail": "A fegyverekkel való ügyességed $1%-kal magasabb."
+  "jc_effect_weapon_master_desc_detail": "A fegyverekkel való ügyességed $1%-kal magasabb.",
+  "jc_uncut_jade_stone": "Jáde drágakő",
+  "jc_uncut_jade_stone_description": "Egy jáde kövek, amelyet egy ékszerész asztalán lehet megmunkálni.",
+  "jc_uncut_amber_stone": "Borostyán köve",
+  "jc_uncut_amber_stone_description": "Egy borostyán drágakő, amely készen áll a kővágó asztalon történő megmunkálásra.",
+  "jc_uncut_aquamarine_stone": "Akvamarin köve",
+  "jc_uncut_aquamarine_stone_description": "Egy akvamarin drágakő, amelyet egy drágakővágó asztalnál lehet megmunkálni.",
+  "jc_uncut_garnet_stone": "Garnet drágakő",
+  "jc_uncut_garnet_stone_description": "Egy vörösréz kövek készen áll a megmunkáló asztalon való megvágásra.",
+  "jc_uncut_opal_stone": "Opál drágakő",
+  "jc_uncut_opal_stone_description": "Egy opál drágakő, amely vágásra kész van a drágaköves asztalon.",
+  "jc_uncut_amethyst_stone": "Ametiszt drágakő",
+  "jc_uncut_amethyst_stone_description": "Egy ametiszt drágakő, amelyet egy drágakővágó asztalnál lehet megmunkálni."
 }

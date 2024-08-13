@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "ไฟรุนแรง",
   "jc_effect_intense_fire_desc_detail": "คุณมีความต้านทานอัคคีภัย +$1% และมีโอกาสสูงกว่าในการเรียกใช้ Inferno ครับ/ค่ะ",
   "jc_effect_weapon_master": "ผู้เชี่ยวชาญในการใช้อาวุธ",
-  "jc_effect_weapon_master_desc_detail": "ความสามารถของคุณในการใช้อาวุธทุกชนิดสูงขึ้น $1%"
+  "jc_effect_weapon_master_desc_detail": "ความสามารถของคุณในการใช้อาวุธทุกชนิดสูงขึ้น $1%",
+  "jc_uncut_jade_stone": "พลอยหยก",
+  "jc_uncut_jade_stone_description": "อัญมณีแจดพร้อมที่จะถูกตัดที่โต๊ะของช่างแกะสลักอัญมณี",
+  "jc_uncut_amber_stone": "อำเภอสุราษฎร์ธานี",
+  "jc_uncut_amber_stone_description": "อัญมณีอำพันพร้อมสำหรับการตัดที่โต๊ะของช่างแกะสลักอัญมณี",
+  "jc_uncut_aquamarine_stone": "พลอยทะเลสีฟ้า",
+  "jc_uncut_aquamarine_stone_description": "อัญมณี Aquamarine พร้อมที่จะถูกตัดที่โต๊ะของช่างแกะสลักอัญมณี",
+  "jc_uncut_garnet_stone": "พลอยแกนเน็ต",
+  "jc_uncut_garnet_stone_description": "อัญมณีเพชรพลอยพร้อมที่จะถูกตัดที่โต๊ะของช่างแกะสลักอัญมณี",
+  "jc_uncut_opal_stone": "เพชรโอปอล",
+  "jc_uncut_opal_stone_description": "ออปอล อัญมณีพร้อมตัดที่โต๊ะของช่างแกะสลักอัญมณี",
+  "jc_uncut_amethyst_stone": "อัมเมทิสต์ อัญมณี",
+  "jc_uncut_amethyst_stone_description": "อัญมณีที่พร้อมสำหรับการตัดที่โต๊ะของช่างแกะสลักอัญมณี"
 }

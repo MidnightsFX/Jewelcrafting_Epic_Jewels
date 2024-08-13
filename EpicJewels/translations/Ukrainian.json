@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Інтенсивний вогонь",
   "jc_effect_intense_fire_desc_detail": "Ви маєте +$1% вогнестійкості і вищий шанс спровокувати пекло.",
   "jc_effect_weapon_master": "Майстер зброї",
-  "jc_effect_weapon_master_desc_detail": "Ваша вправність у володінні усіма зброями вища на 1%."
+  "jc_effect_weapon_master_desc_detail": "Ваша вправність у володінні усіма зброями вища на 1%.",
+  "jc_uncut_jade_stone": "Нефритовий напівдорогоцінний камінь",
+  "jc_uncut_jade_stone_description": "Нефритовий дорогоцінний камінь, готовий до різання на столі для обробки дорогоцінних каменів.",
+  "jc_uncut_amber_stone": "Бурштиновий напівдорогоцінний камінь",
+  "jc_uncut_amber_stone_description": "The translation of the quoted phrase to Ukrainian is: Бурштиновий дорогоцінний камінь, готовий бути вирізаним на столі для обробки дорогоцінних каменів.",
+  "jc_uncut_aquamarine_stone": "Аквамариновий дорогоцінний камінь",
+  "jc_uncut_aquamarine_stone_description": "Смарагдовий напівдорогоцінний камінь, готовий до обрізки на столі для обрізки дорогоцінних каменів.",
+  "jc_uncut_garnet_stone": "Гранатовий дорогоцінний камінь",
+  "jc_uncut_garnet_stone_description": "Наготовується обрізати гранатовий дорогоцінний камінь за столом для обрізки дорогоцінних каменів.",
+  "jc_uncut_opal_stone": "Опал (дорогоцінний камінь)",
+  "jc_uncut_opal_stone_description": "Опал, драгоцінний камінь, готовий бути вирізаним на столі для обробки дорогоцінних каменів.",
+  "jc_uncut_amethyst_stone": "Аметистовий дорогоцінний камінь",
+  "jc_uncut_amethyst_stone_description": "Фіолетовий аметист готовий бути вирізаний на столі для обробки дорогоцінного каміння."
 }

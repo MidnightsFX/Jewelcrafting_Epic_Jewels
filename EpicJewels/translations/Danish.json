@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intens ild",
   "jc_effect_intense_fire_desc_detail": "Du er +$1% brandsikker og har en større chance for at udløse Inferno.",
   "jc_effect_weapon_master": "Våbenmester",
-  "jc_effect_weapon_master_desc_detail": "Din færdighed med alle våben er $1% højere."
+  "jc_effect_weapon_master_desc_detail": "Din færdighed med alle våben er $1% højere.",
+  "jc_uncut_jade_stone": "Jade ædelsten",
+  "jc_uncut_jade_stone_description": "En jade ædelsten klar til at blive skåret på en ædelstensskærerbord.",
+  "jc_uncut_amber_stone": "Rav ædelsten",
+  "jc_uncut_amber_stone_description": "En ravfarvet ædelsten klar til at blive skåret på en ædelstensskærers bord.",
+  "jc_uncut_aquamarine_stone": "Akvamarin Ædelsten",
+  "jc_uncut_aquamarine_stone_description": "En akvamarin ædelsten klar til at blive skåret på en ædelstensskærerbord.",
+  "jc_uncut_garnet_stone": "Garnet ædelsten",
+  "jc_uncut_garnet_stone_description": "En granatædelsten klar til at blive skåret på en ædelstensskærers bord.",
+  "jc_uncut_opal_stone": "Opal ædelsten",
+  "jc_uncut_opal_stone_description": "En opal ædelsten klar til at blive skåret ved en ædelstensskærers bord.",
+  "jc_uncut_amethyst_stone": "Ametyst ædelsten",
+  "jc_uncut_amethyst_stone_description": "En ametyst ædelsten klar til at blive skåret på en ædelstensskærer bord."
 }

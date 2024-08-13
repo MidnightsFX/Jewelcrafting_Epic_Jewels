@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "激烈的火灾",
   "jc_effect_intense_fire_desc_detail": "你对火焰的抵抗能力提高了1%，并且触发灼热的几率更高。",
   "jc_effect_weapon_master": "武器大师武器大师",
-  "jc_effect_weapon_master_desc_detail": "你对所有武器的技能提高了1%。"
+  "jc_effect_weapon_master_desc_detail": "你对所有武器的技能提高了1%。",
+  "jc_uncut_jade_stone": "翡翠宝石",
+  "jc_uncut_jade_stone_description": "一块玉石准备在宝石切割桌上被切割。",
+  "jc_uncut_amber_stone": "琥珀宝石琥珀宝石",
+  "jc_uncut_amber_stone_description": "一颗琥珀宝石准备在宝石切割工作台上切割。",
+  "jc_uncut_aquamarine_stone": "蓝宝石蓝宝石",
+  "jc_uncut_aquamarine_stone_description": "一个待切割的海蓝宝石在宝石切割师的工作台上。",
+  "jc_uncut_garnet_stone": "石榴石宝石",
+  "jc_uncut_garnet_stone_description": "一颗红宝石准备在宝石切割桌上切割。",
+  "jc_uncut_opal_stone": "Opal 宝石",
+  "jc_uncut_opal_stone_description": "一颗蛋白石宝石准备在宝石切割师的工作台上切割。",
+  "jc_uncut_amethyst_stone": "紫水晶宝石",
+  "jc_uncut_amethyst_stone_description": "一颗紫水晶宝石准备在宝石切割工作台上被切割。"
 }

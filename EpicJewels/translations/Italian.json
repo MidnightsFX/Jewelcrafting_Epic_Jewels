@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Fuoco intenso",
   "jc_effect_intense_fire_desc_detail": "Sei +$1% resistente al fuoco e hai una maggiore probabilità di innescare l'Inferno.",
   "jc_effect_weapon_master": "Maestro delle armi",
-  "jc_effect_weapon_master_desc_detail": "La tua abilità con tutte le armi è $1% più alta."
+  "jc_effect_weapon_master_desc_detail": "La tua abilità con tutte le armi è $1% più alta.",
+  "jc_uncut_jade_stone": "Giada",
+  "jc_uncut_jade_stone_description": "Una gemma di giada pronta per essere tagliata su un tavolo da taglio delle gemme.",
+  "jc_uncut_amber_stone": "Gemma d'ambra",
+  "jc_uncut_amber_stone_description": "Una gemma d'ambra pronta per essere tagliata su un tavolo da taglio delle gemme.",
+  "jc_uncut_aquamarine_stone": "La pietra preziosa acquamarina",
+  "jc_uncut_aquamarine_stone_description": "Una pietra preziosa di acquamarina pronta per essere tagliata su un tavolo da taglio delle pietre preziose.",
+  "jc_uncut_garnet_stone": "Gemma di Granato",
+  "jc_uncut_garnet_stone_description": "Un rubino pronto ad essere tagliato su un tavolo da taglio dei gemme.Un rubino pronto ad essere tagliato su un tavolo da taglio dei gemme.",
+  "jc_uncut_opal_stone": "Opale di gemme",
+  "jc_uncut_opal_stone_description": "Un'opale pronta per essere tagliata su un tavolo da taglio dei gioielli.",
+  "jc_uncut_amethyst_stone": "Pietra preziosa ametista",
+  "jc_uncut_amethyst_stone_description": "Un ametista pronta ad essere tagliata su un tavolo da taglio delle pietre preziose."
 }

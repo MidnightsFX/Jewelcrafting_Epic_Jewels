@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Yoğun ateş",
   "jc_effect_intense_fire_desc_detail": "Sen +%1 yangına dayanıklısın ve Inferno'yu tetikleme şansın daha yüksek.",
   "jc_effect_weapon_master": "Silah Ustası",
-  "jc_effect_weapon_master_desc_detail": "Silahların hepsiyle becerin %1 daha yüksek."
+  "jc_effect_weapon_master_desc_detail": "Silahların hepsiyle becerin %1 daha yüksek.",
+  "jc_uncut_jade_stone": "Yeşim Taşı",
+  "jc_uncut_jade_stone_description": "Kesimci masasında kesilmeye hazır bir yeşim taşı.",
+  "jc_uncut_amber_stone": "Kehribar Taşı",
+  "jc_uncut_amber_stone_description": "Kesimci masasında kesilmeye hazır bir kehribar değerli taşı.",
+  "jc_uncut_aquamarine_stone": "Akuvamarin Değeri",
+  "jc_uncut_aquamarine_stone_description": "Bir Kuyumcu Masası'nda kesilmeye hazır bir akik taşı.",
+  "jc_uncut_garnet_stone": "Granat Değerli Taşı",
+  "jc_uncut_garnet_stone_description": "Kesimci masasında kesilmeye hazır bir yakut taşı.",
+  "jc_uncut_opal_stone": "Opal Taşı",
+  "jc_uncut_opal_stone_description": "Bir Değirmen Taşı yatağında kesilmeye hazır bir Opal değerli taşı.",
+  "jc_uncut_amethyst_stone": "Ametist Değeri",
+  "jc_uncut_amethyst_stone_description": "Bir değerli taş olan ametist, bir taş kesicinin masasında kesilmeye hazır."
 }

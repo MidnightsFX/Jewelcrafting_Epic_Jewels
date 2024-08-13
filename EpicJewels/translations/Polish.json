@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intensywny ogień",
   "jc_effect_intense_fire_desc_detail": "Jesteś +$1% odporny na ogień i masz większą szansę na wywołanie Inferno.",
   "jc_effect_weapon_master": "Mistrz broni",
-  "jc_effect_weapon_master_desc_detail": "Twój skill z wszystkimi broniami jest o $1% wyższy."
+  "jc_effect_weapon_master_desc_detail": "Twój skill z wszystkimi broniami jest o $1% wyższy.",
+  "jc_uncut_jade_stone": "Kamień szlachetny jadeit",
+  "jc_uncut_jade_stone_description": "Jadeitowa kamień szlachetny gotowa do cięcia na stole jubilerskim.",
+  "jc_uncut_amber_stone": "Bursztyn",
+  "jc_uncut_amber_stone_description": "Surowy bursztyn gotowy do cięcia na stole jubilerskim.Dziękuję!",
+  "jc_uncut_aquamarine_stone": "Kamień szlachetny akwamaryn",
+  "jc_uncut_aquamarine_stone_description": "Kamień szlachetny akwamaryn gotowy do cięcia na stole do szlifowania kamieni.Dziękuję!",
+  "jc_uncut_garnet_stone": "Kamień szlachetny granat",
+  "jc_uncut_garnet_stone_description": "Kamień szlachetny granat gotowy do cięcia na stole jubilerskim.",
+  "jc_uncut_opal_stone": "Kamień szlachetny opal",
+  "jc_uncut_opal_stone_description": "Kamień szlachetny opal gotowy do cięcia na stole jubilerskim.",
+  "jc_uncut_amethyst_stone": "Kamień ametyst",
+  "jc_uncut_amethyst_stone_description": "Klejnot ametystu gotowy do podcięcia na stole jubilerskim."
 }

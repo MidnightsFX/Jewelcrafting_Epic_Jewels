@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intenses Feuer",
   "jc_effect_intense_fire_desc_detail": "Du bist +$1% feuerresistent und hast eine höhere Chance, Inferno auszulösen.",
   "jc_effect_weapon_master": "Waffenmeister",
-  "jc_effect_weapon_master_desc_detail": "Ihre Fähigkeit mit allen Waffen ist um 1 % höher."
+  "jc_effect_weapon_master_desc_detail": "Ihre Fähigkeit mit allen Waffen ist um 1 % höher.",
+  "jc_uncut_jade_stone": "Jade Edelstein",
+  "jc_uncut_jade_stone_description": "Ein Jade-Edelstein, bereit, an einem Edelsteinschleifertisch geschnitten zu werden.",
+  "jc_uncut_amber_stone": "Bernstein Edelstein",
+  "jc_uncut_amber_stone_description": "Ein Bernstein-Edelstein bereit, an einem Edelsteinschleifertisch geschnitten zu werden.",
+  "jc_uncut_aquamarine_stone": "Aquamarin-Edelstein",
+  "jc_uncut_aquamarine_stone_description": "Ein Aquamarin-Edelstein, der bereit ist, an einem Edelsteinschneider-Tisch geschnitten zu werden.",
+  "jc_uncut_garnet_stone": "Garnet Edelstein",
+  "jc_uncut_garnet_stone_description": "Ein Granat-Edelstein, der bereit ist, an einem Edelsteinschleifertisch geschnitten zu werden.",
+  "jc_uncut_opal_stone": "Opal Edelstein",
+  "jc_uncut_opal_stone_description": "Ein Opal-Edelstein, bereit, an einem Edelsteinschleifertisch geschnitten zu werden.",
+  "jc_uncut_amethyst_stone": "Amethyst Edelstein",
+  "jc_uncut_amethyst_stone_description": "Ein Amethyst-Edelstein, bereit, an einem Edelsteinschneidertisch geschnitten zu werden."
 }

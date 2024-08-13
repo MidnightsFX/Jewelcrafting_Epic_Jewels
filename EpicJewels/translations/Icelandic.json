@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Ákafur eldur",
   "jc_effect_intense_fire_desc_detail": "Þú ert +$1% eldhrífastur og hefur hærri líkur á að kveikja á Inferno.",
   "jc_effect_weapon_master": "Vopnameistari",
-  "jc_effect_weapon_master_desc_detail": "Kunnátta þín með öllum vopnum er $1% hærri."
+  "jc_effect_weapon_master_desc_detail": "Kunnátta þín með öllum vopnum er $1% hærri.",
+  "jc_uncut_jade_stone": "Jade Edelstein",
+  "jc_uncut_jade_stone_description": "Grænn jade-steinn til að skera í steinskurðarborði.Thank you for the translation.",
+  "jc_uncut_amber_stone": "Kambur Edelstein",
+  "jc_uncut_amber_stone_description": "Amber steinunn búin til að verða skorin við skreytingaborð.",
+  "jc_uncut_aquamarine_stone": " Grænar árgerðarkristall",
+  "jc_uncut_aquamarine_stone_description": "Klár til að skera aquamarine ædelstein á skurðarbordi.",
+  "jc_uncut_garnet_stone": "Garnet edelsteinRautt steinbrjótur",
+  "jc_uncut_garnet_stone_description": "Eitt garnet edelstein til að skera við borð skornara.",
+  "jc_uncut_opal_stone": "Opalsteinn",
+  "jc_uncut_opal_stone_description": "Eitthvað sem er tilbúið til að verða skorið á smíðaborði smíðamanna.",
+  "jc_uncut_amethyst_stone": " Ametystur edalsteininn",
+  "jc_uncut_amethyst_stone_description": "Ametyst steinsteinn tilbúinn til að skera á steinskurðara borði."
 }

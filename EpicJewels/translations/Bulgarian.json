@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Интензивен огън",
   "jc_effect_intense_fire_desc_detail": "Вие сте +$1% устойчиви на огън и имате по-висока вероятност да предизвикате Пекло.",
   "jc_effect_weapon_master": "Майстор на оръжието",
-  "jc_effect_weapon_master_desc_detail": "Вашето умение с всички оръжия е повишено с 1%."
+  "jc_effect_weapon_master_desc_detail": "Вашето умение с всички оръжия е повишено с 1%.",
+  "jc_uncut_jade_stone": "Нефритов камък",
+  "jc_uncut_jade_stone_description": "Нефритен камък готов за изрязване на масата на гравьорите на скъпоценни камъни.",
+  "jc_uncut_amber_stone": "Янтарен камък",
+  "jc_uncut_amber_stone_description": "Едно янтарено скъпоценно камъче, готово да бъде изрязано на маса за рязане на скъпоценни камъни.",
+  "jc_uncut_aquamarine_stone": "Аквамаринов камък",
+  "jc_uncut_aquamarine_stone_description": "Аквамаринов камък, готов за изрязване на маса за рязане на драгоценни камъни.",
+  "jc_uncut_garnet_stone": "Гранатов камък",
+  "jc_uncut_garnet_stone_description": "Гранатов камък, готов за рязане на масата на гравьорите на скъпоценни камъни.",
+  "jc_uncut_opal_stone": "Опалов камък",
+  "jc_uncut_opal_stone_description": "Опалов камък, готов за изрязване на маса за обработка на драгоценни камъни.",
+  "jc_uncut_amethyst_stone": "Аметистов камък",
+  "jc_uncut_amethyst_stone_description": "Аметистов камък готов за изрязване на масата на граничарите на драгоценни камъни."
 }

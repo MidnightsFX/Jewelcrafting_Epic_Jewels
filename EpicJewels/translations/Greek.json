@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Έντονη φωτιά",
   "jc_effect_intense_fire_desc_detail": "Είσαι + $1% ανθεκτικός στη φωτιά και έχεις μεγαλύτερη πιθανότητα να ενεργοποιήσεις την καταιγίδα πυρκαγιάς.",
   "jc_effect_weapon_master": "Αρχηγός Όπλων",
-  "jc_effect_weapon_master_desc_detail": "Η δεξιοτεχνία σου με όλα τα όπλα είναι $1% υψηλότερη."
+  "jc_effect_weapon_master_desc_detail": "Η δεξιοτεχνία σου με όλα τα όπλα είναι $1% υψηλότερη.",
+  "jc_uncut_jade_stone": "Πέτρα ιαδίου",
+  "jc_uncut_jade_stone_description": "Ένας λίθος για τον κοπέα πετρωμάτων έτοιμος να κοπεί στο τραπέζι του.",
+  "jc_uncut_amber_stone": "Κεχριμπάρι πετράδι",
+  "jc_uncut_amber_stone_description": "Ένας λίθος κεχριμπαριού έτοιμος για κοπή σε τραπέζι γλυπτής λίθων.",
+  "jc_uncut_aquamarine_stone": "Πετράδι ακουαμαρίνα",
+  "jc_uncut_aquamarine_stone_description": "Ένας λίθος ακουαμαρίνας έτοιμος για κοπή στο τραπέζι του χαράκτη.",
+  "jc_uncut_garnet_stone": "Κόκκινη πέτρα πολύτιμων λίθων",
+  "jc_uncut_garnet_stone_description": "Ένας κόκκινος λίθος γρανάτης έτοιμος να κοπεί σε ένα τραπέζι για κοπή λίθων.",
+  "jc_uncut_opal_stone": "Πολύτιμος λίθος οπάλ",
+  "jc_uncut_opal_stone_description": "Ένας πολύτιμος λίθος Opal έτοιμος για κοπή σε ένα τραπέζι κοπτών λίθων.",
+  "jc_uncut_amethyst_stone": "Πολύτιμη πέτρα αμέθυστος",
+  "jc_uncut_amethyst_stone_description": "Ένας πολύτιμος λίθος αμέθυστου έτοιμος να κοπεί σε ένα τραπέζι για γλυπτική λίθων."
 }

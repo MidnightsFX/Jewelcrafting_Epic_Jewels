@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intensyvus gaisras",
   "jc_effect_intense_fire_desc_detail": "Jūs esate +$1% atsparūs ugniai ir turite didesnį šansą sukelti Inferną.",
   "jc_effect_weapon_master": "Ginklų meistras",
-  "jc_effect_weapon_master_desc_detail": "Jūsų įgūdžiai su visais ginklais yra $1% aukštesni."
+  "jc_effect_weapon_master_desc_detail": "Jūsų įgūdžiai su visais ginklais yra $1% aukštesni.",
+  "jc_uncut_jade_stone": "Jado akmuo",
+  "jc_uncut_jade_stone_description": "Jados akmuo pasiruošęs būti supjaustytas Gaminėjų stalo.",
+  "jc_uncut_amber_stone": "Gintarinė deimantė",
+  "jc_uncut_amber_stone_description": "Gotas gatvės paruoštas pjauti Gatavintųjų stalo pjūklams.",
+  "jc_uncut_aquamarine_stone": "Akvariumo akmuo",
+  "jc_uncut_aquamarine_stone_description": "Akvariumo akmuo pasiruošęs būti supjaustytas Gemcutters stalo.",
+  "jc_uncut_garnet_stone": "Granato akmuo",
+  "jc_uncut_garnet_stone_description": "Granato deimantas pasiruošęs būti supjaustytas Gemcutters stalas.",
+  "jc_uncut_opal_stone": "Opalinis deimantas",
+  "jc_uncut_opal_stone_description": "Opalų akmuo pasiruošęs būti supjaustytas gintaro pjūklų stalo.",
+  "jc_uncut_amethyst_stone": "Ametisto gys",
+  "jc_uncut_amethyst_stone_description": "Ametisto akmuo paruoštas pjauti Grotuotojų stalo."
 }

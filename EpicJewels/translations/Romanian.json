@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Foc intens",
   "jc_effect_intense_fire_desc_detail": "Ești rezistent la foc cu +1% și ai o șansă mai mare să declanșezi Infernul.",
   "jc_effect_weapon_master": "Maestru al armelor",
-  "jc_effect_weapon_master_desc_detail": "Abilitatea ta cu toate armele este cu $1% mai mare."
+  "jc_effect_weapon_master_desc_detail": "Abilitatea ta cu toate armele este cu $1% mai mare.",
+  "jc_uncut_jade_stone": "Piatră de jad",
+  "jc_uncut_jade_stone_description": "Un safir de jade gata să fie tăiat la masa unui tăietor de pietre preţioase.",
+  "jc_uncut_amber_stone": "Piatră de chihlimbar",
+  "jc_uncut_amber_stone_description": "Un safir de chihlimbar gata să fie tăiat la o masă de tăiat pietre prețioase.",
+  "jc_uncut_aquamarine_stone": "piatră prețioasă de acvamarin",
+  "jc_uncut_aquamarine_stone_description": "Un safir de aquamarin gata să fie tăiat la masa unui tăietor de pietre prețioase.",
+  "jc_uncut_garnet_stone": "Piatră prețioasă granat",
+  "jc_uncut_garnet_stone_description": "Un safir gata să fie tăiat la masa de tăiat pietre prețioase.",
+  "jc_uncut_opal_stone": "Opal Pietre prețioase",
+  "jc_uncut_opal_stone_description": "Un safir opal gata să fie tăiat la masa unui tăietor de pietre prețioase.",
+  "jc_uncut_amethyst_stone": "Ametist Pietre prețioase",
+  "jc_uncut_amethyst_stone_description": "Un safir ametist pregătit să fie tăiat la o masă de tăiat pietre prețioase."
 }

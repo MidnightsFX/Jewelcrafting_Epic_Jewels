@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intensiv eld.",
   "jc_effect_intense_fire_desc_detail": "Du är +$1% eldresistent och har en högre chans att utlösa Inferno.",
   "jc_effect_weapon_master": "Vapenmästare",
-  "jc_effect_weapon_master_desc_detail": "Din skicklighet med alla vapen är $1% högre."
+  "jc_effect_weapon_master_desc_detail": "Din skicklighet med alla vapen är $1% högre.",
+  "jc_uncut_jade_stone": "Jade ädelsten",
+  "jc_uncut_jade_stone_description": "En jade ädelsten redo att skäras vid en ädelstensskares bord.",
+  "jc_uncut_amber_stone": "Bärnsten ädelsten",
+  "jc_uncut_amber_stone_description": "En bärnsten ädelsten redo att skäras vid en ädelstensskärares bord.",
+  "jc_uncut_aquamarine_stone": "Akvamarin ädelsten",
+  "jc_uncut_aquamarine_stone_description": "En akvamarin ädelsten redo att skäras vid en ädelstensskärarbord.",
+  "jc_uncut_garnet_stone": "Garnet ädelsten",
+  "jc_uncut_garnet_stone_description": "En granatsten redo att skäras vid en ädelstensskärd bord.",
+  "jc_uncut_opal_stone": "Opal ädelsten",
+  "jc_uncut_opal_stone_description": "En opal ädelsten redo att skäras vid en ädelstensskärarbord.",
+  "jc_uncut_amethyst_stone": "Ametist ädelsten",
+  "jc_uncut_amethyst_stone_description": "En ametist ädelsten redo att skäras vid en ädelstensskärarbord."
 }

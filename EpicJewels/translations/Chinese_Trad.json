@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "激烈的火災激烈的火災",
   "jc_effect_intense_fire_desc_detail": "你具有+$1%的火焰抗性，并且觸發地獄火的機會更高。",
   "jc_effect_weapon_master": "武器大師",
-  "jc_effect_weapon_master_desc_detail": "你使用所有武器的技能提高了$1%。"
+  "jc_effect_weapon_master_desc_detail": "你使用所有武器的技能提高了$1%。",
+  "jc_uncut_jade_stone": "翡翠寶石",
+  "jc_uncut_jade_stone_description": "一顆翡翠寶石準備在寶石切割桌上切割。",
+  "jc_uncut_amber_stone": "琥珀寶石",
+  "jc_uncut_amber_stone_description": "一顆琥珀寶石準備在寶石切割桌上被切割。",
+  "jc_uncut_aquamarine_stone": "藍寶石",
+  "jc_uncut_aquamarine_stone_description": "一顆海藍寶石準備在寶石切割桌上切割。",
+  "jc_uncut_garnet_stone": "石榴石寶石",
+  "jc_uncut_garnet_stone_description": "一顆石榴石寶石準備在寶石切割桌上切割。",
+  "jc_uncut_opal_stone": "蛋白石寶石",
+  "jc_uncut_opal_stone_description": "一颗蛋白石宝石已经准备好在宝石切割桌上被切割。",
+  "jc_uncut_amethyst_stone": "紫水晶宝石",
+  "jc_uncut_amethyst_stone_description": "一顆紫水晶寶石準備在寶石切割工作台上切割。"
 }

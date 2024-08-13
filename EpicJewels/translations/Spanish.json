@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Fuego intenso",
   "jc_effect_intense_fire_desc_detail": "Eres +$1% resistente al fuego y tienes una mayor probabilidad de activar Inferno.",
   "jc_effect_weapon_master": "Maestro de armas",
-  "jc_effect_weapon_master_desc_detail": "Tu habilidad con todas las armas es un $1% más alta."
+  "jc_effect_weapon_master_desc_detail": "Tu habilidad con todas las armas es un $1% más alta.",
+  "jc_uncut_jade_stone": "Jade piedra preciosa",
+  "jc_uncut_jade_stone_description": "Una piedra preciosa de jade lista para ser cortada en una mesa de talladores de gemas.",
+  "jc_uncut_amber_stone": "Ambar piedra preciosa",
+  "jc_uncut_amber_stone_description": "Una gema de ámbar lista para ser cortada en una mesa de talladores de gemas.",
+  "jc_uncut_aquamarine_stone": "Piedra preciosa de aguamarina",
+  "jc_uncut_aquamarine_stone_description": "Una piedra preciosa de aguamarina lista para ser cortada en una mesa de talladores de gemas.",
+  "jc_uncut_garnet_stone": "Gema granate",
+  "jc_uncut_garnet_stone_description": "Una piedra preciosa de granate lista para ser cortada en una mesa de gemólogos.",
+  "jc_uncut_opal_stone": "Piedra preciosa ópalo",
+  "jc_uncut_opal_stone_description": "Una piedra preciosa de ópalo lista para ser cortada en una mesa de cortadores de gemas.",
+  "jc_uncut_amethyst_stone": "Amatista piedra preciosa",
+  "jc_uncut_amethyst_stone_description": "Una piedra preciosa de amatista lista para ser cortada en una mesa de lapidación."
 }

@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Fogo intenso",
   "jc_effect_intense_fire_desc_detail": "Você é + $1% resistente ao fogo e tem uma chance maior de acionar o Inferno.",
   "jc_effect_weapon_master": "Mestre das Armas",
-  "jc_effect_weapon_master_desc_detail": "Sua habilidade com todas as armas é $1% mais alta."
+  "jc_effect_weapon_master_desc_detail": "Sua habilidade com todas as armas é $1% mais alta.",
+  "jc_uncut_jade_stone": "Pedra de jade",
+  "jc_uncut_jade_stone_description": "Uma pedra preciosa de jade pronta para ser cortada em uma mesa de lapidação de gemas.",
+  "jc_uncut_amber_stone": "Gema de Âmbar",
+  "jc_uncut_amber_stone_description": "Uma pedra preciosa de âmbar pronta para ser cortada em uma mesa de lapidação de gemas.",
+  "jc_uncut_aquamarine_stone": "Pedra preciosa de água-marinha",
+  "jc_uncut_aquamarine_stone_description": "Uma pedra preciosa de água-marinha pronta para ser cortada em uma mesa de lapidários.",
+  "jc_uncut_garnet_stone": "Gema de Granada",
+  "jc_uncut_garnet_stone_description": "Uma pedra preciosa de granada pronta para ser cortada em uma mesa de lapidários.",
+  "jc_uncut_opal_stone": "Pedra preciosa de Opala",
+  "jc_uncut_opal_stone_description": "Uma pedra preciosa de opala pronta para ser cortada em uma mesa de lapidação de gemas.",
+  "jc_uncut_amethyst_stone": "Pedra de Ametista",
+  "jc_uncut_amethyst_stone_description": "Uma pedra preciosa de ametista pronta para ser cortada em uma mesa de lapidação de gemas."
 }

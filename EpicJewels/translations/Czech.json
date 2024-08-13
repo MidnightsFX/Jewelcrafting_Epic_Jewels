@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intenzivní oheň",
   "jc_effect_intense_fire_desc_detail": "Jste +$1% odolní proti ohni a máte vyšší šanci vyvolat Inferno.",
   "jc_effect_weapon_master": "Zbraňový mistr",
-  "jc_effect_weapon_master_desc_detail": "Vaše dovednost s všemi zbraněmi je o $1% vyšší."
+  "jc_effect_weapon_master_desc_detail": "Vaše dovednost s všemi zbraněmi je o $1% vyšší.",
+  "jc_uncut_jade_stone": "Jade drahokam",
+  "jc_uncut_jade_stone_description": "Jadeový drahokam připravený k řezání na stolu pro broušení drahokamů.",
+  "jc_uncut_amber_stone": "Jantarový drahokam",
+  "jc_uncut_amber_stone_description": "Jantarový drahokam připravený k řezání na stolu pro broušení drahokamů.Drahokam z jantaru připravený k řezání na stole pro broušení drahokamů.",
+  "jc_uncut_aquamarine_stone": "Akvamarínový drahokam",
+  "jc_uncut_aquamarine_stone_description": "Akvamarínový drahokam připravený k řezání na stole řezbářů drahokamů.",
+  "jc_uncut_garnet_stone": "Garnet drahokam",
+  "jc_uncut_garnet_stone_description": "Granátový drahokam připravený k řezání na stolu pro řezání drahokamů.",
+  "jc_uncut_opal_stone": "Opálový drahokam",
+  "jc_uncut_opal_stone_description": "A opálový drahokam připravený k řezání na stolu pro broušení drahokamů.",
+  "jc_uncut_amethyst_stone": "Fialový drahokam ametyst",
+  "jc_uncut_amethyst_stone_description": "Fialový ametyst připravený k řezání na stolu pro řezání drahých kamenů."
 }

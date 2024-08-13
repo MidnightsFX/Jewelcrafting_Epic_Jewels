@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "तीव्र आग",
   "jc_effect_intense_fire_desc_detail": "आप +$1% आग प्रतिरोधी हैं और इन्फर्नो को शुरू करने की अधिक संभावना है।",
   "jc_effect_weapon_master": "शस्त्र विद्याधर",
-  "jc_effect_weapon_master_desc_detail": "आपकी सभी हथियारों की कौशलता $1% अधिक है।"
+  "jc_effect_weapon_master_desc_detail": "आपकी सभी हथियारों की कौशलता $1% अधिक है।",
+  "jc_uncut_jade_stone": "जेड गेमस्टोन",
+  "jc_uncut_jade_stone_description": "एक जेड रत्न जोहरी की मेज़ पर काटने के लिए तैयार है।",
+  "jc_uncut_amber_stone": "अम्बर रत्न",
+  "jc_uncut_amber_stone_description": "एक एम्बर जेमस्टोन जोड़े के लिए तैयार है एक जेमकटर्स टेबल पर।",
+  "jc_uncut_aquamarine_stone": "एक्वामरीन जेमस्टोन",
+  "jc_uncut_aquamarine_stone_description": "जेमकटर टेबल पर कटने के लिए तैयार एक एक्वामरीन रत्न।",
+  "jc_uncut_garnet_stone": "गार्नेट रत्न",
+  "jc_uncut_garnet_stone_description": "एक गार्नेट जेमस्टोन जेमकटर्स टेबल पर कटने के लिए तैयार है।",
+  "jc_uncut_opal_stone": "ओपल रत्न",
+  "jc_uncut_opal_stone_description": "जेमकटर की मेज़ पर कटाई के लिए तैयार एक ओपल रत्न।",
+  "jc_uncut_amethyst_stone": "अमेथिस्ट रत्न",
+  "jc_uncut_amethyst_stone_description": "एक एमेथिस्ट गहना जो कटाई के लिए तैयार है एक जेमकटर्स टेबल पर।"
 }

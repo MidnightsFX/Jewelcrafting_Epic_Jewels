@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intensīva uguns.",
   "jc_effect_intense_fire_desc_detail": "Tu esi +$1% pret uguni izturīgs un ir lielāka iespēja izraisīt Inferno.",
   "jc_effect_weapon_master": "I have translated the phrase  to Latvian.Īpašs ieroču meistars",
-  "jc_effect_weapon_master_desc_detail": "Jūsu prasme ar visām ieroču veidiem ir par 1% augstāka."
+  "jc_effect_weapon_master_desc_detail": "Jūsu prasme ar visām ieroču veidiem ir par 1% augstāka.",
+  "jc_uncut_jade_stone": "Jādes dārgakmens",
+  "jc_uncut_jade_stone_description": "Džadu dārgakmens gatavs apstrādei dārgakmeņu griešanas galda.",
+  "jc_uncut_amber_stone": "Dzintara dārgakmens",
+  "jc_uncut_amber_stone_description": "Dzintara dārgakmens gatavs griešanai pie dārgakmeņu griezēja galda.",
+  "jc_uncut_aquamarine_stone": "Akvamarīna dārgakmens",
+  "jc_uncut_aquamarine_stone_description": "Akvamarīna dārgakmens gatavs griešanai dārgakmeņu griezēju galda.",
+  "jc_uncut_garnet_stone": "Garnetu dārgakmens",
+  "jc_uncut_garnet_stone_description": "Garneta dārgakmens gatavs griešanai Gemcutters galda.",
+  "jc_uncut_opal_stone": "Opāļa dārgakmens",
+  "jc_uncut_opal_stone_description": "Opāla dārgakmens gatavs griešanai dārgakmeņu griezēja galda.",
+  "jc_uncut_amethyst_stone": " Amatista Akmeņi",
+  "jc_uncut_amethyst_stone_description": "Amatista dārgakmens gatavs apstrādei Gemcutter galda."
 }

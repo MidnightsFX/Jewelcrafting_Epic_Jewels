@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intensiivinen tulipalo",
   "jc_effect_intense_fire_desc_detail": "Olet +$1% tulenkestävä ja sinulla on suurempi mahdollisuus laukaista Inferno.",
   "jc_effect_weapon_master": "Aseiden mestari",
-  "jc_effect_weapon_master_desc_detail": "Taitosi kaikkien aseiden kanssa on $1% korkeampi."
+  "jc_effect_weapon_master_desc_detail": "Taitosi kaikkien aseiden kanssa on $1% korkeampi.",
+  "jc_uncut_jade_stone": "Jade-kiven",
+  "jc_uncut_jade_stone_description": "Jade-kiven jalokivi valmiina leikattavaksi jalokivileikkurin pöydällä.",
+  "jc_uncut_amber_stone": "Ambra-kiven",
+  "jc_uncut_amber_stone_description": "Meripihkan jalokivi valmiina leikattavaksi jalokivien leikkauspöydällä.",
+  "jc_uncut_aquamarine_stone": "Akvamariinikiven",
+  "jc_uncut_aquamarine_stone_description": "Akvamariini jalokivi valmiina leikattavaksi jalokivienleikkauspöydällä.",
+  "jc_uncut_garnet_stone": "Garnet-kiven",
+  "jc_uncut_garnet_stone_description": "Garnet-kivenjalokivi, valmis leikattavaksi jalokivien leikkauspöydällä.",
+  "jc_uncut_opal_stone": "Opaalikivi",
+  "jc_uncut_opal_stone_description": "Opalikivi valmiina leikattavaksi jalokivienleikkauspöydällä.",
+  "jc_uncut_amethyst_stone": "Ametistikivi",
+  "jc_uncut_amethyst_stone_description": "Amatistikivi valmiina leikattavaksi jalokivileikkauspöydällä."
 }

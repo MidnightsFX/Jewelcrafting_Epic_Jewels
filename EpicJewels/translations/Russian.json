@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Интенсивный огонь",
   "jc_effect_intense_fire_desc_detail": "Вы имеете +$1% сопротивление к огню и больше шансов вызвать Инферно.",
   "jc_effect_weapon_master": "Мастер оружия",
-  "jc_effect_weapon_master_desc_detail": "Ваш навык обращения со всеми видами оружия выше на $1%."
+  "jc_effect_weapon_master_desc_detail": "Ваш навык обращения со всеми видами оружия выше на $1%.",
+  "jc_uncut_jade_stone": "Нефритовый камень",
+  "jc_uncut_jade_stone_description": "Нефритовый драгоценный камень готов к обработке на столе для обработки драгоценных камней.",
+  "jc_uncut_amber_stone": "Янтарный камень",
+  "jc_uncut_amber_stone_description": "Янтарный камень, готовый к резке на столе для обработки драгоценных камней.",
+  "jc_uncut_aquamarine_stone": "Голубой аквамарин",
+  "jc_uncut_aquamarine_stone_description": "Геммологический камень аквамарин, готовый к резке на столе геммолога.",
+  "jc_uncut_garnet_stone": "Гранатовый драгоценный камень",
+  "jc_uncut_garnet_stone_description": "Гранатовый драгоценный камень, готовый к обработке на столе для обработки драгоценных камней.",
+  "jc_uncut_opal_stone": "Опал драгоценный камень",
+  "jc_uncut_opal_stone_description": "Опал, готовый к обработке на столе для обработки драгоценных камней.",
+  "jc_uncut_amethyst_stone": "Аметистовый камень",
+  "jc_uncut_amethyst_stone_description": "Аметистовый драгоценный камень готов к обработке на столе для обработки драгоценных камней."
 }

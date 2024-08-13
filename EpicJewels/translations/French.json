@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Feu intense",
   "jc_effect_intense_fire_desc_detail": "Vous êtes +1% résistant au feu et avez une chance plus élevée de déclencher l'Inferno.",
   "jc_effect_weapon_master": "Maître d'armes",
-  "jc_effect_weapon_master_desc_detail": "Votre habileté avec toutes les armes est supérieure de 1%."
+  "jc_effect_weapon_master_desc_detail": "Votre habileté avec toutes les armes est supérieure de 1%.",
+  "jc_uncut_jade_stone": "Pierre de jade",
+  "jc_uncut_jade_stone_description": "Une pierre précieuse en jade prête à être taillée sur une table de lapidaire.",
+  "jc_uncut_amber_stone": "Pierre d'ambre",
+  "jc_uncut_amber_stone_description": "Une gemme d'ambre prête à être taillée sur une table de lapidaire.",
+  "jc_uncut_aquamarine_stone": "Pierre gemme d'aigue-marine",
+  "jc_uncut_aquamarine_stone_description": "Une pierre précieuse d'aigue-marine prête à être taillée sur une table de lapidaire.",
+  "jc_uncut_garnet_stone": "Pierre précieuse grenat",
+  "jc_uncut_garnet_stone_description": "Une pierre précieuse de grenat prête à être taillée sur une table de lapidaire.",
+  "jc_uncut_opal_stone": "Pierre précieuse d'opale",
+  "jc_uncut_opal_stone_description": "Une pierre précieuse d'opale prête à être taillée sur une table de lapidaire.",
+  "jc_uncut_amethyst_stone": "Pierre précieuse améthyste",
+  "jc_uncut_amethyst_stone_description": "Une pierre précieuse d'améthyste prête à être taillée sur une table de lapidaire."
 }

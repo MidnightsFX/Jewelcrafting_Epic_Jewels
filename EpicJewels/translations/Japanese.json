@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "激しい火災 (Hageshii kasai)",
   "jc_effect_intense_fire_desc_detail": "あなたは+1％の耐火性があり、インフェルノを発動する確率が高くなります。",
   "jc_effect_weapon_master": "武器使い",
-  "jc_effect_weapon_master_desc_detail": "あなたの全ての武器に対するスキルは$1%高いです。"
+  "jc_effect_weapon_master_desc_detail": "あなたの全ての武器に対するスキルは$1%高いです。",
+  "jc_uncut_jade_stone": "ヒスイ宝石",
+  "jc_uncut_jade_stone_description": "「宝石職人のテーブルで切られる準備が整った翡翠の宝石。」",
+  "jc_uncut_amber_stone": "琥珀の宝石琥珀の宝石",
+  "jc_uncut_amber_stone_description": "宝石切り師のテーブルでカットする準備が整ったアンバー宝石",
+  "jc_uncut_aquamarine_stone": "アクアマリン宝石アクアマリン宝石",
+  "jc_uncut_aquamarine_stone_description": "宝石切りのテーブルでカットする準備が整ったアクアマリンの宝石。",
+  "jc_uncut_garnet_stone": "ガーネット宝石",
+  "jc_uncut_garnet_stone_description": "宝石カッターのテーブルでカットする準備が整ったガーネットの宝石",
+  "jc_uncut_opal_stone": "オパール宝石",
+  "jc_uncut_opal_stone_description": "宝石切り師のテーブルでカットされる準備ができたオパール宝石。",
+  "jc_uncut_amethyst_stone": "紫水晶の宝石紫水晶の宝石",
+  "jc_uncut_amethyst_stone_description": "「宝石切りのテーブルでカットする準備が整ったアメジストの宝石」"
 }

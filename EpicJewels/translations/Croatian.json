@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intenzivan požar",
   "jc_effect_intense_fire_desc_detail": "Imate + $1% otpornost na vatru i veću šansu za pokretanje Inferna.",
   "jc_effect_weapon_master": "Vladar oružja",
-  "jc_effect_weapon_master_desc_detail": "Vaša vještina sa svim oružjima je 1% veća."
+  "jc_effect_weapon_master_desc_detail": "Vaša vještina sa svim oružjima je 1% veća.",
+  "jc_uncut_jade_stone": "Dragulj od žada",
+  "jc_uncut_jade_stone_description": "Biserni dragulj spreman za rezanje na stolu za rezbarije dragog kamenja.",
+  "jc_uncut_amber_stone": "Jantarna dragulj",
+  "jc_uncut_amber_stone_description": "Jantar dragi kamen spreman za rezanje na stolu za rezanje dragog kamenja.",
+  "jc_uncut_aquamarine_stone": "Akvamarin dragi kamen",
+  "jc_uncut_aquamarine_stone_description": "Akvamarin dragulj spreman za rezanje na stolu za rezanje dragog kamenja.Hvala na informaciji.",
+  "jc_uncut_garnet_stone": "Drač Gemstone",
+  "jc_uncut_garnet_stone_description": "Dragulj od granata spreman za rezanje na stolu za rezanje dragog kamenja.Hvala na prijevodu.",
+  "jc_uncut_opal_stone": "Dragi kamen opal",
+  "jc_uncut_opal_stone_description": "Dragi kamen opal spreman za rezanje na stolu za rezanje dragog kamenja.",
+  "jc_uncut_amethyst_stone": "Ametist dragi kamen",
+  "jc_uncut_amethyst_stone_description": "Ametist dragi kamen spreman za rezanje na stolu za rezanje dragog kamenja."
 }

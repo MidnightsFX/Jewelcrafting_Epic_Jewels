@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Intenst brann",
   "jc_effect_intense_fire_desc_detail": "Du er +$1% ildbestandig og har en høyere sjanse for å utløse Inferno.",
   "jc_effect_weapon_master": "Våpenmester",
-  "jc_effect_weapon_master_desc_detail": "Din ferdighet med alle våpen er $1% høyere."
+  "jc_effect_weapon_master_desc_detail": "Din ferdighet med alle våpen er $1% høyere.",
+  "jc_uncut_jade_stone": "Jade edelsten",
+  "jc_uncut_jade_stone_description": "En jade edelsten klar til å bli kuttet ved en edelsteinskjærers bord.",
+  "jc_uncut_amber_stone": "Amber edelsten",
+  "jc_uncut_amber_stone_description": "En ravfarget edelsten klar til å bli kuttet på en edelsteinsskjærers bord.",
+  "jc_uncut_aquamarine_stone": "Akvamarin edelsten",
+  "jc_uncut_aquamarine_stone_description": "En akvamarin edelsten klar til å bli kuttet ved et edelsteinslipers bord.",
+  "jc_uncut_garnet_stone": "Garnet Edelsten",
+  "jc_uncut_garnet_stone_description": "En granat edelsten klar til å bli kuttet ved en edelsteinsliperbord.",
+  "jc_uncut_opal_stone": "Opal edelsten",
+  "jc_uncut_opal_stone_description": "En opal edelsten klar til å bli kuttet ved en edelstenskutterbord.",
+  "jc_uncut_amethyst_stone": "Ametystedelsten",
+  "jc_uncut_amethyst_stone_description": "En ametystedelsten klar til å bli kuttet ved en edelstenskutterbord."
 }

@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Интензивен пожар",
   "jc_effect_intense_fire_desc_detail": "Вие сте +$1% огнестоен и имате поголема шанса да предизвикате Инферно.",
   "jc_effect_weapon_master": "Мајстор на оружје",
-  "jc_effect_weapon_master_desc_detail": "Вашата вештина со сите оружја е за $1% поголема."
+  "jc_effect_weapon_master_desc_detail": "Вашата вештина со сите оружја е за $1% поголема.",
+  "jc_uncut_jade_stone": "Јаден камен",
+  "jc_uncut_jade_stone_description": "Еден џејд камен готов да се исече на стол за резање на камење.",
+  "jc_uncut_amber_stone": "Амбер каменАмбер камен",
+  "jc_uncut_amber_stone_description": "Амбер камење готово за резање на маса за резање на камење.",
+  "jc_uncut_aquamarine_stone": "Аквамарин минерал",
+  "jc_uncut_aquamarine_stone_description": "Аквамарин камен готов за резање на маса за резање на камење.",
+  "jc_uncut_garnet_stone": "Гранатен каменГранатен камен",
+  "jc_uncut_garnet_stone_description": "Гранатен камен готов да се исече на маса за сечење на камењари.",
+  "jc_uncut_opal_stone": "Опал каменThank you for your request! Let me know if there's anything else I can help with.",
+  "jc_uncut_opal_stone_description": "Еден опален камен готов да се исече на маса за сечење на камењари.",
+  "jc_uncut_amethyst_stone": "Аметист каменPlease note that the translation provided is in Macedonian.",
+  "jc_uncut_amethyst_stone_description": "Аметист камен готов да се сече на маса за обработка на камењари."
 }

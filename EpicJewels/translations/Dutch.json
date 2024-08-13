@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "Hevige brand",
   "jc_effect_intense_fire_desc_detail": "Je bent +$1% vuurbestendig en hebt een grotere kans om Inferno te activeren.",
   "jc_effect_weapon_master": "Wapenmeester",
-  "jc_effect_weapon_master_desc_detail": "Jouw vaardigheid met alle wapens is $1% hoger."
+  "jc_effect_weapon_master_desc_detail": "Jouw vaardigheid met alle wapens is $1% hoger.",
+  "jc_uncut_jade_stone": "Jade edelsteen",
+  "jc_uncut_jade_stone_description": "Een jade edelsteen klaar om te worden gesneden aan een edelsteensnijders tafel.",
+  "jc_uncut_amber_stone": "Amber Edelsteen",
+  "jc_uncut_amber_stone_description": "Een barnsteen edelsteen klaar om geslepen te worden aan een edelsteenslijptafel.",
+  "jc_uncut_aquamarine_stone": "Aquamarijn Edelsteen",
+  "jc_uncut_aquamarine_stone_description": "Een aquamarijn edelsteen klaar om geslepen te worden aan een edelsteenslijptafel.",
+  "jc_uncut_garnet_stone": "Garnet edelsteen",
+  "jc_uncut_garnet_stone_description": "Een granaat edelsteen klaar om geslepen te worden aan een edelsteenslijptafel.",
+  "jc_uncut_opal_stone": "Opalen edelsteen",
+  "jc_uncut_opal_stone_description": "Een opaal edelsteen klaar om geslepen te worden aan een edelsteensnijtafel.",
+  "jc_uncut_amethyst_stone": "Amethist Edelsteen",
+  "jc_uncut_amethyst_stone_description": "Een amethist edelsteen klaar om geslepen te worden aan een edelsnijders tafel."
 }

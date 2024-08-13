@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "강렬한 불꽃",
   "jc_effect_intense_fire_desc_detail": "당신은 +$1% 화염 저항력이 있으며 인페르노를 발동할 확률이 높습니다.",
   "jc_effect_weapon_master": "무기 대가",
-  "jc_effect_weapon_master_desc_detail": "모든 무기에 대한 당신의 기술은 1% 높습니다."
+  "jc_effect_weapon_master_desc_detail": "모든 무기에 대한 당신의 기술은 1% 높습니다.",
+  "jc_uncut_jade_stone": "비노석 보석",
+  "jc_uncut_jade_stone_description": "보석 연마자 탁자 위에서 잘려질 준비가 된 비취 보석.",
+  "jc_uncut_amber_stone": "호박석gemstone",
+  "jc_uncut_amber_stone_description": "절단 준비가 된 호박석 보석이 절단기 테이블 위에 있습니다.",
+  "jc_uncut_aquamarine_stone": " Aquamarine 보석",
+  "jc_uncut_aquamarine_stone_description": "절단 준비가 된 아쿠아마린 보석이 보석 연마 탁자에서 자를 준비가 되어 있습니다.",
+  "jc_uncut_garnet_stone": "가넷 보석",
+  "jc_uncut_garnet_stone_description": "절단을 위해 준비된 가넷 보석",
+  "jc_uncut_opal_stone": "오팔 보석",
+  "jc_uncut_opal_stone_description": "보석 연마자 테이블에서 잘려질 준비가 된 오팔 보석.",
+  "jc_uncut_amethyst_stone": "자수정 보석",
+  "jc_uncut_amethyst_stone_description": "보석연마 테이블에서 잘릴 준비가 된 자수정 보석."
 }

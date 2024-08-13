@@ -206,5 +206,17 @@
   "jc_effect_intense_fire": "მძლევრი ცხენი.",
   "jc_effect_intense_fire_desc_detail": "შენ ხარ +$1% ცხენი და გაქრებულთან შენი შემთხვევა ინფერნოს გამოქვეყნებისთვის მაღალი შანსი გექნე.",
   "jc_effect_weapon_master": "იარაღის მასტერი",
-  "jc_effect_weapon_master_desc_detail": "შენი უნარები ყველა იარებით $1% უფრო მაღალია."
+  "jc_effect_weapon_master_desc_detail": "შენი უნარები ყველა იარებით $1% უფრო მაღალია.",
+  "jc_uncut_jade_stone": "ჯეიდი შიგათავი",
+  "jc_uncut_jade_stone_description": "ჯეიდის შიგთამბრილი ქსოვი, რომელიც მზის გამოსაჭირად მზიდავს ჯემის დათარგმნის მაგალითის მაგალითში.",
+  "jc_uncut_amber_stone": "ქარვის შიგანი",
+  "jc_uncut_amber_stone_description": "იანი ჯადოლი, რომელიც შემზრდება ჯეველერების მაგალითთა მაგალითზე.",
+  "jc_uncut_aquamarine_stone": "  -  აკვამარინი შილვი ქსოვი",
+  "jc_uncut_aquamarine_stone_description": "გამჭვიარე ნახატი, რომელიც მომზადებულია გემსათების მაგრის სამაგიდოსთვის.",
+  "jc_uncut_garnet_stone": "გარნეტის ცხენი",
+  "jc_uncut_garnet_stone_description": "გარნეტის შიგათამსი გამოსახულება შიგათამსების მაგრამების მაგიდაზე.",
+  "jc_uncut_opal_stone": "ოპალი შპილი.",
+  "jc_uncut_opal_stone_description": "ოპალი შიგთავსი, რომელიც გამოსახულებელია შეჭემის მაგრამელში.",
+  "jc_uncut_amethyst_stone": "ამეთისტის ქვესიმრავლე",
+  "jc_uncut_amethyst_stone_description": "მწვანე მწვანელი მზის მაგიდაზე გზამკლეველების მითითებათან გამოყენებისას."
 }
