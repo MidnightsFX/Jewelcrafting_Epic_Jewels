@@ -1,8 +1,24 @@
- **0.7.3**
+ **0.7.5**
+ ---
+ ```
+ - Fix localization of gem descriptions
+ - Fix localization of gem names
+ - Add stylized gem names
+ - Fix carry weight gem not reducing item inventory weight contribution
+ ```
+
+  **0.7.3**
+ ---
+ ```
+- Adds more gem name localizations
+ ```
+
+  **0.7.3**
  ---
  ```
  - Stop localizing some instances of gem names
  ```
+
 
  **0.7.2**
  ---

@@ -28,5 +28,40 @@ namespace EpicJewels.GemEffects
                 }
             }
         }
+
+        [HarmonyPatch(typeof(ItemDrop.ItemData), nameof(ItemDrop.ItemData.GetNonStackedWeight))]
+        public static class ReduceWeight_ItemData_GetNonstackedWeight_Patch
+        {
+            public static void Postfix(ref float __result)
+            {
+                // EJLog.LogInfo("Starting weight reduce check");
+                if (Player.m_localPlayer == null) { return; }
+                // if (__result <= 10) { return; } // Only make this work on bigger items?
+                if (Player.m_localPlayer.GetEffectPower<Config>("Reduce Weight").Power > 0)
+                {
+                    float weightReduceMultiplier = 100f / (Player.m_localPlayer.GetEffectPower<Config>("Reduce Weight").Power + 100f);
+                    // EJLog.LogInfo($"Multiplying Item Weight by {weightReduceMultiplier}");
+                    __result *= weightReduceMultiplier;
+                }
+            }
+        }
+
+        [HarmonyPatch(typeof(Inventory), nameof(Inventory.GetTotalWeight))]
+        public static class ReduceWeight_Player_Weight
+        {
+            public static void Postfix(ref float __result)
+            {
+                
+                // EJLog.LogInfo("Starting weight reduce check");
+                if (Player.m_localPlayer == null) { return; }
+                // if (__result <= 10) { return; } // Only make this work on bigger items?
+                if (Player.m_localPlayer.GetEffectPower<Config>("Reduce Weight").Power > 0)
+                {
+                    float weightReduceMultiplier = 100f / (Player.m_localPlayer.GetEffectPower<Config>("Reduce Weight").Power + 100f);
+                    // EJLog.LogInfo($"Multiplying Item Weight by {weightReduceMultiplier}");
+                    __result *= weightReduceMultiplier;
+                }
+            }
+        }
     }
 }
