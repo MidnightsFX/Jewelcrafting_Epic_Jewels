@@ -28,6 +28,10 @@ Expert Daggers:
   slot: head
   gem: jade
   power: [5, 7, 12]
+Staggering Block:
+  slot: shield
+  gem: jade
+  power: [3, 5, 7]
 Blunt Resistance:
   slot: legs
   gem: amber
@@ -56,6 +60,12 @@ Increase Stamina Regen:
   slot: head
   gem: amber
   power: [9, 18, 27]
+Farmer:
+  slot: tool
+  gem: amber
+  power:
+    power: [1, 2, 3]
+    chance: [15, 25, 35]
 Pierce Resistance:
   slot: chest
   gem: aquamarine
@@ -76,6 +86,16 @@ Water Frenzy:
   slot: utility
   gem: aquamarine
   power: [6, 9, 18]
+Freezing Guard:
+  slot: shield
+  gem: aquamarine
+  power:
+    power: [7, 14, 21]
+    chance: [14, 21, 28]
+Wet Worker:
+  slot: tool
+  gem: aquamarine
+  power: [10, 20, 30]
 Water Resistant:
   slot: cloak
   gem: aquamarine
@@ -110,6 +130,12 @@ Burning Viking:
   slot: cloak
   gem: garnet
   power: [5, 15, 30]
+Burning Guard:
+  slot: shield
+  gem: garnet
+  power:
+    power: [5, 10, 15]
+    chance: [20, 30, 40] 
 Add Lightning Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: opal
@@ -176,35 +202,57 @@ Eitr Conversion:
   power:
     power: [2, 4, 6]
     chance: [20, 30, 40]
+Eitr Fused:
+  slot: tool
+  gem: amethyst
+  power:
+    power: [10, 20, 30]
+    cost: [2, 4, 6]
 gems:
   meadows:
     aquamarine: 0.1
     amber: 0.1
     jade: 0.3
+    amethyst: 0.0
+    opal: 0.0
   black forest:
     jade: 0.1
     garnet: 0.1
     opal: 0.1
+    amethyst: 0.0
+    amber: 0.0
   swamp:
-    amber: 0.2
+    amber: 0.1
+    garnet: 0.1
+    opal: 0.1
+    jade: 0.0
+    amethyst: 0.1
+    aquamarine: 0.2
+  mountain:
+    aquamarine: 0.3
+    jade: 0.1
+    amethyst: 0.1
+    opal: 0.2
+    amber: 0.0
+  plains:
+    amber: 0.3
     garnet: 0.2
     opal: 0.1
-  mountain:
-    aquamarine: 0.4
-    jade: 0.2
+    jade: 0.0
     amethyst: 0.1
-  plains:
-    amber: 0.4
-    garnet: 0.4
-    opal: 0.1
+    aquamarine: 0.0
   mistlands:
     aquamarine: 0.2
-    amethyst: 0.4
-    opal: 0.1
+    amethyst: 0.3
+    opal: 0.2
+    jade: 0.0
+    amber: 0.0
   ash lands:
     amethyst: 0.2
-    garnet: 0.4
+    garnet: 0.3
     opal: 0.1
+    jade: 0.0
+    amber: 0.0
 Have opal = amethyst > 3 of each:
   conditions:
     - opal > 3
@@ -223,8 +271,20 @@ Have 6 amber and 6 jade:
     - jade = 6
   effect:
     Weapon Master: 15
-Have at least 7 aquamarine:
+Have at least 6 aquamarine:
   conditions:
-    - aquamarine > 6
+    - aquamarine > 5
   effect:
     Slippery When Wet: 35
+Have at least 13 aquamarine:
+  conditions:
+    - aquamarine > 12
+  effect:
+    Waterproof: 1
+Have at least 9 amethyst, 6 opal, and 3 amber:
+  conditions:
+    - amethyst > 8
+    - opal > 5
+    - amber > 2
+  effect:
+    Spellsword: 45

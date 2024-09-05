@@ -1,3 +1,25 @@
+ **0.9.1**
+ ---
+ ```
+ - Fix race condition with combat spirit
+ ```
+
+ **0.9.0**
+ ---
+ ```
+ - Added Staggering Block
+ - Added Burning Guard
+ - Added Freezing Guard
+ - Added Wet Worker
+ - Added Eitr Fused
+ - Added Farmer
+ - Added Synergy Waterproof
+ - Added Synergy Spellsword
+ - Fixes Harvest damage types not being applied when harvesting everything
+ - Reduces gem default spawn rates in non-primary biomes
+ - Added text size auto-resize to support the larger list of synergies
+ ```
+
  **0.7.5**
  ---
  ```

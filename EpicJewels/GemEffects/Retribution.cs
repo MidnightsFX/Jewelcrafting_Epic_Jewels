@@ -15,7 +15,7 @@ namespace EpicJewels.GemEffects
         }
 
         [HarmonyPatch(typeof(Humanoid), nameof(Humanoid.BlockAttack))]
-        private static class HealOnParry
+        private static class Retribution_Patch
         {
             private static void Postfix(Humanoid __instance, HitData hit, Character attacker, ref bool __result)
             {

@@ -1,12 +1,6 @@
-﻿using EpicJewels.EffectHelpers;
-using HarmonyLib;
+﻿using HarmonyLib;
 using JetBrains.Annotations;
 using Jewelcrafting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace EpicJewels.GemEffects
@@ -19,7 +13,7 @@ namespace EpicJewels.GemEffects
             [InverseMultiplicativePercentagePower] public float Power;
         }
 
-        public static float delayWetTill = 0;
+        private static float delayWetTill = 0;
         private static int wet_hash =  "Wet".GetHashCode();
 
         [HarmonyPatch(typeof(SEMan), nameof(SEMan.AddStatusEffect), typeof(int), typeof(bool), typeof(int), typeof(float))]
@@ -29,6 +23,8 @@ namespace EpicJewels.GemEffects
             {
                 if (__instance.m_character.IsPlayer() && nameHash == wet_hash)
                 {
+                    // Waterproof, never gets wet
+                    if (Player.m_localPlayer.GetEffectPower<Waterproof.Config>("Waterproof").Power > 0) { return false; }
                     if (Player.m_localPlayer.GetEffectPower<Config>("Water Resistant").Power > 0)
                     {
                         // EpicJewels.EJLog.LogInfo($"Water Resistance activated.");

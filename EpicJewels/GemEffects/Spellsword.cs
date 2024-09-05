@@ -3,7 +3,7 @@ using Jewelcrafting;
 
 namespace EpicJewels.GemEffects
 {
-    public static class IntenseFire
+    public static class Spellsword
     {
         [PublicAPI]
         public struct Config

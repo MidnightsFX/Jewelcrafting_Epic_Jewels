@@ -3,12 +3,12 @@ using Jewelcrafting;
 
 namespace EpicJewels.GemEffects
 {
-    public static class IntenseFire
+    public static class Waterproof
     {
         [PublicAPI]
         public struct Config
         {
-            [AdditivePowerAttribute] public float Power;
+            [AdditivePower] public float Power;
         }
     }
 }

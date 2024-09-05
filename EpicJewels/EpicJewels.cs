@@ -10,6 +10,9 @@ using YamlDotNet.Serialization.NamingConventions;
 using YamlDotNet.Serialization;
 using LocalizationManager;
 using Mono.Cecil;
+using System.Collections.Generic;
+using UnityEngine.UI;
+using JetBrains.Annotations;
 
 namespace EpicJewels
 {
@@ -19,7 +22,7 @@ namespace EpicJewels
     {
         public const string PluginGUID = "MidnightsFX.EpicJewels";
         public const string PluginName = "EpicJewels";
-        public const string PluginVersion = "0.7.5";
+        public const string PluginVersion = "0.9.1";
 
         public static readonly ManualLogSource EJLog = BepInEx.Logging.Logger.CreateLogSource(PluginName);
 
@@ -91,5 +94,28 @@ namespace EpicJewels
             }
             return result;
         }
+
+        // TODO: Remove once blaxxun either sets scaling size for the synergies box or enables text fit
+        [HarmonyPatch(typeof(InventoryGui), nameof(InventoryGui.Awake))]
+        public static class EnableSynergyTextfit
+        {
+            [HarmonyPriority(Priority.Last)]
+            public static void Postfix()
+            {
+                IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith("JC_Synergies_Window"));
+                EJLog.LogDebug($"Found {objects.Count()} Synergy panels to update.");
+                foreach (GameObject go in objects)
+                {
+                    // don't break crap if we can't modify a textbox
+                    try
+                    {
+                        EJLog.LogDebug($"Updating Synergy GO {go}");
+                        go.transform.Find("Bkg/Left_Text/Left_Text_1").gameObject.GetComponent<Text>().resizeTextForBestFit = true;
+                    }
+                    catch (Exception) { }
+                }
+            }
+        }
+        
     }
 }

@@ -65,11 +65,19 @@ namespace EpicJewels.GemEffects
             API.AddGemEffect<CoverOfDarkness.Config>("Cover of Darkness", "$EJ_cover_darkness", "$2% $EJ_cover_darkness_pt1 $1% $EJ_cover_darkness_pt2");
             API.AddGemEffect<EitrConversion.Config>("Eitr Conversion", "$EJ_eitr_conversion", "$2% $EJ_eitr_conversion_pt1 $1% $EJ_eitr_conversion_pt2");
             API.AddGemEffect<Retribution.Config>("Retribution", "$EJ_retribution", "$2% $EJ_retribution_pt1 $1% $EJ_retribution_pt2");
+            API.AddGemEffect<StaggeringBlock.Config>("Staggering Block", "Blocking can stagger attackers.", "$1% chance to stagger your attacker.");
+            API.AddGemEffect<FlamingGuard.Config>("Burning Guard", "On block chance to return fire damage.", "$1% chance to set your attacker on fire for $2% of the blocked damage.");
+            API.AddGemEffect<FreezingGuard.Config>("Freezing Guard", "On block chance to  return frost damage.", "$1% chance to return frost damage for $2% of the blocked damage.");
+            API.AddGemEffect<WetWorker.Config>("Wet Worker", "Reduces stamina usage when wet.", "$1% usage stamina cost reduction when wet.");
+            API.AddGemEffect<EitrFused.Config>("Eitr Fused", "Uses eitr to increase damage.", "$1% increase to damage at the cost of $2 eitr per hit.");
+            API.AddGemEffect<Farmer.Config>("Farmer", "Chance for bigger harvests.", "$2% chance to get $1 additional crops when harvesting.");
 
             API.AddGemEffect<CombatSpirit.Config>("Combat Spirit", "A spirit helps you in combat.", "A spirit aids you in combat for $1 seconds. Returns after a cooldown.");
             API.AddGemEffect<IntenseFire.Config>("Intense Fire", "An affinity for fire.", "You are +$1% fire resistant and have a higher chance to trigger Inferno.");
             API.AddGemEffect<SlipperyWhenWet.Config>("Slippery When Wet", "Water quickens you.", "You are $1% faster when wet.");
+            API.AddGemEffect<SlipperyWhenWet.Config>("Waterproof", "You do not get wet.", "You do not get wet.");
             API.AddGemEffect<WeaponMaster.Config>("Weapon Master", "Experianced with weapons.", "Your skill with all weapons is $1% higher.");
+            API.AddGemEffect<Spellsword.Config>("Spellsword", "Use eitr to increase weapon damage.", "$1% increase to damage at the cost of 5 eitr per hit.");
         }
     }
 }

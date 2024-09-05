@@ -25,7 +25,8 @@ namespace EpicJewels.GemEffects
                 if (__instance.m_character.IsPlayer() && Player.m_localPlayer.GetEffectPower<Config>("Increase Stamina Regen").Power > 0)
                 {
                     float stamina_multiplier = (Player.m_localPlayer.GetEffectPower<Config>("Increase Stamina Regen").Power + 100) / 100;
-                    EpicJewels.EJLog.LogDebug($"stamina regen multiplied by {stamina_multiplier}");
+                    // Super noisy
+                    // EpicJewels.EJLog.LogDebug($"stamina regen multiplied by {stamina_multiplier}");
                     staminaMultiplier *= stamina_multiplier;
                 }
             }

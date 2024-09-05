@@ -10,7 +10,7 @@ namespace EpicJewels.EffectHelpers
     {
         private static void Prefix(HitData hit)
         {
-            if (hit.GetAttacker() is Player attacker)
+            if (hit.GetAttacker() is Player)
             {
                 float original_total_dmg = hit.m_damage.GetTotalDamage();
                 float added_blunt_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Power / 100);
@@ -21,8 +21,31 @@ namespace EpicJewels.EffectHelpers
                 float added_spirit_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Power / 100);
                 float added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
                 float added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
-                float sum_of_added_dmg = added_blunt_dmg + added_slash_dmg + added_pierce_dmg + added_lightning_dmg + added_spirit_dmg + added_pickaxe_dmg;
 
+
+                if (Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power > 0 || Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0)
+                {
+                    float eitr_cost = Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Cost;
+                    if (Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0) { eitr_cost += 5; }
+                    if (Player.m_localPlayer.HaveEitr(eitr_cost))
+                    {
+                        float eitr_fused_powerup = ((Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power + Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power) / 100f) + 1f;
+                        EpicJewels.EJLog.LogDebug($"Eitr powered attack powered up multiplier {eitr_fused_powerup} cost {eitr_cost}");
+                        added_chop_dmg += hit.m_damage.m_chop * eitr_fused_powerup;
+                        added_pickaxe_dmg += hit.m_damage.m_pickaxe * eitr_fused_powerup;
+                        added_spirit_dmg += hit.m_damage.m_spirit * eitr_fused_powerup;
+                        added_lightning_dmg += hit.m_damage.m_lightning * eitr_fused_powerup;
+                        added_pierce_dmg += hit.m_damage.m_pierce * eitr_fused_powerup;
+                        added_slash_dmg += hit.m_damage.m_slash * eitr_fused_powerup;
+                        added_blunt_dmg += hit.m_damage.m_blunt * eitr_fused_powerup;
+                        Player.m_localPlayer.UseEitr(eitr_cost);
+                    } else
+                    {
+                        EpicJewels.EJLog.LogDebug($"Eitr powered attack not triggered due to cost {eitr_cost}");
+                    }
+                }
+
+                float sum_of_added_dmg = added_blunt_dmg + added_slash_dmg + added_pierce_dmg + added_lightning_dmg + added_spirit_dmg + added_pickaxe_dmg + added_chop_dmg;
 
                 float inferno_chance = Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Chance;
                 // Bonus from intenseFire

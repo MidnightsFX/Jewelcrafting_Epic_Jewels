@@ -10,10 +10,5 @@ namespace EpicJewels.GemEffects
         {
             [AdditivePowerAttribute] public float Power;
         }
-
-        static AddBluntDamage()
-        {
-
-        }
     }
 }

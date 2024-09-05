@@ -373,6 +373,7 @@
   <ItemGroup>
     <Compile Include="Common\Config.cs" />
     <Compile Include="CustomGems.cs" />
+    <Compile Include="EffectHelpers\AddDamageHarvestables.cs" />
     <Compile Include="EffectHelpers\AddDamages.cs" />
     <Compile Include="EffectHelpers\ItemDisplay.cs" />
     <Compile Include="EffectHelpers\SkillIncrease.cs" />
@@ -381,6 +382,9 @@
     <Compile Include="GemEffects\CombatSpirit.cs" />
     <Compile Include="GemEffects\CoverOfDarkness.cs" />
     <Compile Include="GemEffects\EitrConversion.cs" />
+    <Compile Include="GemEffects\EitrFused.cs" />
+    <Compile Include="GemEffects\FlamingGuard.cs" />
+    <Compile Include="GemEffects\FreezingGuard.cs" />
     <Compile Include="GemEffects\Inferno.cs" />
     <Compile Include="GemEffects\AddLightningDamage.cs" />
     <Compile Include="GemEffects\AddPickaxeDamage.cs" />
@@ -419,11 +423,16 @@
     <Compile Include="GemEffects\Retribution.cs" />
     <Compile Include="GemEffects\SlashResistance.cs" />
     <Compile Include="GemEffects\SlipperyWhenWet.cs" />
+    <Compile Include="GemEffects\Spellsword.cs" />
+    <Compile Include="GemEffects\StaggeringBlock.cs" />
+    <Compile Include="GemEffects\Farmer.cs" />
     <Compile Include="GemEffects\WaterFrenzy.cs" />
+    <Compile Include="GemEffects\Waterproof.cs" />
     <Compile Include="GemEffects\WaterResistant.cs" />
     <Compile Include="GemEffects\WaterSwiftness.cs" />
     <Compile Include="GemEffects\WeaponMaster.cs" />
     <Compile Include="GemEffects\WeaponReducedStamina.cs" />
+    <Compile Include="GemEffects\WetWorker.cs" />
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="EpicJewels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
