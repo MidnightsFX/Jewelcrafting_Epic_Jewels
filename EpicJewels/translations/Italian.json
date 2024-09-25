@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "possibilità di lasciare cadere",
   "EJ_coingreed_pt3": "monete.",
   "EJ_coinhoarder": "Aumenta il danno trasportando monete",
-  "EJ_coinhoarder_pt1": "Aumenta tutto il tuo danno del",
-  "EJ_coinhoarder_pt2": "delle monete totali che trasporti.",
   "EJ_water_prevent": "Previene temporaneamente l'umidità",
   "EJ_water_prevent_pt1": "Previene di bagnarti se non sei esposto all'acqua per più di",
   "EJ_water_prevent_pt2": "secondi.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "La tua abilità di taglio e piccone è $1% più alta. Visibile sulla tua pagina delle abilità.",
   "jc_effect_expert_polearms_desc_detail": "La tua abilità con le armi a asta è $1% più alta. Visibile nella tua pagina delle abilità.",
   "jc_effect_expert_swordsman_desc_detail": "La tua abilità con la spada è $1% più alta. Visibile sulla tua pagina delle abilità.",
-  "jc_effect_coin_hoarder_desc_detail": "Aumenta tutto il tuo danno del $1% delle monete totali che trasporti.Aumenta tutto il tuo danno del $1% delle monete totali che trasporti.",
   "jc_effect_coin_greed_desc_detail": "I nemici hanno una probabilità del 2% di rilasciare tra 1 e 1 monete da $1.",
   "jc_effect_slash_resistance_desc_detail": "Riduce tutti i danni da taglio che subisci del $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Riduce tutti i danni contundenti che subisci del 1%.Riduce tutti i danni contundenti che subisci del 1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Impermeabile",
   "jc_effect_waterproof_desc_detail": "Tu non ti bagni.",
   "jc_effect_spellsword": "Spada incantata",
-  "jc_effect_spellsword_desc_detail": "Aumento del 1% al danno a un costo di 5 eitr per colpo.Grazie!"
+  "jc_effect_spellsword_desc_detail": "Aumento del 1% al danno a un costo di 5 eitr per colpo.Grazie!",
+  "EJ_coinhoarder_desc": "Aumenta tutti i tuoi danni di una frazione delle monete che possiedi.",
+  "jc_effect_coin_hoarder_desc_detail": "Aumenta tutti i tuoi danni di una percentuale delle monete totali che possiedi."
 }

@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "kans om",
   "EJ_coingreed_pt3": "munten te laten vallen.",
   "EJ_coinhoarder": "Verhoogt schade door munten te dragen",
-  "EJ_coinhoarder_pt1": "Verhoogt al je schade met",
-  "EJ_coinhoarder_pt2": "van de totale munten die je draagt.",
   "EJ_water_prevent": "Voorkomt tijdelijk nat worden",
   "EJ_water_prevent_pt1": "Voorkomt nat worden als je niet langer dan",
   "EJ_water_prevent_pt2": "seconden aan water wordt blootgesteld.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Jouw hak- en pikhouweelvaardigheid is 1% hoger. Zichtbaar op jouw vaardighedenpagina.",
   "jc_effect_expert_polearms_desc_detail": "Je stokwapens vaardigheid is $1% hoger. Zichtbaar op je vaardigheden pagina.",
   "jc_effect_expert_swordsman_desc_detail": "Je zwaardvaardigheid is $1% hoger. Zichtbaar op je vaardighedenpagina.",
-  "jc_effect_coin_hoarder_desc_detail": "Verhoog al je schade met $1% van het totale aantal munten dat je bij je draagt.",
   "jc_effect_coin_greed_desc_detail": "Vijanden hebben een 2% kans om tussen de 1 en 2 munten te laten vallen.",
   "jc_effect_slash_resistance_desc_detail": "Vermindert alle snijdende schade die je oploopt met $1%.Bedankt voor de vertaling.",
   "jc_effect_blunt_resistance_desc_detail": "Vermindert alle stomp letsel dat je oploopt met $1%.Bedankt!",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Waterdicht",
   "jc_effect_waterproof_desc_detail": "Je wordt niet nat.",
   "jc_effect_spellsword": "",
-  "jc_effect_spellsword_desc_detail": "1% toename van schade tegen een kostprijs van 5 eitr per slag."
+  "jc_effect_spellsword_desc_detail": "1% toename van schade tegen een kostprijs van 5 eitr per slag.",
+  "EJ_coinhoarder_desc": "Verhoog al je schade met een fractie van de munten die je bij je draagt.",
+  "jc_effect_coin_hoarder_desc_detail": "Verhoog al je schade met een percentage van de totale munten die je bij je draagt."
 }

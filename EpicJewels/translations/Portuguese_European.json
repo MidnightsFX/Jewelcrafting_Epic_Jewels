@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "moedas.",
   "EJ_coingreed_pt3": "moedas.",
   "EJ_coinhoarder": "Aumenta o dano ao carregar moedas",
-  "EJ_coinhoarder_pt1": "Aumenta todo o seu dano em",
-  "EJ_coinhoarder_pt2": "do total de moedas que você carrega.",
   "EJ_water_prevent": "Previne temporariamente a umidade",
   "EJ_water_prevent_pt1": "Previne a umidade se você não estiver exposto à água por mais de",
   "EJ_water_prevent_pt2": "segundos.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "A sua habilidade de corte e de picareta é $1% maior. Visível na sua página de habilidades.",
   "jc_effect_expert_polearms_desc_detail": "A sua habilidade com armas de haste está $1% mais alta. Visível na sua página de habilidades.",
   "jc_effect_expert_swordsman_desc_detail": "A sua habilidade com a espada é $1% maior. Visível na página de habilidades.",
-  "jc_effect_coin_hoarder_desc_detail": "Aumente todo o seu dano em $1% das moedas totais que carrega.",
   "jc_effect_coin_greed_desc_detail": "Inimigos têm uma chance de 2% de soltar entre 1 a $1 moedas.",
   "jc_effect_slash_resistance_desc_detail": "Reduz todo o dano cortante que recebe em $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Reduz todo o dano contundente que recebe em $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Impermeável",
   "jc_effect_waterproof_desc_detail": "Tu não te molhas.",
   "jc_effect_spellsword": "Espadachim encantado",
-  "jc_effect_spellsword_desc_detail": "Aumento de 1% no dano ao custo de 5 eitr por golpe."
+  "jc_effect_spellsword_desc_detail": "Aumento de 1% no dano ao custo de 5 eitr por golpe.",
+  "EJ_coinhoarder_desc": "Aumente todo o seu dano por uma fração das moedas que você carrega.",
+  "jc_effect_coin_hoarder_desc_detail": "Aumente todo o seu dano em uma percentagem das moedas totais que carrega."
 }

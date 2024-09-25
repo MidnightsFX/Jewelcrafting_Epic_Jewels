@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "შესაძლოა გამოჩნდეს",
   "EJ_coingreed_pt3": "მეთაგანი.",
   "EJ_coinhoarder": "კუცხით მოვალების შესწორებით ზრდებს ტყეები",
-  "EJ_coinhoarder_pt1": "შეამტკივე შენი ყველა დახანს",
-  "EJ_coinhoarder_pt2": "სულ თქვენს გარეშე მონეტების რაოდენობიდან.",
   "EJ_water_prevent": "დროებადად უპირველეს ნელის შეწყვეტა",
   "EJ_water_prevent_pt1": "შეუძლებელია შეხვიდეთ წყალში თუ არ ხართ მეტი, ვიდრე",
   "EJ_water_prevent_pt2": "წამები.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "თქვენი ხანხანის და შიტათის უნარება 1%-ით მაღალია. ნახია თქვენი უნარებების გვერდზე.",
   "jc_effect_expert_polearms_desc_detail": "თქვენი მეჭვრების უნარება მაღალია $1%. ხილვადია თქვენი უნარებების გვერდზე.",
   "jc_effect_expert_swordsman_desc_detail": "შენი მშვიდი უძველესობა  $1% უფრო მაღალია. ხილვადია შენი უნარებების გვერდზე.",
-  "jc_effect_coin_hoarder_desc_detail": "გაზრდეთ ყველა თქვენი დაზღვევა $1%-ით  თქვენი მისახლების სრულ რაოდენობიდან.",
   "jc_effect_coin_greed_desc_detail": "მტერებს 2% შანსი აქვს 1-$1 კუპრის ჩანაწერის გამოშვებაზე.",
   "jc_effect_slash_resistance_desc_detail": "შენი ყვირილის ყველა დაჭირებული განათებული დაზარდებით $1%.",
   "jc_effect_blunt_resistance_desc_detail": "შენს ყმაწვილობას ყოველი უბრალო ზარი შეგენების 1%-ით შემოწმების შესაძლებლობა არის.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "წყლის წარმოშობა",
   "jc_effect_waterproof_desc_detail": "შენ არ დადუმდე.",
   "jc_effect_spellsword": "მაგარი მშვიდობის შემწე",
-  "jc_effect_spellsword_desc_detail": "1%-ით ზრდა დანერგების დასაფარად 5 eitr-ის თანხმობით."
+  "jc_effect_spellsword_desc_detail": "1%-ით ზრდა დანერგების დასაფარად 5 eitr-ის თანხმობით.",
+  "EJ_coinhoarder_desc": "შემალავდეთ ყველა თქვენი დაზღვევა მონეტების ნაწილით, რომელთა თქვენ გაქვთ.",
+  "jc_effect_coin_hoarder_desc_detail": "გაზრდეთ ყველა დანადგარს თქვენი მოწევის პროცენტით იმ სულ ქულების, რომლებსაც თქვენ გექნებათ."
 }

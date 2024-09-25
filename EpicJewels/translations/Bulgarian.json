@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "възможност да пуснат",
   "EJ_coingreed_pt3": "монети.",
   "EJ_coinhoarder": "Увеличава урона, като носите монети",
-  "EJ_coinhoarder_pt1": "Увеличава целия ви урон с",
-  "EJ_coinhoarder_pt2": "от общия брой монети, които носите.",
   "EJ_water_prevent": "Временно предотвратява мокренето",
   "EJ_water_prevent_pt1": "Предотвратява мокренето, ако не сте изложени на вода за повече от",
   "EJ_water_prevent_pt2": "секунди.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Вашето умение за сечене и умение с кирка е с 1% по-високо. Видимо на вашата страница с умения.",
   "jc_effect_expert_polearms_desc_detail": "Вашето умение с копията е по-високо с $1%. Видимо на вашата страница с умения.",
   "jc_effect_expert_swordsman_desc_detail": "Вашето умение с меч е по-високо с $1%. Видимо на вашата страница с умения.",
-  "jc_effect_coin_hoarder_desc_detail": "Увеличете целия си урон с 1% от общото количество монети, които носите.",
   "jc_effect_coin_greed_desc_detail": "Враговете имат 2% шанс да паднат между 1 и 1 долара монети.",
   "jc_effect_slash_resistance_desc_detail": "Намалява всички режещи щети, които поемате, с $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Намалява всички тъпи удари, които поемате, с $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Водоустойчив",
   "jc_effect_waterproof_desc_detail": "Не се намокряш.",
   "jc_effect_spellsword": "Магьосник мечоносец",
-  "jc_effect_spellsword_desc_detail": "$1% увеличение на щетите на цената от 5 еитр на удар."
+  "jc_effect_spellsword_desc_detail": "$1% увеличение на щетите на цената от 5 еитр на удар.",
+  "EJ_coinhoarder_desc": "Увеличете всичките си щети с част от монетите, които носите.Thank you for your request. Let me know if there is anything else I can help with.",
+  "jc_effect_coin_hoarder_desc_detail": "Увеличете целия си щети с определен процент от общия брой монети, които носите.Моля, потвърдете, че сте получили тази информация."
 }

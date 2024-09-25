@@ -1,3 +1,9 @@
+ **0.9.2**
+ ---
+ ```
+ - Changes the damage formula for coinhoarder and sets a soft cap for how large the bonus can get
+ ```
+
  **0.9.1**
  ---
  ```

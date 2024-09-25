@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "chans att släppa",
   "EJ_coingreed_pt3": "mynt.",
   "EJ_coinhoarder": "Ökar skadan genom att bära mynt",
-  "EJ_coinhoarder_pt1": "Öka all din skada med",
-  "EJ_coinhoarder_pt2": "av de totala mynten du bär.",
   "EJ_water_prevent": "Förhindrar tillfälligt blöt",
   "EJ_water_prevent_pt1": "Förhindrar att bli blöt om du inte är exponerad för vatten i mer än",
   "EJ_water_prevent_pt2": "sekunder.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Din huggning och hacka skicklighet är $1% högre. Synlig på din färdigheter sida.",
   "jc_effect_expert_polearms_desc_detail": "Din färdighet i stavgång är $1% högre. Synligt på din färdigheter sida.",
   "jc_effect_expert_swordsman_desc_detail": "Din svärdfärdighet är $1% högre. Synlig på din färdigheter sida.",
-  "jc_effect_coin_hoarder_desc_detail": "Öka all din skada med $1% av de totala mynt du bär.",
   "jc_effect_coin_greed_desc_detail": "Fiender har en 2% chans att släppa mellan 1- $1-mynt.",
   "jc_effect_slash_resistance_desc_detail": "Minskar all skärskada du tar med $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Minskar allt trubbigt skada du tar med $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vattentät",
   "jc_effect_waterproof_desc_detail": "Du blir inte blöt.",
   "jc_effect_spellsword": "Trollkarlsvärd",
-  "jc_effect_spellsword_desc_detail": "1% ökning av skada till priset av 5 eitr per träff."
+  "jc_effect_spellsword_desc_detail": "1% ökning av skada till priset av 5 eitr per träff.",
+  "EJ_coinhoarder_desc": "Öka all din skada med en bråkdel av de mynt du bär.",
+  "jc_effect_coin_hoarder_desc_detail": "Öka all din skada med en procent av de totala mynt du bär."
 }

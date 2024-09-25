@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "chance for at tabe",
   "EJ_coingreed_pt3": "mønter.",
   "EJ_coinhoarder": "Øger skade ved at bære mønter",
-  "EJ_coinhoarder_pt1": "Øger al din skade med",
-  "EJ_coinhoarder_pt2": "af de samlede mønter, du bærer.",
   "EJ_water_prevent": "Forhindrer midlertidigt vådhed",
   "EJ_water_prevent_pt1": "Forhindrer at blive våd, hvis du ikke er udsat for vand i mere end",
   "EJ_water_prevent_pt2": "sekunder.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Din hugge- og hakkefærdighed er $1% højere. Synlig på din færdighedsside.",
   "jc_effect_expert_polearms_desc_detail": "Din færdighed med stangvåben er $1% højere. Synligt på din færdighedsside.",
   "jc_effect_expert_swordsman_desc_detail": "Din sværdfærdighed er $1% højere. Synlig på din færdighedsside.",
-  "jc_effect_coin_hoarder_desc_detail": "Forøg al din skade med $1% af de samlede mønter, du bærer.",
   "jc_effect_coin_greed_desc_detail": "Fjender har en 2% chance for at droppe mellem 1-2 mønter.",
   "jc_effect_slash_resistance_desc_detail": "Reducerer al snit skade du tager med $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Reducerer al slagsskade, du modtager, med $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vandtæt",
   "jc_effect_waterproof_desc_detail": "Du bliver ikke våd.",
   "jc_effect_spellsword": "Troldmandssværd",
-  "jc_effect_spellsword_desc_detail": "1% stigning i skade til en pris af 5 eitr pr. hit."
+  "jc_effect_spellsword_desc_detail": "1% stigning i skade til en pris af 5 eitr pr. hit.",
+  "EJ_coinhoarder_desc": "Øg al din skade med en brøkdel af de mønter, du bærer.",
+  "jc_effect_coin_hoarder_desc_detail": "Forøg al din skade med en procent af de samlede mønter, du bærer."
 }

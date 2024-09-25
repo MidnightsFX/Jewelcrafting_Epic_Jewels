@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "šansu da ispuste",
   "EJ_coingreed_pt3": "novčiće.",
   "EJ_coinhoarder": "Povećava štetu nošenjem novčića",
-  "EJ_coinhoarder_pt1": "Povećava svu vašu štetu za",
-  "EJ_coinhoarder_pt2": "ukupnih novčića koje nosite.",
   "EJ_water_prevent": "Privremeno sprečava vlažnost",
   "EJ_water_prevent_pt1": "Sprečava vlaženje ako niste izloženi vodi duže od",
   "EJ_water_prevent_pt2": "sekundi.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Vaša veština sečenja i korišćenja krampi je 1% veća. Vidljivo na vašoj stranici veština.",
   "jc_effect_expert_polearms_desc_detail": "Vaše veštine sa štapovima su za $1% bolje. Vidljivo na vašoj stranici veština.",
   "jc_effect_expert_swordsman_desc_detail": "Vaše veštine mačevanja su za $1% veće. Vidljivo na vašoj stranici veština.",
-  "jc_effect_coin_hoarder_desc_detail": "Povećajte sav svoj udar za $1% ukupnih novčića koje nosite.Hvala!",
   "jc_effect_coin_greed_desc_detail": "Neprijatelji imaju 2% šanse da ispuste između 1 i 1 dolara.",
   "jc_effect_slash_resistance_desc_detail": "Smanjuje sav slash damage koji primite za $1%.Hvala!",
   "jc_effect_blunt_resistance_desc_detail": "Smanjuje sav tup udarac koji primite za $1%.Mnogo hvala!",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vodootporno",
   "jc_effect_waterproof_desc_detail": "Ne kvasiš se.",
   "jc_effect_spellsword": "Čarobni mačevalac",
-  "jc_effect_spellsword_desc_detail": "1% povećanje oštećenja uz trošak od 5 eitr po udarcu."
+  "jc_effect_spellsword_desc_detail": "1% povećanje oštećenja uz trošak od 5 eitr po udarcu.",
+  "EJ_coinhoarder_desc": "Povećajte svoju štetu za određeni deo novčića koje nosite.",
+  "jc_effect_coin_hoarder_desc_detail": "Povećajte sav svoj štetu za određeni procenat ukupnog novca koji nosite.Hvala!"
 }

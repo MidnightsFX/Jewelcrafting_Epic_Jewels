@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "шанс выпадения",
   "EJ_coingreed_pt3": "монет.",
   "EJ_coinhoarder": "Увеличивает урон при наличии монет",
-  "EJ_coinhoarder_pt1": "Увеличивает весь ваш урон на",
-  "EJ_coinhoarder_pt2": "от общего количества монет, которые вы несете.",
   "EJ_water_prevent": "Временно предотвращает увлажнение",
   "EJ_water_prevent_pt1": "Предотвращает увлажнение, если вы не подвергаетесь воде более",
   "EJ_water_prevent_pt2": "секунд.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Ваш навык рубки и работа с киркой на $1% выше. Видно на вашей странице навыков.",
   "jc_effect_expert_polearms_desc_detail": "Ваш навык владения холодным оружием выше на $1%. Видно на вашей странице навыков.",
   "jc_effect_expert_swordsman_desc_detail": "Ваш навык владения мечом на $1% выше. Видимо на вашей странице навыков.",
-  "jc_effect_coin_hoarder_desc_detail": "Увеличьте всё своё урон на $1% от общей суммы монет, которую вы несёте.",
   "jc_effect_coin_greed_desc_detail": "Враги имеют шанс 2% выпустить монеты на сумму от 1 до 1 доллара.",
   "jc_effect_slash_resistance_desc_detail": "Уменьшает весь урон от рубящего оружия, получаемый вами, на $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Снижает весь тупой урон, который вы получаете, на $1%.Translated response: Снижает весь тупой урон, который вы получаете, на $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Водонепроницаемый",
   "jc_effect_waterproof_desc_detail": "Вы не промокнете.",
   "jc_effect_spellsword": "Заклинатель мечей",
-  "jc_effect_spellsword_desc_detail": "Увеличение урона на 1% за счет 5 еитр за удар."
+  "jc_effect_spellsword_desc_detail": "Увеличение урона на 1% за счет 5 еитр за удар.",
+  "EJ_coinhoarder_desc": "Увеличьте весь свой урон на долю монет, которые вы несете.",
+  "jc_effect_coin_hoarder_desc_detail": "Увеличивайте весь ваш урон на процент от общего количества монет, которое у вас есть."
 }

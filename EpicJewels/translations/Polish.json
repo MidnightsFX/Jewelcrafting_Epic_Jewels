@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "szansę na upuszczenie",
   "EJ_coingreed_pt3": "monet.",
   "EJ_coinhoarder": "Zwiększa obrażenia nosząc monety",
-  "EJ_coinhoarder_pt1": "Zwiększa wszystkie twoje obrażenia o",
-  "EJ_coinhoarder_pt2": "całkowitej ilości noszonych monet.",
   "EJ_water_prevent": "Tymczasowo zapobiega zmoczeniu",
   "EJ_water_prevent_pt1": "Zapobiega zmoczeniu jeśli nie jesteś wystawiony na wodę dłużej niż",
   "EJ_water_prevent_pt2": "sekund.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Twój skill w siekaniu i użyciu kilofa jest wyższy o $1%. Widoczny na twojej stronie umiejętności.",
   "jc_effect_expert_polearms_desc_detail": "Twój poziom umiejętności w posługiwaniu się bronią drzewcową jest wyższy o $1%. Widoczne na twojej stronie umiejętności.",
   "jc_effect_expert_swordsman_desc_detail": "Twój skill miecza jest wyższy o $1%. Widoczny na twojej stronie umiejętności.",
-  "jc_effect_coin_hoarder_desc_detail": "Zwiększ wszystkie swoje obrażenia o $1% ze wszystkich monet, które nosisz.",
   "jc_effect_coin_greed_desc_detail": "Przeciwnicy mają 2% szansy na upuszczenie od 1 do 1 monet.",
   "jc_effect_slash_resistance_desc_detail": "Zmniejsza całe obrażenia od cięcia o $1%.Dostosowuje się do skuteczności broni.",
   "jc_effect_blunt_resistance_desc_detail": "Zmniejsza wszelkie obrażenia tępe, jakie otrzymujesz o $1%.Działa to tylko na obrażenia tępe?",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Wodoodporny",
   "jc_effect_waterproof_desc_detail": "Nie zmokniesz.",
   "jc_effect_spellsword": "Mieczomag",
-  "jc_effect_spellsword_desc_detail": "Zwiększenie obrażeń o 1% kosztem 5 eitr za trafienie."
+  "jc_effect_spellsword_desc_detail": "Zwiększenie obrażeń o 1% kosztem 5 eitr za trafienie.",
+  "EJ_coinhoarder_desc": "Zwiększ wszystkie swoje obrażenia o ułamek monet, które nosisz przy sobie.",
+  "jc_effect_coin_hoarder_desc_detail": "Zwiększ całe swoje obrażenia o procent całkowitej liczby monet, które nosisz."
 }

@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "шанс випустити",
   "EJ_coingreed_pt3": "монети.",
   "EJ_coinhoarder": "Збільшує урон, несучи монети",
-  "EJ_coinhoarder_pt1": "Збільшує весь ваш урон на",
-  "EJ_coinhoarder_pt2": "від загальної кількості монет, яку ви несете.",
   "EJ_water_prevent": "Тимчасово запобігає вологості",
   "EJ_water_prevent_pt1": "Запобігає вологості, якщо ви не зазнаєте впливу води більше, ніж",
   "EJ_water_prevent_pt2": "секунд.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Ваш навик рубання та киянка вищий на $1%. Видно на вашій сторінці вмінь.",
   "jc_effect_expert_polearms_desc_detail": "Ваш навик у володінні дротами вищий на $1%. Видно на вашій сторінці навичок.",
   "jc_effect_expert_swordsman_desc_detail": "Ваш навик майстерності з мечем вищий на $1%. Видимий на вашій сторінці навичок.",
-  "jc_effect_coin_hoarder_desc_detail": "Збільште всі свої пошкодження на $1% від загальної кількості монет, яку ви носите.",
   "jc_effect_coin_greed_desc_detail": "Вороги мають 2% шанс випустити від 1 до 1 долара монет.",
   "jc_effect_slash_resistance_desc_detail": "Зменшує всі порізи урону, який ви отримуєте на $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Зменшує всі відбиті удари, які ви отримуєте, на $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Водонепроникний",
   "jc_effect_waterproof_desc_detail": "Ви не промокнете.",
   "jc_effect_spellsword": "Чарівницький мечник",
-  "jc_effect_spellsword_desc_detail": "$1% збільшення пошкоджень за ціною 5 eitr за удар."
+  "jc_effect_spellsword_desc_detail": "$1% збільшення пошкоджень за ціною 5 eitr за удар.",
+  "EJ_coinhoarder_desc": "Збільшуйте усі свої пошкодження на частку монет, які ви носите.",
+  "jc_effect_coin_hoarder_desc_detail": "Збільште всі свої пошкодження на відсоток від загальної кількості монет, яку ви носите."
 }

@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "chance de laisser tomber",
   "EJ_coingreed_pt3": "pièces.",
   "EJ_coinhoarder": "Augmente les dégâts en transportant des pièces",
-  "EJ_coinhoarder_pt1": "Augmente tous vos dégâts de",
-  "EJ_coinhoarder_pt2": "du total des pièces que vous transportez.",
   "EJ_water_prevent": "Empêche temporairement l'humidité",
   "EJ_water_prevent_pt1": "Empêche de devenir humide si vous n'êtes pas exposé à l'eau pendant plus de",
   "EJ_water_prevent_pt2": "secondes.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Votre compétence de hachage et de pioche est supérieure de 1 %. Visible sur votre page de compétences.",
   "jc_effect_expert_polearms_desc_detail": "Votre compétence en armes d'hast est $1% plus élevée. Visible sur votre page de compétences.",
   "jc_effect_expert_swordsman_desc_detail": "Votre compétence à l'épée est supérieure de $1%. Visible sur votre page de compétences.",
-  "jc_effect_coin_hoarder_desc_detail": "Augmentez tous vos dégâts de $1% du total des pièces que vous transportez.",
   "jc_effect_coin_greed_desc_detail": "Les ennemis ont 2% de chances de laisser tomber entre 1 et 1$ en pièces.",
   "jc_effect_slash_resistance_desc_detail": "Réduit tous les dégâts de taille que vous subissez de $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Réduit tous les dommages contondants que vous subissez de $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Imperméable",
   "jc_effect_waterproof_desc_detail": "Tu ne te mouilles pas.",
   "jc_effect_spellsword": "Épéesort",
-  "jc_effect_spellsword_desc_detail": "Augmentation de 1% des dégâts au prix de 5 eitr par coup."
+  "jc_effect_spellsword_desc_detail": "Augmentation de 1% des dégâts au prix de 5 eitr par coup.",
+  "EJ_coinhoarder_desc": "Augmentez tous vos dégâts d'une fraction des pièces que vous portez.",
+  "jc_effect_coin_hoarder_desc_detail": "Augmentez tous vos dégâts d'un pourcentage du total de pièces que vous transportez."
 }

@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "드롭할 확률",
   "EJ_coingreed_pt3": "동전.",
   "EJ_coinhoarder": "동전을 들고 있는 경우 피해 증가",
-  "EJ_coinhoarder_pt1": "총 동전 중",
-  "EJ_coinhoarder_pt2": "만큼의 동전을 들고 있으면 모든 피해가 증가합니다",
   "EJ_water_prevent": "일시적으로 젖음 방지",
   "EJ_water_prevent_pt1": "물에 노출되지 않으면",
   "EJ_water_prevent_pt2": "초 이상 젖지 않습니다",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "당신의 벌목 및 고대의 기술이 $1% 높아졌습니다. 스킬 페이지에서 확인 가능합니다.",
   "jc_effect_expert_polearms_desc_detail": "당신의 장창술이 $1% 더 높아졌습니다. 당신의 스킬 페이지에서 확인할 수 있습니다.",
   "jc_effect_expert_swordsman_desc_detail": "당신의 검술 기술이 $1% 높아졌습니다. 기술 페이지에서 확인 가능합니다.",
-  "jc_effect_coin_hoarder_desc_detail": "당신이 소지한 총 동전의 1% 만큼 모든 피해를 증가시킵니다.",
   "jc_effect_coin_greed_desc_detail": "적들은 1달러에서 1달러 사이의 동전을 드롭할 확률이 2%입니다.",
   "jc_effect_slash_resistance_desc_detail": "당신이 받는 모든 베기 피해를 $1%만큼 줄입니다.",
   "jc_effect_blunt_resistance_desc_detail": "당신이 받는 모든 둔한 피해를 1% 줄입니다.이것이 번역입니다.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "방수 가능한",
   "jc_effect_waterproof_desc_detail": "너는 젖지 않아.",
   "jc_effect_spellsword": "마법검사 (Mabeop Geomsa)",
-  "jc_effect_spellsword_desc_detail": "히트당 피해 증가율이 1% 증가하며 히트당 5개의 아이트르가 소모됩니다."
+  "jc_effect_spellsword_desc_detail": "히트당 피해 증가율이 1% 증가하며 히트당 5개의 아이트르가 소모됩니다.",
+  "EJ_coinhoarder_desc": "당신이 소유한 동전의 일부로 모든 피해량을 증가시킵니다.",
+  "jc_effect_coin_hoarder_desc_detail": "당신이 가진 총 동전의 퍼센트 만큼 당신의 모든 피해를 증가시킵니다."
 }

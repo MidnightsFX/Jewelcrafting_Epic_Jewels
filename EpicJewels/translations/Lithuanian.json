@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "galimybę mesti",
   "EJ_coingreed_pt3": "monetas.",
   "EJ_coinhoarder": "Padidina žalą nešiodamas monetas",
-  "EJ_coinhoarder_pt1": "Padidina visą jūsų žalą",
-  "EJ_coinhoarder_pt2": "iš visų monetų, kurias nešiojate.",
   "EJ_water_prevent": "Laikinai neleidžia nubėgti",
   "EJ_water_prevent_pt1": "Neleidžia nubėgti, jei neesate patekę į vandenį ilgiau nei",
   "EJ_water_prevent_pt2": "sekundžių.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Tavo kirpimo ir kirstuvo įgūdžiai yra $1% aukštesni. Matoma tavo įgūdžių puslapyje.",
   "jc_effect_expert_polearms_desc_detail": "Jūsų ginklų įgūdžiai yra $1% aukštesni. Matoma jūsų įgūdžių puslapyje.",
   "jc_effect_expert_swordsman_desc_detail": "Jūsų kardų meistriškumas yra $1% aukštesnis. Matomas jūsų įgūdžių puslapyje.",
-  "jc_effect_coin_hoarder_desc_detail": "Padidinkite visą savo žalą $1% iš visų monetų, kurias nešiojate.",
   "jc_effect_coin_greed_desc_detail": "Priešai turi 2% šansą numesti nuo 1 iki 1$ monetų.",
   "jc_effect_slash_resistance_desc_detail": "Mažina visus pjūvio žalos nuo jūsų gautos nuostolius $1%.(Mažina visas pjūvio žalos nuostolius jums $1%.)",
   "jc_effect_blunt_resistance_desc_detail": "Sumažina visus nekastinius sužalojimus, kuriuos patiriate, $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vandeniui atsparus",
   "jc_effect_waterproof_desc_detail": "Tu nesilsi.",
   "jc_effect_spellsword": "Užburtas karys",
-  "jc_effect_spellsword_desc_detail": "$1% padidėjimas žalai už 5 eitr už kiekvieną smūgį."
+  "jc_effect_spellsword_desc_detail": "$1% padidėjimas žalai už 5 eitr už kiekvieną smūgį.",
+  "EJ_coinhoarder_desc": "Padidinkite visą savo žalą dėl dalies monetų, kurias nešate.",
+  "jc_effect_coin_hoarder_desc_detail": "Padidinkite visą savo žalą procentais nuo visų monetų, kurias nešiojate."
 }

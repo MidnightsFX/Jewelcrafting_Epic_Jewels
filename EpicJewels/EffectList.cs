@@ -43,7 +43,7 @@ namespace EpicJewels.GemEffects
             API.AddGemEffect<BlockReduceStamina.Config>("Block Reduce Stamina", "$EJ_stamina_block_cost_header", "$EJ_stamina_block_cost_explained $1%.");
             API.AddGemEffect<WeaponReducedStamina.Config>("Weapon Reduced Stamina", "$EJ_stamina_weapon_cost_header", "$EJ_stamina_weapon_cost_explained $1%.");
             API.AddGemEffect<CoinGreed.Config>("Coin Greed", "$EJ_coingreed_header", "$EJ_coingreed_pt1 $2% $EJ_coingreed_pt2 1-$1 $EJ_coingreed_pt3");
-            API.AddGemEffect<CoinHoarder.Config>("Coin Hoarder", "$EJ_coinhoarder", "$EJ_coinhoarder_pt1 $1% $EJ_coinhoarder_pt2");
+            API.AddGemEffect<CoinHoarder.Config>("Coin Hoarder", "$EJ_coinhoarder", "Increase all of your damage by a fraction of the coins you carry.");
             API.AddGemEffect<WaterResistant.Config>("Water Resistant", "$EJ_water_prevent", "$EJ_water_prevent_pt1 $1 $EJ_water_prevent_pt2");
             API.AddGemEffect<WaterFrenzy.Config>("Water Frenzy", "$EJ_water_dmg_buff", "$EJ_dmg_buff_pt1 $1% $EJ_water_dmg_buff_pt2");
             API.AddGemEffect<WaterSwiftness.Config>("Water Swiftness", "$EJ_water_speed_buff", "$EJ_speed_buff_pt1 $1% $EJ_water_speed_buff_pt2");

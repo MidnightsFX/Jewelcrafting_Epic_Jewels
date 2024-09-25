@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "șansă de a lăsa",
   "EJ_coingreed_pt3": "monede.",
   "EJ_coinhoarder": "Crește daunele prin transportarea monedelor",
-  "EJ_coinhoarder_pt1": "Crește toate daunele tale cu",
-  "EJ_coinhoarder_pt2": "din totalul monedelor pe care le porți.",
   "EJ_water_prevent": "Prevenirea temporară a umezelii",
   "EJ_water_prevent_pt1": "Previene devenirea ud dacă nu ești expus la apă mai mult de",
   "EJ_water_prevent_pt2": "secunde.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Abilitatea ta de tăiere și de folosire a unei topoare este cu 1% mai mare. Vizibilă pe pagina ta de abilități.",
   "jc_effect_expert_polearms_desc_detail": "Abilitatea ta în folosirea armelor cu vârf este cu $1% mai mare. Vizibilă pe pagina ta de abilități.",
   "jc_effect_expert_swordsman_desc_detail": "Abilitatea ta cu sabia este cu $1% mai mare. Vizibil pe pagina ta de abilități.",
-  "jc_effect_coin_hoarder_desc_detail": "Mărește toate daunele tale cu 1% din numărul total de monede pe care le ai.Mulțumesc!",
   "jc_effect_coin_greed_desc_detail": "Dușmanii au o şansă de 2% să lase între 1-1 monede.",
   "jc_effect_slash_resistance_desc_detail": "Reduce toate daunele de tăiere pe care le primești cu $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Reduce toate daunele contondente pe care le primești cu $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "rezistent la apă",
   "jc_effect_waterproof_desc_detail": "Nu te uzi.",
   "jc_effect_spellsword": "Vrăjitor de luptă",
-  "jc_effect_spellsword_desc_detail": "Increase cu 1% la damage în schimbul a 5 eitr per lovitură."
+  "jc_effect_spellsword_desc_detail": "Increase cu 1% la damage în schimbul a 5 eitr per lovitură.",
+  "EJ_coinhoarder_desc": "Măriți toate daunele tale cu o fracțiune din monedele pe care le deții.Mulțumesc!",
+  "jc_effect_coin_hoarder_desc_detail": "Creșteți toate daunele tale cu un procent din totalul monedelor pe care le deții."
 }

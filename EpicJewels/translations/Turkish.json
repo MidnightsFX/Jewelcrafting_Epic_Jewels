@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "para düşürme şansı",
   "EJ_coingreed_pt3": "paralar.",
   "EJ_coinhoarder": "Para taşıdıkça hasarı artırır",
-  "EJ_coinhoarder_pt1": "Tüm hasarınızı artırır",
-  "EJ_coinhoarder_pt2": "taşıdığınız toplam paranın.",
   "EJ_water_prevent": "Geçici olarak ıslanmayı önler",
   "EJ_water_prevent_pt1": "Suyla temas etmezseniz",
   "EJ_water_prevent_pt2": "saniyeden fazla süreyle ıslanmayı önler.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Kesme ve kazma becerin %1 daha yüksek. Beceriler sayfanızda görünür.",
   "jc_effect_expert_polearms_desc_detail": "Değnek silahları becerin $1% daha yüksek. Beceriler sayfanızda görünür.",
   "jc_effect_expert_swordsman_desc_detail": "Kılıç becerin $1% daha yüksek. Beceriler sayfanızda görülebilir.",
-  "jc_effect_coin_hoarder_desc_detail": "Tüm hasarınızı taşıdığınız toplam paraların %1'i kadar arttırın.Anladım, teşekkürler.",
   "jc_effect_coin_greed_desc_detail": "Düşmanların 1 ile 1 dolar arasında para bırakma şansı %2'dir.",
   "jc_effect_slash_resistance_desc_detail": "Alınan bütün kesme hasarını %1 azaltır.Teşekkür ederim.",
   "jc_effect_blunt_resistance_desc_detail": "Alınan tüm darbe hasarını %1 azaltır.(Turkish translation)",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Suya dayanıklı",
   "jc_effect_waterproof_desc_detail": "Seni ıslanmazsın.Ben ıslanmam.",
   "jc_effect_spellsword": "Büyü kılıç ustası",
-  "jc_effect_spellsword_desc_detail": "Her vuruşta 5 eitr maliyetiyle hasarı %1 artırın."
+  "jc_effect_spellsword_desc_detail": "Her vuruşta 5 eitr maliyetiyle hasarı %1 artırın.",
+  "EJ_coinhoarder_desc": "Tüm hasarınızı taşıdığınız paraların bir kısmıyla artırın.(Taşıdığınız paraların bir kısmıyla tüm hasarınızı artırın.)",
+  "jc_effect_coin_hoarder_desc_detail": "Tüm hasarınızı taşıdığınız toplam paraların yüzde biriyle artırın.Tüm hasarınızı taşıdığınız toplam paraların yüzde biriyle artırın."
 }

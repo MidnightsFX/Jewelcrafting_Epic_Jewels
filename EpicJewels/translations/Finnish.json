@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "mahdollisuus pudottaa",
   "EJ_coingreed_pt3": "kolikoita.",
   "EJ_coinhoarder": "Lisää vahinkoa kantaessasi kolikoita",
-  "EJ_coinhoarder_pt1": "Lisää kaikkea vahinkoasi",
-  "EJ_coinhoarder_pt2": "kantamiesi kolikoiden kokonaismäärällä.",
   "EJ_water_prevent": "Estää väliaikaisesti kastumista",
   "EJ_water_prevent_pt1": "Estää kastumisen, jos et ole altistunut vedelle yli",
   "EJ_water_prevent_pt2": "sekuntia.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Sinun hakkuu- ja kirves taitosi on $1% korkeampi. Näkyy taitosivullasi.",
   "jc_effect_expert_polearms_desc_detail": "Taitosi keihäsmiekkailussa on $1% korkeampi. Näkyy taitosivullasi.",
   "jc_effect_expert_swordsman_desc_detail": "Oma miekkataitosi on $1% korkeampi. Näkyvissä taitosivullasi.",
-  "jc_effect_coin_hoarder_desc_detail": "Kasvata kaikkea vahinkoasi $1%:lla kantamistasi kolikoista.",
   "jc_effect_coin_greed_desc_detail": "Vihollisilla on 2% mahdollisuus pudottaa 1-1 dollarin kolikoita.",
   "jc_effect_slash_resistance_desc_detail": "Vähentää kaiken viiltovaurion, jonka saat, $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Vähentää kaiken tylsän vahingon, jonka saat, $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vedenkestävä",
   "jc_effect_waterproof_desc_detail": "Et kastu.",
   "jc_effect_spellsword": "Loitsusoturi",
-  "jc_effect_spellsword_desc_detail": "$1% vahinko lisääntyy 5 eitrin kustannuksella per osuma."
+  "jc_effect_spellsword_desc_detail": "$1% vahinko lisääntyy 5 eitrin kustannuksella per osuma.",
+  "EJ_coinhoarder_desc": "Lisää kaikki vahinkosi murto-osalla kantamistasi kolikoista.",
+  "jc_effect_coin_hoarder_desc_detail": "Lisää kaikki vahinkosi prosentilla kantamistasi kolikoista."
 }

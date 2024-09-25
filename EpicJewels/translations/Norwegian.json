@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "sjanse for å slippe",
   "EJ_coingreed_pt3": "mynter.",
   "EJ_coinhoarder": "Øker skaden ved å bære mynter",
-  "EJ_coinhoarder_pt1": "Øker all skaden din med",
-  "EJ_coinhoarder_pt2": "av de totale myntene du bærer.",
   "EJ_water_prevent": "Midlertidig forhindrer våthet",
   "EJ_water_prevent_pt1": "Forhindrer å bli våt hvis du ikke er eksponert for vann i mer enn",
   "EJ_water_prevent_pt2": "sekunder.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Din hugging og hakkeferdigheter er 1 % høyere. Synlig på ferdighetssiden din.",
   "jc_effect_expert_polearms_desc_detail": "Din ferdighet i stavvåpen er $1% høyere. Synlig på ferdighetssiden din.",
   "jc_effect_expert_swordsman_desc_detail": "Din sverdføring er $1% høyere. Synlig på ferdighetssiden din.",
-  "jc_effect_coin_hoarder_desc_detail": "Øk all skaden din med $1% av de totale myntene du bærer.",
   "jc_effect_coin_greed_desc_detail": "Fiender har en 2% sjanse til å slippe mellom 1- $1 mynter.Takk!",
   "jc_effect_slash_resistance_desc_detail": "Reduserer all stikkskade du tar med $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Reduserer all slag skade du tar med $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vanntett",
   "jc_effect_waterproof_desc_detail": "Du blir ikke våt.",
   "jc_effect_spellsword": "Tryllekjempe",
-  "jc_effect_spellsword_desc_detail": "$1% økning i skade til en kostnad av 5 eitr per treff."
+  "jc_effect_spellsword_desc_detail": "$1% økning i skade til en kostnad av 5 eitr per treff.",
+  "EJ_coinhoarder_desc": "Øk all skaden din med en brøkdel av myntene du bærer.",
+  "jc_effect_coin_hoarder_desc_detail": "Øk all skaden din med en prosentandel av de totale myntene du bærer."
 }

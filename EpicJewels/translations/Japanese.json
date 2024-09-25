@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "のコイン",
   "EJ_coingreed_pt3": "をドロップする確率",
   "EJ_coinhoarder": "コインを持っているとダメージが増加",
-  "EJ_coinhoarder_pt1": "所持しているコインの合計の",
-  "EJ_coinhoarder_pt2": "でダメージを増加",
   "EJ_water_prevent": "一時的に湿気を防止",
   "EJ_water_prevent_pt1": "水にさらされない場合、",
   "EJ_water_prevent_pt2": "秒以上湿気を防止",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "あなたの切断およびつるはしのスキルは1％高くなります。スキルページで確認できます。",
   "jc_effect_expert_polearms_desc_detail": "あなたの槍武器のスキルは$1%高いです。あなたのスキルページに表示されます。",
   "jc_effect_expert_swordsman_desc_detail": "あなたの剣のスキルは$1%高いです。あなたのスキルページで確認できます。",
-  "jc_effect_coin_hoarder_desc_detail": "「所持している総コインの$1%分、あなたの全てのダメージを増やします。」",
   "jc_effect_coin_greed_desc_detail": "敵は1〜$1のコインを落とす確率が2%です。敵は1〜$1のコインを落とす確率が2%です。",
   "jc_effect_slash_resistance_desc_detail": "あなたが受けるすべての斬撃ダメージを1％減らします。斬撃ダメージを減らす効果です。",
   "jc_effect_blunt_resistance_desc_detail": "あなたが受けるすべての鈍器ダメージを$1%減らします。それは効果的な能力です。",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "防水防水",
   "jc_effect_waterproof_desc_detail": "濡れません。",
   "jc_effect_spellsword": "呪文剣士 (Jumon Kenshi)",
-  "jc_effect_spellsword_desc_detail": "1％のダメージ増加、ただし1回の攻撃ごとに5エイトルを消費します。"
+  "jc_effect_spellsword_desc_detail": "1％のダメージ増加、ただし1回の攻撃ごとに5エイトルを消費します。",
+  "EJ_coinhoarder_desc": "「持っているコインの一部を使って、あなたの全てのダメージを増やします。」",
+  "jc_effect_coin_hoarder_desc_detail": "あなたが持っている総コインの一部によってすべてのダメージを増加させます。総持ちコインの一部に応じてダメージを増加させます。"
 }

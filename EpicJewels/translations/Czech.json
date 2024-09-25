@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "šanci vypadnout",
   "EJ_coingreed_pt3": "mincí.",
   "EJ_coinhoarder": "Zvyšuje poškození nesením mincí",
-  "EJ_coinhoarder_pt1": "Zvýší veškeré vaše poškození o",
-  "EJ_coinhoarder_pt2": "celkových mincí, které nosíte.",
   "EJ_water_prevent": "Dočasně zabrání vlhkosti",
   "EJ_water_prevent_pt1": "Zabrání stání vlhkosti, pokud nejste vystaveni vodě déle než",
   "EJ_water_prevent_pt2": "sekund.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Vaše dovednosti se sekáním a sekyrou jsou o 1 % vyšší. Viditelné na vaší stránce s dovednostmi.",
   "jc_effect_expert_polearms_desc_detail": "Vaše dovednosti s dlouhými zbraněmi jsou o $1% vyšší. Viditelné na vaší stránce s dovednostmi.",
   "jc_effect_expert_swordsman_desc_detail": "Vaše dovednosti se šermem jsou o $1% vyšší. Viditelné na vaší stránce s dovednostmi.",
-  "jc_effect_coin_hoarder_desc_detail": "Zvýšte veškeré vaše poškození o $1% z celkového počtu mincí, které nesete.",
   "jc_effect_coin_greed_desc_detail": "Nepřátelé mají 2% šanci na výskyt mincí v hodnotě 1 až 1 dolar.",
   "jc_effect_slash_resistance_desc_detail": "Sníží veškeré škody z řezání, které utrpíte o $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Sníží veškeré tupé poškození, které utrpíte, o $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": " Vodotěsný",
   "jc_effect_waterproof_desc_detail": "Ty se nezmokneš.",
   "jc_effect_spellsword": "Kouzelnický mečový bojovník",
-  "jc_effect_spellsword_desc_detail": "Zvýšení poškození o 1 % za cenu 5 eitrů za úder."
+  "jc_effect_spellsword_desc_detail": "Zvýšení poškození o 1 % za cenu 5 eitrů za úder.",
+  "EJ_coinhoarder_desc": "Zvyšte veškeré své poškození o zlomek mincí, které máte u sebe.",
+  "jc_effect_coin_hoarder_desc_detail": "Zvyšte veškeré vaše poškození o procento z celkového počtu mincí, které nesete."
 }

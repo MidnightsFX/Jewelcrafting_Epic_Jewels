@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "Chance,",
   "EJ_coingreed_pt3": "Münzen fallen zu lassen.",
   "EJ_coinhoarder": "Erhöht den Schaden durch das Tragen von Münzen",
-  "EJ_coinhoarder_pt1": "Erhöht Ihren gesamten Schaden um",
-  "EJ_coinhoarder_pt2": "der insgesamt getragenen Münzen.",
   "EJ_water_prevent": "Verhindert vorübergehend Nässe",
   "EJ_water_prevent_pt1": "Verhindert das Benetzen, wenn Sie nicht länger als",
   "EJ_water_prevent_pt2": "Sekunden Wasser ausgesetzt sind.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Ihre Hack- und Spitzhackenfertigkeit ist um $1% höher. Sichtbar auf Ihrer Fertigkeiten-Seite.",
   "jc_effect_expert_polearms_desc_detail": "Ihre Stangenwaffenfertigkeit ist um $1% höher. Sichtbar auf Ihrer Fähigkeiten-Seite.",
   "jc_effect_expert_swordsman_desc_detail": "Ihre Schwertfertigkeit ist um $1% höher. Sichtbar auf Ihrer Fähigkeiten-Seite.",
-  "jc_effect_coin_hoarder_desc_detail": "Erhöhe den Schaden um $1% der Gesamtanzahl an Münzen, die du trägst.",
   "jc_effect_coin_greed_desc_detail": "Feinde haben eine 2%ige Chance, zwischen 1 und 1 Dollar Münzen fallen zu lassen.",
   "jc_effect_slash_resistance_desc_detail": "Reduziert den Schaden, den Sie durch Schnittangriffe erleiden, um $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Verringert alle stumpfen Schäden, die du erleidest, um 1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Wasserdicht",
   "jc_effect_waterproof_desc_detail": "Du wirst nicht nass.",
   "jc_effect_spellsword": "Zauberstreiter",
-  "jc_effect_spellsword_desc_detail": "1% Erhöhung des Schadens zum Preis von 5 Eitr pro Treffer.Verstanden."
+  "jc_effect_spellsword_desc_detail": "1% Erhöhung des Schadens zum Preis von 5 Eitr pro Treffer.Verstanden.",
+  "EJ_coinhoarder_desc": "Erhöhe all deinen Schaden um einen Bruchteil der Münzen, die du trägst.",
+  "jc_effect_coin_hoarder_desc_detail": "Erhöhe deinen gesamten Schaden um einen Prozentsatz der Gesamtsumme der Münzen, die du trägst."
 }

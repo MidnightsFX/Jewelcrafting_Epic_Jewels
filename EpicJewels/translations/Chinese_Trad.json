@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "機會掉落",
   "EJ_coingreed_pt3": "硬幣。",
   "EJ_coinhoarder": "攜帶硬幣增加傷害",
-  "EJ_coinhoarder_pt1": "攜帶的硬幣總數增加所有傷害",
-  "EJ_coinhoarder_pt2": "。",
   "EJ_water_prevent": "暫時防止濕潤",
   "EJ_water_prevent_pt1": "如果您未暴露於水中超過",
   "EJ_water_prevent_pt2": "秒，則不會濕潤。",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "你的砍伐和鎬技能提高了$1%。在你的技能頁面上可見。",
   "jc_effect_expert_polearms_desc_detail": "你的長柄武器技能提高了$1%。顯示在你的技能頁面上。",
   "jc_effect_expert_swordsman_desc_detail": "你的劍術技能提高了$1%。在你的技能頁面上可見。",
-  "jc_effect_coin_hoarder_desc_detail": "提高你携带的总硬币数量的1%的伤害。",
   "jc_effect_coin_greed_desc_detail": "敵人有2%的機會掉落1-2美元硬幣。",
   "jc_effect_slash_resistance_desc_detail": "減少你受到的所有斬擊傷害$1%。",
   "jc_effect_blunt_resistance_desc_detail": "減少你所承受的所有鈍損傷害 $1%。",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "防水",
   "jc_effect_waterproof_desc_detail": "你不會濕。",
   "jc_effect_spellsword": "魔法劍士",
-  "jc_effect_spellsword_desc_detail": "每次攻击增加1%的伤害，但要支付5点毒血。"
+  "jc_effect_spellsword_desc_detail": "每次攻击增加1%的伤害，但要支付5点毒血。",
+  "EJ_coinhoarder_desc": "增加你所有的傷害，依據你攜帶的硬幣數量的一小部分。",
+  "jc_effect_coin_hoarder_desc_detail": "將你攜帶的硬幣總數的百分比增加到所有傷害上。(Note: The translation provided is in traditional Chinese characters)"
 }

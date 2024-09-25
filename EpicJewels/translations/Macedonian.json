@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "шанса да паднат",
   "EJ_coingreed_pt3": "монети.",
   "EJ_coinhoarder": "Зголемување на оштетувањето со носење на монети",
-  "EJ_coinhoarder_pt1": "Зголемување на сите ваши оштетувања за",
-  "EJ_coinhoarder_pt2": "од вкупните монети кои ги носите.",
   "EJ_water_prevent": "Привремено спречува влага",
   "EJ_water_prevent_pt1": "Спречува влага ако не сте изложени на вода повеќе од",
   "EJ_water_prevent_pt2": "секунди.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Вашата вештина на сечење и користење на кирка е за 1% поголема. Видливо на вашата страна со вештини.",
   "jc_effect_expert_polearms_desc_detail": "Вашата вештина со дрвени оружја е за $1% поголема. Видливо на вашата страна со вештини.",
   "jc_effect_expert_swordsman_desc_detail": "Вашата вештина со меч е за $1% поголема. Видлива на вашата страна со вештини.",
-  "jc_effect_coin_hoarder_desc_detail": "Зголемете го сите вашите штети за $1% од вкупните монети што ги носите.",
   "jc_effect_coin_greed_desc_detail": "Непријателите имаат шанса од 2% да испуштат помеѓу 1 и 3 долари.",
   "jc_effect_slash_resistance_desc_detail": "Намалува сите штети од сечење кои ги примаш за $1%.Please provide the context for your question.",
   "jc_effect_blunt_resistance_desc_detail": "Намалува сите оштетувања од удари за $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Водоотпорен",
   "jc_effect_waterproof_desc_detail": "Не се намирш.",
   "jc_effect_spellsword": "Чароборец",
-  "jc_effect_spellsword_desc_detail": "$1% зголемување на штетата на цена од 5 еитр по погодок."
+  "jc_effect_spellsword_desc_detail": "$1% зголемување на штетата на цена од 5 еитр по погодок.",
+  "EJ_coinhoarder_desc": "Зголемете го сите вашите штети за дел од монетите што ги носите.",
+  "jc_effect_coin_hoarder_desc_detail": "Зголемете го сите вашите штети за одземање за процент од вкупните монети кои ги носите."
 }

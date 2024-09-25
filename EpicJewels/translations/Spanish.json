@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "probabilidad de soltar",
   "EJ_coingreed_pt3": "monedas.",
   "EJ_coinhoarder": "Aumenta el daño al llevar monedas",
-  "EJ_coinhoarder_pt1": "Aumenta todo tu daño por",
-  "EJ_coinhoarder_pt2": "del total de monedas que llevas.",
   "EJ_water_prevent": "Previene temporalmente la humedad",
   "EJ_water_prevent_pt1": "Evita mojarte si no estás expuesto al agua durante más de",
   "EJ_water_prevent_pt2": "segundos.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Tu habilidad para cortar y usar el pico es un 1% más alta. Visible en tu página de habilidades.",
   "jc_effect_expert_polearms_desc_detail": "Tu habilidad con armas de asta es $1% más alta. Visible en tu página de habilidades.",
   "jc_effect_expert_swordsman_desc_detail": "Tu habilidad con la espada es $1% más alta. Visible en tu página de habilidades.",
-  "jc_effect_coin_hoarder_desc_detail": "Aumenta todo tu daño en $1% del total de monedas que llevas.(Increase all of your damage by $1% of the total coins you carry.)",
   "jc_effect_coin_greed_desc_detail": "Los enemigos tienen un 2% de probabilidad de soltar entre 1 y 1 monedas.",
   "jc_effect_slash_resistance_desc_detail": "Reduce todo el daño cortante que recibas en un 1%.",
   "jc_effect_blunt_resistance_desc_detail": "Reduce todo el daño contundente que recibes en un $1%.Please provide the context for the response.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Impermeable",
   "jc_effect_waterproof_desc_detail": "No te mojas.",
   "jc_effect_spellsword": "Espadachín mágico",
-  "jc_effect_spellsword_desc_detail": "Aumento del 1% al daño a cambio de 5 eitr por golpe."
+  "jc_effect_spellsword_desc_detail": "Aumento del 1% al daño a cambio de 5 eitr por golpe.",
+  "EJ_coinhoarder_desc": "Aumenta todo tu daño en una fracción de las monedas que llevas.Gracias.",
+  "jc_effect_coin_hoarder_desc_detail": "Aumenta todo tu daño en un porcentaje del total de monedas que llevas.Por favor, hágamelo saber si hay algo más en lo que pueda ayudarte."
 }

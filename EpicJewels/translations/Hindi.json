@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "को गिराने का अवसर है",
   "EJ_coingreed_pt3": "सिक्के।",
   "EJ_coinhoarder": "सिक्के लेकर नुकसान बढ़ता है",
-  "EJ_coinhoarder_pt1": "सभी आपके नुकसान को बढ़ाता है",
-  "EJ_coinhoarder_pt2": "कुल सिक्कों की मात्रा।",
   "EJ_water_prevent": "अस्थायी रूप से गीलापन को रोकता है",
   "EJ_water_prevent_pt1": "अगर आपको ज्यादा से ज्यादा",
   "EJ_water_prevent_pt2": "सेकंड के लिए पानी का संपर्क नहीं होता है तो गीलापन को रोकता है।",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "आपकी कटाई और पिकाक्स कौशल $1% अधिक है। आपके कौशल पृष्ठ पर दिखाई देगा।",
   "jc_effect_expert_polearms_desc_detail": "आपका पोलार्म कौशल $1% अधिक है। आपके कौशल पृष्ठ पर दिखाई देता है।",
   "jc_effect_expert_swordsman_desc_detail": "आपकी तलवार कौशल $1% अधिक है। आपके कौशल पृष्ठ पर दिखता है।",
-  "jc_effect_coin_hoarder_desc_detail": "अपने सभी हताशा को बढ़ाएं $1% जितने सिक्के आप लेकर चलते हैं।",
   "jc_effect_coin_greed_desc_detail": "दुश्मनों के पास 1-1 डॉलर के सिक्के गिराने का 2% की संभावना है।",
   "jc_effect_slash_resistance_desc_detail": "आपके द्वारा लिया जाने वाला सभी स्लैश हानि को $1% घटाता है।",
   "jc_effect_blunt_resistance_desc_detail": "आपको प्राप्त होने वाले सभी कुंडली चोट को 1% तक कम करता है।",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "पानी से बचाव करने वाला",
   "jc_effect_waterproof_desc_detail": "तुम भीगते नहीं हो।",
   "jc_effect_spellsword": "जादू की तलवार",
-  "jc_effect_spellsword_desc_detail": "5 प्रति हिट कीमत पर नुकसान में 1% बढ़ोतरी।"
+  "jc_effect_spellsword_desc_detail": "5 प्रति हिट कीमत पर नुकसान में 1% बढ़ोतरी।",
+  "EJ_coinhoarder_desc": "अपने सभी हानि को बढ़ाएँ जो भी सिक्के आपके पास हैं, उनका एक हिस्सा।",
+  "jc_effect_coin_hoarder_desc_detail": "अपने सभी हानि को बढ़ाएं जो भी राशि आपके पास है, उसके प्रतिशत में।"
 }

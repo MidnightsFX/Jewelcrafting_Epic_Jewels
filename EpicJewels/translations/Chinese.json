@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "掉落硬币的机会",
   "EJ_coingreed_pt3": "。",
   "EJ_coinhoarder": "携带硬币增加伤害",
-  "EJ_coinhoarder_pt1": "携带的硬币总量的",
-  "EJ_coinhoarder_pt2": "增加所有伤害。",
   "EJ_water_prevent": "临时防止潮湿",
   "EJ_water_prevent_pt1": "如果你不暴露在水中超过",
   "EJ_water_prevent_pt2": "秒，就可以防止湿润。",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "你的砍伐和鹤嘴镐技能提高了1%。在你的技能页面上可见。",
   "jc_effect_expert_polearms_desc_detail": "你的长柄武器技能提高了$1%。在你的技能页面上可以看到。",
   "jc_effect_expert_swordsman_desc_detail": "你的剑术技能提高了$1%。在你的技能页面上可见。",
-  "jc_effect_coin_hoarder_desc_detail": "增加你所有伤害的$1%等于你携带的总硬币数。",
   "jc_effect_coin_greed_desc_detail": "敌人有2%的几率掉落1-2美元的硬币。敌人掉银币的概率很小。",
   "jc_effect_slash_resistance_desc_detail": "减少你受到的所有割伤伤害$1%。",
   "jc_effect_blunt_resistance_desc_detail": "减少你受到的所有钝击伤害 $1%。",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "防水",
   "jc_effect_waterproof_desc_detail": "你不会被淋湿。",
   "jc_effect_spellsword": "法剑使",
-  "jc_effect_spellsword_desc_detail": "$1%对伤害的增加，每次打击需支付5个艾特。"
+  "jc_effect_spellsword_desc_detail": "$1%对伤害的增加，每次打击需支付5个艾特。",
+  "EJ_coinhoarder_desc": "通过携带的硬币增加你的所有伤害的一部分。",
+  "jc_effect_coin_hoarder_desc_detail": "将你携带的硬币总数的百分比提高你的所有伤害。"
 }

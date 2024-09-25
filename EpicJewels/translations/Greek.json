@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "πιθανότητα να αφήσουν",
   "EJ_coingreed_pt3": "νομίσματα.",
   "EJ_coinhoarder": "Αυξάνει τη ζημιά κουβαλώντας νομίσματα",
-  "EJ_coinhoarder_pt1": "Αυξάνει όλη τη ζημιά σας κατά",
-  "EJ_coinhoarder_pt2": "των συνολικών νομισμάτων που κουβαλάτε.",
   "EJ_water_prevent": "Προσωρινά αποτρέπει την υγρασία",
   "EJ_water_prevent_pt1": "Αποτρέπει την υγρασία αν δεν εκτίθεστε στο νερό για περισσότερο από",
   "EJ_water_prevent_pt2": "δευτερόλεπτα.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Η δεξιότητά σου στο κόψιμο και το δρεπάνι είναι υψηλότερη κατά $1%. Ορατή στη σελίδα των δεξιοτήτων σου.",
   "jc_effect_expert_polearms_desc_detail": "Η δεξιότητά σου στα όπλα πόλου είναι υψηλότερη κατά $1%. Ορατή στη σελίδα των δεξιοτήτων σου.",
   "jc_effect_expert_swordsman_desc_detail": "Η δεξιοτεχνία σου με το σπαθί είναι $1% υψηλότερη. Ορατό στη σελίδα των δεξιοτήτων σου.",
-  "jc_effect_coin_hoarder_desc_detail": "Αυξήστε όλη τη ζημία σας κατά $1% των συνολικών νομισμάτων που κουβαλάτε.",
   "jc_effect_coin_greed_desc_detail": "Οι εχθροί έχουν μια 2% πιθανότητα να αφήσουν μεταξύ 1 έως 1 δολάρια νομίσματα.",
   "jc_effect_slash_resistance_desc_detail": "Μειώνει όλη τη ζημιά από κοπή που υφίστασαι κατά $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Μειώνει όλες τις αμβλύς ζημιές που υποστήριξες κατά $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Αδιάβροχο",
   "jc_effect_waterproof_desc_detail": "Δεν βρέχεσαι.",
   "jc_effect_spellsword": "Μάγος ξιφομάχος",
-  "jc_effect_spellsword_desc_detail": "Αύξηση 1% στη ζημιά με κόστος 5 eitr ανά χτύπημα."
+  "jc_effect_spellsword_desc_detail": "Αύξηση 1% στη ζημιά με κόστος 5 eitr ανά χτύπημα.",
+  "EJ_coinhoarder_desc": "Αυξήστε όλη σας τη ζημιά κατά ένα κλάσμα των νομισμάτων που κουβαλάτε.",
+  "jc_effect_coin_hoarder_desc_detail": "Αυξήστε τη ζημιά σας κατά ένα ποσοστό των συνολικών νομισμάτων που κουβαλάτε."
 }

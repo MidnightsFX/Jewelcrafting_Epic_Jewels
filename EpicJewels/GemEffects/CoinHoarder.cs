@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using JetBrains.Annotations;
 using Jewelcrafting;
+using System;
 using System.Linq;
 
 namespace EpicJewels.GemEffects
@@ -18,16 +19,19 @@ namespace EpicJewels.GemEffects
         {
             private static void Prefix(HitData hit)
             {
-                if (hit.GetAttacker() is Player attacker)
+                if (hit.GetAttacker() is Player attacker && Player.m_localPlayer != null && Player.m_localPlayer.GetEffectPower<Config>("Coin Hoarder").Power > 0)
                 {
                     ItemDrop.ItemData[] mcoins = Player.m_localPlayer.m_inventory.GetAllItems().Where(val => val.m_dropPrefab.name == "Coins").ToArray();
                     // Check if the user has coins, if they do not, we don't give a bonus
                     if (mcoins.Length == 0) { return; }
-                    float inv_coins = mcoins[0].m_stack;
+                    float inv_coins = 0f;
+                    // count all of the coin stacks
+                    foreach (var coin in mcoins) { inv_coins += coin.m_stack; }
                     float coin_hoarder_powerlevel = Player.m_localPlayer.GetEffectPower<Config>("Coin Hoarder").Power;
-                    float coinHoarderBonus = inv_coins * (coin_hoarder_powerlevel / 100);
-                    float damage_multiplier = (coinHoarderBonus + 100f) / 100f;
-                    EpicJewels.EJLog.LogDebug($"Coinhorder bonus multipler {damage_multiplier} coinhorder bonus: {coinHoarderBonus} inv coins: {inv_coins} coinhorder power: {coin_hoarder_powerlevel}");
+                    // This equates to 12% at 1000 coins, with lvl 5 coinhoarder, at 
+                    float coin_bonus = (float)(Math.Log10(coin_hoarder_powerlevel * inv_coins));
+                    float damage_multiplier = (coin_bonus * 5.5f / 100f) + 1f;
+                    EpicJewels.EJLog.LogDebug($"Coinhorder bonus multipler {damage_multiplier} coin log bonus: {coin_bonus} inv coins: {inv_coins}");
                     // We modify each of the various possible damage types, because 0 * 1.01 is still 0
                     // This ensures the total damage and each types get the bonus
                     hit.m_damage.m_blunt *= damage_multiplier;

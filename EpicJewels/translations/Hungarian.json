@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "esélye arra, hogy dobjanak",
   "EJ_coingreed_pt3": "érméket.",
   "EJ_coinhoarder": "Növeli a kárt a hordott érmékkel",
-  "EJ_coinhoarder_pt1": "Növeli az összes károdat",
-  "EJ_coinhoarder_pt2": "a hordott érmék összegének",
   "EJ_water_prevent": "Átmenetileg megakadályozza az nedvességet",
   "EJ_water_prevent_pt1": "Megakadályozza az átnedvesedést, ha nem vagy ki vagy téve víznek",
   "EJ_water_prevent_pt2": "másodpercnél tovább.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "A vágás és csákánykészséged 1%-kal magasabb. Látható a készségeid oldalon.",
   "jc_effect_expert_polearms_desc_detail": "A páncélzatkezelési képességed $1% -kal magasabb. Látható a képességeid oldalon.",
   "jc_effect_expert_swordsman_desc_detail": "A kardkészséged $1%-kal magasabb. Látható a készségeid oldalon.",
-  "jc_effect_coin_hoarder_desc_detail": "Növeld meg minden sebzésedet 1%-kal az összes érméből, amit magadnál viselsz.",
   "jc_effect_coin_greed_desc_detail": "Az ellenségeknek 2% esélyük van arra, hogy 1 és 1 dollár közötti érméket dobják le.",
   "jc_effect_slash_resistance_desc_detail": "Minden vágó sérülést 1%-kal csökkent.",
   "jc_effect_blunt_resistance_desc_detail": "Csökkenti az összes tompa sérülést 1%-kal.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vízálló",
   "jc_effect_waterproof_desc_detail": "Nem leszel vizes.",
   "jc_effect_spellsword": "Varázskard",
-  "jc_effect_spellsword_desc_detail": "1% növekedés a sebzésben 5 eitr ára per találat."
+  "jc_effect_spellsword_desc_detail": "1% növekedés a sebzésben 5 eitr ára per találat.",
+  "EJ_coinhoarder_desc": "Növeld meg minden sebzésedet a hordozott érmék egy részével.",
+  "jc_effect_coin_hoarder_desc_detail": "Növeld meg minden sebzésedet a hordozott összes érme százalékával."
 }

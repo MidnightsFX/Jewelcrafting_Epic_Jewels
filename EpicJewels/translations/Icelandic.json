@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "tækifæri til að falla",
   "EJ_coingreed_pt3": "peninga.",
   "EJ_coinhoarder": "Aukning á skaða með að bera peninga",
-  "EJ_coinhoarder_pt1": "Aukning alls skaða þíns um",
-  "EJ_coinhoarder_pt2": "af heildarpeningunum sem þú berð.",
   "EJ_water_prevent": "Tímabundið hindrar vötnun",
   "EJ_water_prevent_pt1": "Hindrar að verða vöt við að vera ekki útsett fyrir vatn lengur en",
   "EJ_water_prevent_pt2": "sekúndur.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Köst og öxi færni þín er $1% hærri. Sýnilegt á færni síðunni þinni.",
   "jc_effect_expert_polearms_desc_detail": "Kæfisækjasnæði þitt er hærri um $1%. Sjáanlegt á færni síðunni þinni.",
   "jc_effect_expert_swordsman_desc_detail": "Þín sverðshæfni er $1% hærri. Sýnilegt á þinni færni síðu.",
-  "jc_effect_coin_hoarder_desc_detail": "Aukið öll tjón þitt um $1% af heildarpeningum sem þú berð með þér.Taktu eftir!",
   "jc_effect_coin_greed_desc_detail": "Óvinir hafa 2% líkur á að detta milli 1-1$ mynta.",
   "jc_effect_slash_resistance_desc_detail": "Minnkar allt snertiskemmdir sem þú tekur um $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Minnkar allan stækkun skaða sem þú tekur um $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Vatnsheldur",
   "jc_effect_waterproof_desc_detail": "Þú verður ekki blautur.",
   "jc_effect_spellsword": "Táknsverðari",
-  "jc_effect_spellsword_desc_detail": "1% aukning á skaða á kostnað af 5 eitr á hverju hitti."
+  "jc_effect_spellsword_desc_detail": "1% aukning á skaða á kostnað af 5 eitr á hverju hitti.",
+  "EJ_coinhoarder_desc": "Aukið öll skaði ykkar um brot af peningunum sem þið bera.Aukið allan skaða ykkar um brot af peningunum sem þið bera.",
+  "jc_effect_coin_hoarder_desc_detail": "Aukið öll skaða ykkar um ákveðinn hluta af öllum peningum sem þið bera."
 }

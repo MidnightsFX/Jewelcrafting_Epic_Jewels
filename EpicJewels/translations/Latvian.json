@@ -33,8 +33,6 @@
   "EJ_coingreed_pt2": "iespēja nomet",
   "EJ_coingreed_pt3": "monētas.",
   "EJ_coinhoarder": "Palielina bojājumu, nesot monētas",
-  "EJ_coinhoarder_pt1": "Palielina visu jūsu bojājumu par",
-  "EJ_coinhoarder_pt2": "no kopējās nesējamo monētu summas.",
   "EJ_water_prevent": "Pagaidu novērš mitrumu",
   "EJ_water_prevent_pt1": "Novērš mitrumu, ja jūs neesat pakļauts ūdenim vairāk nekā",
   "EJ_water_prevent_pt2": "sekundes.",
@@ -128,7 +126,6 @@
   "jc_effect_expert_harvester_desc_detail": "Tava ciršanas un cirvja lietošanas prasme ir par 1% augstāka. Redzams tavā prasmju lapā.",
   "jc_effect_expert_polearms_desc_detail": "Tava ierocu prasmju līmenis ir paaugstināts par $1%. Redzams tavā prasmju lapā.",
   "jc_effect_expert_swordsman_desc_detail": "Jūsu zobena prasme ir par $1% augstāka. Redzams jūsu prasmju lapā.",
-  "jc_effect_coin_hoarder_desc_detail": "Palieliniet visus savus bojājumus par $1% no kopējām monētām, ko jūs nesat līdzi.",
   "jc_effect_coin_greed_desc_detail": "Ienaidniekiem ir 2% iespēja nomet 1-1 ASV dolāru monētas.",
   "jc_effect_slash_resistance_desc_detail": "Samazina visu ievainojumu ar grieziena ieročiem, ko jūs saņemat, par $1%.",
   "jc_effect_blunt_resistance_desc_detail": "Samazina visus tev nodarītos stumšanas bojājumus par $1%.",
@@ -282,5 +279,7 @@
   "jc_effect_waterproof": "Ūdensdrošs",
   "jc_effect_waterproof_desc_detail": "Tu nekļūsti slapjš.",
   "jc_effect_spellsword": "Burtu zobens",
-  "jc_effect_spellsword_desc_detail": "1% palielinājums bojājumiem par 5 eitr par sitieniem."
+  "jc_effect_spellsword_desc_detail": "1% palielinājums bojājumiem par 5 eitr par sitieniem.",
+  "EJ_coinhoarder_desc": "Palieliniet visu savu bojājumu par monētu daļu, ko jūs nesat līdzi.",
+  "jc_effect_coin_hoarder_desc_detail": "Palieliniet visu savu bojājumu par procentiem no kopējās monētu summas, ko jūs nesat."
 }
