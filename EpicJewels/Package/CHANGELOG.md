@@ -1,3 +1,9 @@
+ **0.9.3**
+ ---
+ ```
+ - Fix inferno activation chance
+ ```
+
  **0.9.2**
  ---
  ```

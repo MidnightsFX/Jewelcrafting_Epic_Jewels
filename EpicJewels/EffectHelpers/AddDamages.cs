@@ -50,8 +50,10 @@ namespace EpicJewels.EffectHelpers
                 float inferno_chance = Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Chance;
                 // Bonus from intenseFire
                 if (Player.m_localPlayer.GetEffectPower<GemEffects.IntenseFire.Config>("Intense Fire").Power > 0) { inferno_chance = inferno_chance * 1.5f; }
-
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0 && Random.value < inferno_chance)
+                inferno_chance = inferno_chance / 100f; // Normalize to decimal value.
+                float inferno_activation_chance = Random.value;
+                EpicJewels.EJLog.LogDebug($"Inferno activation chance: {inferno_activation_chance} < {inferno_chance}");
+                if (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0 && inferno_activation_chance < inferno_chance)
                 {
                     float added_fire_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power / 100);
                     hit.m_damage.m_fire += added_fire_dmg;
