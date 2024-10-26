@@ -1,3 +1,10 @@
+ **0.9.4**
+ ---
+ ```
+ - Improvements for translations
+ - Fixes missing translations for gem type headers
+ ```
+
  **0.9.3**
  ---
  ```

@@ -3,7 +3,7 @@
 require "json"
 
 language_files = Dir["EpicJewels/translations/*"]
-keys_to_remove = %w[jc_effect_coin_hoarder_desc_detail EJ_coinhoarder_pt1 EJ_coinhoarder_pt2]
+keys_to_remove = %w[jc_effect_cover_of_darkness_desc_detail]
 
 language_files.each do |lang_file|
   next if lang_file == "EpicJewels/translations/English.json"

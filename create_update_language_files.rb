@@ -23,7 +23,7 @@ def sanitize_response(text, original_text)
   return sanitized_response
 end
 
-client = OpenAI::Client.new(access_token: config["OPENAI_KEY"])
+client = OpenAI::Client.new(access_token: config["OPENAI_KEY"], log_errors: true)
 
 master_file = File.read("#{localizations_dir}/English.json")
 master_json = JSON.parse(master_file)
@@ -89,7 +89,7 @@ languages.each do |lang|
       response = client.chat(
         parameters: {
           model: "gpt-3.5-turbo-1106", # Required.
-          messages: [{ role: "user", content: "Please translate the quoted phrase to #{lang} and respond only the translation text: \"#{master_json[key]}\"" }],
+          messages: [{ role: "user", content: "Please translate the quoted phrase to #{lang}, do not remove any '$' and respond only the translation text: \"#{master_json[key]}\"" }],
           temperature: 0.7
         }
       )
