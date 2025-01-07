@@ -70,22 +70,22 @@ namespace EpicJewels.GemEffects
 
             Quaternion rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
             Vector3 player_location = Player.m_localPlayer.gameObject.transform.position;
-            player_location.z += 0.5f; // spawn just above the player
+            player_location.y += 1f; // spawn just above the player
             GameObject creature = Object.Instantiate(bat, player_location, rotation);
             Character creature_character = creature.GetComponent<Character>();
+            ZNetView zNetView = creature.GetComponent<ZNetView>();
+            zNetView.m_persistent = true;
             // Increase the bats level based on how strong the darkness is
             creature_character.m_level = stars;
             // Remove drops from this creature
             Object.Destroy(creature.GetComponent<CharacterDrop>());
 
+
             // Set the creatures faction to the player
-            Humanoid creature_metadata = creature.GetComponent<Humanoid>();
-            if (creature_metadata != null)
-            {
-                creature_metadata.m_faction = Character.Faction.Players;
-            }
-            else
-            {
+            MonsterAI creature_AI = creature.GetComponent<MonsterAI>();
+            if (creature_AI != null) {
+                creature_AI.MakeTame();
+            } else {
                 // This creatures faction isn't set so destroy it
                 Object.Destroy(creature);
             }

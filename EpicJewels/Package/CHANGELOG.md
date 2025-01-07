@@ -1,3 +1,16 @@
+ **0.9.6**
+ ---
+ ```
+ - Fix weight reduction displaying a lower inventory weight than it should
+ - Fix cover of darkness bats becoming hostile when unloaded and reloaded
+ ```
+
+ **0.9.5**
+ ---
+ ```
+ - Bog Witch update, no change.
+ ```
+
  **0.9.4**
  ---
  ```

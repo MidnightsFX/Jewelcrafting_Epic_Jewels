@@ -5,7 +5,7 @@ namespace EpicJewels.Common
     internal class Config
     {
         public static ConfigFile cfg;
-        public static ConfigEntry<bool> EnableDebugMode;
+        // public static ConfigEntry<bool> EnableDebugMode;
 
         public Config(ConfigFile cfgref)
         {
