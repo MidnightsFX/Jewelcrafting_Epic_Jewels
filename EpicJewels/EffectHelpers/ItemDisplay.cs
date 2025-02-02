@@ -43,7 +43,7 @@ namespace EpicJewels.EffectHelpers
                 if (entry_lines[i].Length < 17) {  continue; }
                 
                 string line_desc = entry_lines[i].Split(':')[0].Trim();
-                EpicJewels.EJLog.LogDebug($"ItemDescription {entry_lines[i]} |{line_desc}|");
+                //EpicJewels.EJLog.LogDebug($"ItemDescription {entry_lines[i]} |{line_desc}|");
                 switch (line_desc)
                 {
                     case "$inventory_damage":
@@ -95,7 +95,7 @@ namespace EpicJewels.EffectHelpers
             }
             // Return our modified version of the item tooltip
             string result_modified = string.Join("\n", result_lines.ToArray());
-            EpicJewels.EJLog.LogDebug($"ItemDescription {result_modified}");
+            //EpicJewels.EJLog.LogDebug($"ItemDescription {result_modified}");
             __result = result_modified;
         }
 
@@ -137,7 +137,7 @@ namespace EpicJewels.EffectHelpers
         {
             float bonus_dmg = total_dmg * (bonus_power / 100);
             string[] line_arr = current_line.Split(' ');
-            EpicJewels.EJLog.LogDebug($"Modifying {line_arr[1]}");
+            //EpicJewels.EJLog.LogDebug($"Modifying {line_arr[1]}");
             // Change the damage text color to the specified one
             float dmg = int.Parse(line_arr[1].Replace("<color=orange>", "").Replace("</color>", ""));
             line_arr[1] = $"<color=purple>{(dmg + bonus_dmg).ToString("F1")}</color>";
@@ -146,7 +146,7 @@ namespace EpicJewels.EffectHelpers
             line_arr[1] += $" <color=purple>[+{bonus_dmg.ToString("F1")}]</color>";
 
             line_arr[2] = $"<color=purple>({Mathf.RoundToInt((m_dmg_value + bonus_dmg ) * min)}-{Mathf.RoundToInt((m_dmg_value + bonus_dmg) * max)})";
-            EpicJewels.EJLog.LogDebug($"Result {line_arr[1]}");
+            //EpicJewels.EJLog.LogDebug($"Result {line_arr[1]}");
             return string.Join(" ", line_arr);
         }
 

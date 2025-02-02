@@ -1,3 +1,11 @@
+ **0.9.7**
+ ---
+ ```
+ - Fixes cover of darkness allowing infinite bat spawning with near instant usage weapons
+	- Cover of darkness now has a default limit of 2, 4, 6 bats (additive) based on gem level
+ - Fixes taming complaints about spawned bats
+ ```
+
  **0.9.6**
  ---
  ```

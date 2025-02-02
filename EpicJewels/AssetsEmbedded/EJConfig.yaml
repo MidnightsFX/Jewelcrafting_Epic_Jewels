@@ -166,6 +166,7 @@ Cover of Darkness:
   power:
     power: [10, 15, 30]
     chance: [10, 12, 15]
+    Max Count: [2, 4, 6]
 Retribution:
   slot: shield
   gem: opal
