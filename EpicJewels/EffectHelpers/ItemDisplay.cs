@@ -38,7 +38,6 @@ namespace EpicJewels.EffectHelpers
             List<String> result_lines = new List<string> (entry_lines);
             for (int i = 0; i < entry_lines.Count; i++)
             {
-                
                 // Skip all the short lines, we don't care about them
                 if (entry_lines[i].Length < 17) {  continue; }
                 

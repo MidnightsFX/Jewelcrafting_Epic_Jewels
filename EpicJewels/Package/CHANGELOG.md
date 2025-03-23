@@ -1,3 +1,21 @@
+ **0.9.10**
+ ---
+ ```
+ - Updated Russian translation
+ ``` 
+
+ **0.9.9**
+ ---
+ ```
+ - Fixes a scenario that could cause CombatSpirit to turn all wolves into spirit wolves
+ ```
+
+ **0.9.8**
+ ---
+ ```
+ - Fixes potential Error caused by character deaths without a cause
+ ```
+
  **0.9.7**
  ---
  ```

@@ -22,7 +22,7 @@ namespace EpicJewels
     {
         public const string PluginGUID = "MidnightsFX.EpicJewels";
         public const string PluginName = "EpicJewels";
-        public const string PluginVersion = "0.9.7";
+        public const string PluginVersion = "0.9.10";
 
         public static readonly ManualLogSource EJLog = BepInEx.Logging.Logger.CreateLogSource(PluginName);
 
@@ -37,7 +37,7 @@ namespace EpicJewels
         // https://valheim-modding.github.io/Jotunn/tutorials/localization.html
         // public static CustomLocalization Localization = LocalizationManager.Instance.GetLocalization();
 
-        private void Awake()
+        public void Awake()
         {
             Localizer.Load();
             cfg = new Common.Config(Config);

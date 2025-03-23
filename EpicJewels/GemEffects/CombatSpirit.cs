@@ -28,7 +28,8 @@ namespace EpicJewels.GemEffects
                 {
                     if (wolf == null)
                     {
-                        ZNetScene.instance.m_namedPrefabs.TryGetValue("Wolf".GetStableHashCode(), out wolf);
+                        ZNetScene.instance.m_namedPrefabs.TryGetValue("Wolf".GetStableHashCode(), out var temp);
+                        wolf = temp;
                         SkinnedMeshRenderer wolf_renderer = wolf.GetComponentInChildren<SkinnedMeshRenderer>();
                         wolf_renderer.material = EpicJewels.spiritCreature;
                         Object.Destroy(wolf.GetComponent<CharacterDrop>());

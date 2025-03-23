@@ -1,7 +1,6 @@
 ﻿using HarmonyLib;
 using JetBrains.Annotations;
 using Jewelcrafting;
-using System.Security.Cryptography.X509Certificates;
 
 namespace EpicJewels.GemEffects
 {
