@@ -52,8 +52,7 @@ namespace EpicJewels.GemEffects
                                 {
                                     GameObject bat_exists = ZNetScene.instance.FindInstance(bat);
                                     // EpicJewels.EJLog.LogDebug($"Cover of darkness checking bat dead: {(bat_exists == null)}");
-                                    if (bat_exists != null)
-                                    {
+                                    if (bat_exists != null && !alive_bats.Contains(bat)) {
                                         alive_bats.Add(bat);
                                     }
                                 }
@@ -102,7 +101,7 @@ namespace EpicJewels.GemEffects
             // Set the creatures faction to the player
             MonsterAI creature_AI = creature.GetComponent<MonsterAI>();
             if (creature_AI != null) {
-                Tameable tamable = creature.AddComponent<Tameable>();
+                if (creature.GetComponent<Tameable>() == null) { Tameable tamable = creature.AddComponent<Tameable>(); }
                 creature_AI.MakeTame();
             } else {
                 // This creatures faction isn't set so destroy it

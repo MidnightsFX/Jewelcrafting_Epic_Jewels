@@ -9,10 +9,8 @@ using UnityEngine;
 using YamlDotNet.Serialization.NamingConventions;
 using YamlDotNet.Serialization;
 using LocalizationManager;
-using Mono.Cecil;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using JetBrains.Annotations;
 
 namespace EpicJewels
 {
@@ -22,7 +20,7 @@ namespace EpicJewels
     {
         public const string PluginGUID = "MidnightsFX.EpicJewels";
         public const string PluginName = "EpicJewels";
-        public const string PluginVersion = "0.9.10";
+        public const string PluginVersion = "0.9.11";
 
         public static readonly ManualLogSource EJLog = BepInEx.Logging.Logger.CreateLogSource(PluginName);
 

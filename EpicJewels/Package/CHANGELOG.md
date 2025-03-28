@@ -1,3 +1,9 @@
+ **0.9.11**
+ ---
+ ```
+ - Fixed a potential error with Cover Of Darkness spawning a tamed bat that is already tamed
+ ``` 
+
  **0.9.10**
  ---
  ```
