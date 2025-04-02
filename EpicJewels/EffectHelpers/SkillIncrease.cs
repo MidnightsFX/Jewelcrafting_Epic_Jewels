@@ -1,14 +1,18 @@
 ﻿using HarmonyLib;
 using JetBrains.Annotations;
 using Jewelcrafting;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using static Skills;
 
 namespace EpicJewels.EffectHelpers
 {
+    [HarmonyPatch(typeof(Skills), nameof(Skills.GetSkillLevel))]
+    public static class IncreaseSkillLevelPatch
+    {
+        private static void Postfix(Skills __instance, SkillType skillType, ref float __result)
+        {
+            __result = IncreaseSkillPatch.DetermineSkillIncrease(__instance.m_player, skillType, __result, false);
+        }
+    }
 
     [HarmonyPatch(typeof(Skills), nameof(Skills.GetSkillFactor))]
     public static class IncreaseSkillPatch
@@ -19,7 +23,7 @@ namespace EpicJewels.EffectHelpers
             __result = DetermineSkillIncrease(__instance.m_player, skillType, __result);
         }
 
-        private static float DetermineSkillIncrease(Player player, SkillType selectedSkill, float current_skill_level)
+        public static float DetermineSkillIncrease(Player player, SkillType selectedSkill, float current_skill_level, bool factor = true)
         {
             float skill_increase = 0f;
             switch (selectedSkill)
@@ -155,63 +159,15 @@ namespace EpicJewels.EffectHelpers
                     // EpicJewels.EJLog.LogDebug($"All skills increase {skill_increase}");
                     break;
             }
-
-            EpicJewels.EJLog.LogDebug($"Total skill increase {skill_increase}");
-            return (current_skill_level + skill_increase);
-        }
-
-        // Modified from https://github.com/OrianaVenture/Randy_Vapok_ValheimMods/blob/main/EpicLoot/src/Magic/MagicItemEffects/AddSkillLevel.cs
-        [HarmonyPatch(typeof(SkillsDialog), nameof(SkillsDialog.Setup))]
-        public static class DisplayExtraSkillLevels_SkillsDialog_Setup_Patch
-        {
-            [UsedImplicitly]
-            private static void Postfix(SkillsDialog __instance, Player player)
-            {
-                var allSkills = player.m_skills.GetSkillList();
-                var elementList = new List<GameObject>();
-                elementList = __instance.m_elements;
-
-                foreach (var element in elementList)
-                {
-                    var tooltipComponent = element.GetComponentInChildren<UITooltip>();
-                    var skill = allSkills.Find(s => s.m_info.m_description == tooltipComponent.m_text);
-
-                    if (skill == null)
-                    {
-                        continue;
-                    }
-                    float base_skill_level = player.m_skills.GetSkill(skill.m_info.m_skill).m_level;
-                    float modified_skill = DetermineSkillIncrease(player, skill.m_info.m_skill, base_skill_level);
-
-                    if (modified_skill > base_skill_level)
-                    {
-                        float skill_increase = modified_skill - base_skill_level;
-                        var levelbar = Utils.FindChild(element.transform, "bar");
-                        var extraLevelbar = Utils.FindChild(element.transform, "extrabar")?.gameObject;
-
-                        if (extraLevelbar == null)
-                        {
-                            extraLevelbar = Object.Instantiate(levelbar.gameObject, levelbar.parent);
-                            extraLevelbar.transform.SetSiblingIndex(levelbar.GetSiblingIndex());
-                            extraLevelbar.name = "extrabar";
-                        }
-
-                        extraLevelbar.SetActive(true);
-                        var rect = extraLevelbar.GetComponent<RectTransform>();
-                        rect.sizeDelta = new Vector2((skill.m_level + skill_increase) * 1.6f, rect.sizeDelta.y);
-                        extraLevelbar.GetComponent<Image>().color = Color.magenta;
-                        Utils.FindChild(element.transform, "leveltext").GetComponent<TMP_Text>().text += $"  <color=#{ColorUtility.ToHtmlStringRGBA(Color.magenta)}>+{skill_increase:#0.0}</color>";
-                    }
-                    else
-                    {
-                        var extralevelbar = Utils.FindChild(element.transform, "extrabar");
-                        if (extralevelbar != null)
-                        {
-                            extralevelbar.gameObject.SetActive(false);
-                        }
-                    }
-                }
+            float new_skill_with_bonus = current_skill_level;
+            if (factor) {
+                new_skill_with_bonus += (skill_increase / 100f);
+            } else {
+                new_skill_with_bonus += skill_increase;
             }
+            
+            // EpicJewels.EJLog.LogDebug($"Skill increase: o:{current_skill_level} a:{skill_increase} new: {new_skill_with_bonus}");
+            return new_skill_with_bonus;
         }
     }
 }

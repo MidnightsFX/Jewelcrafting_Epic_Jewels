@@ -1,3 +1,10 @@
+ **0.9.15**
+ ---
+ ```
+ - Fixed skill factor magnitude being too high or too low
+ - Fixed skill level not being applied in all cases
+ ``` 
+
  **0.9.14**
  ---
  ```
