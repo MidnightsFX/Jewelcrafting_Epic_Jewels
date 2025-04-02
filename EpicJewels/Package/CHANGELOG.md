@@ -1,3 +1,9 @@
+ **0.9.14**
+ ---
+ ```
+ - Fixed skill increase being exponential
+ ``` 
+
  **0.9.13**
  ---
  ```

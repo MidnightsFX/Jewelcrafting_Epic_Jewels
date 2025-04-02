@@ -156,8 +156,8 @@ namespace EpicJewels.EffectHelpers
                     break;
             }
 
-            // EpicJewels.EJLog.LogDebug($"Total skill increase {final_skill_increase}");
-            return (current_skill_level * skill_increase);
+            EpicJewels.EJLog.LogDebug($"Total skill increase {skill_increase}");
+            return (current_skill_level + skill_increase);
         }
 
         // Modified from https://github.com/OrianaVenture/Randy_Vapok_ValheimMods/blob/main/EpicLoot/src/Magic/MagicItemEffects/AddSkillLevel.cs
