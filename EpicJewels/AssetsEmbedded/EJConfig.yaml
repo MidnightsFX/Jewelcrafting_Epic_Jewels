@@ -1,11 +1,15 @@
 Add Slash Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: jade
-  power: [3, 6, 9]
+  power:
+    power: [3, 6, 9]
+    chance: [30, 45, 55]
 Add Chop Damage:
   slot: tool
   gem: jade
-  power: [6, 9, 12]
+  power:
+    power: [6, 9, 12]
+    chance: [30, 45, 55]
 Coin Hoarder:
   slot: cloak
   gem: jade
@@ -43,7 +47,9 @@ Expert Smasher:
 Add Blunt Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: amber
-  power: [3, 6, 9]
+  power:
+    power: [3, 6, 9]
+    chance: [30, 45, 55]
 Expert Spearmaiden:
   slot: cloak
   gem: amber
@@ -77,7 +83,9 @@ Expert Sprinter:
 Add Pierce Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: aquamarine
-  power: [3, 6, 9]
+  power:
+    power: [3, 6, 9]
+    chance: [30, 45, 55]
 Water Swiftness:
   slot: legs
   gem: aquamarine
@@ -121,7 +129,9 @@ Inferno:
 Add Pickaxe Damage:
   slot: tool
   gem: garnet
-  power: [6, 9, 12]
+  power:
+    power: [6, 9, 12]
+    chance: [30, 45, 55]
 Burning Frenzy:
   slot: utility
   gem: garnet
@@ -139,7 +149,9 @@ Burning Guard:
 Add Lightning Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: opal
-  power: [6, 9, 12]
+  power:
+    power: [6, 9, 12]
+    chance: [30, 45, 55]
 Expert Fisher:
   slot: head
   gem: opal
@@ -176,7 +188,9 @@ Retribution:
 Add Spirit Damage:
   slot: ['weapon', 'elementalmagic', 'bow', 'crossbow']
   gem: amethyst
-  power: [9, 12, 18]
+  power:
+    power: [9, 12, 18]
+    chance: [30, 45, 55]
 Expert Swordsman:
   slot: chest
   gem: amethyst

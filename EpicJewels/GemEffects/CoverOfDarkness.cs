@@ -30,7 +30,7 @@ namespace EpicJewels.GemEffects
                     {
                         if (Random.value < (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Chance/ 100))
                         {
-                            EpicJewels.EJLog.LogDebug($"Cover of darkness triggered darkness power: {Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power}");
+                            // EpicJewels.EJLog.LogDebug($"Cover of darkness triggered darkness power: {Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power}");
                             int bat_stars = 1; // 1 = 0 stars, 2 = 1 star etc
                             switch (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power)
                             {

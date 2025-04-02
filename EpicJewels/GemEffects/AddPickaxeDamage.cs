@@ -9,6 +9,7 @@ namespace EpicJewels.GemEffects
         public struct Config
         {
             [AdditivePowerAttribute] public float Power;
+            [AdditivePowerAttribute] public float Chance;
         }
     }
 }

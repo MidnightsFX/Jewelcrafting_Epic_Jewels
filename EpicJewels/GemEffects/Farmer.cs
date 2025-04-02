@@ -16,7 +16,30 @@ namespace EpicJewels.GemEffects
             [AdditivePowerAttribute] public float Chance;
         }
 
-        static List<String> UnallowedGreenThumbPickables = new List<String>() { "SurtlingCore", "Flint", "Wood", "Stone", "Amber", "AmberPearl", "Coins", "Ruby" };
+        static List<String> UnallowedGreenThumbPickables = new List<String>() { 
+            "SurtlingCore", 
+            "Flint", 
+            "Wood",
+            "Stone",
+            "Amber",
+            "AmberPearl",
+            "Coins",
+            "Ruby",
+            "CryptRemains",
+            "Obsidian",
+            "Crystal",
+            "Pot_Shard",
+            "DragonEgg",
+            "DvergrLantern",
+            "DvergrMineTreasure",
+            "SulfurRock",
+            "VoltureEgg",
+            "Swordpiece",
+            "MoltenCore",
+            "Hairstrands",
+            "Tar",
+            "BlackCore"
+        };
 
         [HarmonyPatch(typeof(Pickable), nameof(Pickable.Interact))]
         public static class IncreaseCarryWeight
@@ -35,12 +58,12 @@ namespace EpicJewels.GemEffects
                     string prefabname = __instance.m_itemPrefab.name.Replace("(Clone)","").Replace("Pickable_","");
                     if (UnallowedGreenThumbPickables.Contains(prefabname))
                     {
-                        EpicJewels.EJLog.LogDebug($"Pickable type ({prefabname}) is not allowed for farmer perk.");
+                        // EpicJewels.EJLog.LogDebug($"Pickable type ({prefabname}) is not allowed for farmer perk.");
                         return;
                     }
                     float roll = UnityEngine.Random.value;
                     float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Farmer").Chance / 100);
-                    EpicJewels.EJLog.LogDebug($"Farmer chance roll: {roll} < {chance_max}");
+                    // EpicJewels.EJLog.LogDebug($"Farmer chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {
                         int offset = 0;
@@ -71,16 +94,15 @@ namespace EpicJewels.GemEffects
                     if (current_tick_time > (last_update + 1f)) { last_update = current_tick_time; } else { return; }
                     foreach (Collider obj_collider in Physics.OverlapSphere(__instance.transform.position, 3f, pickableMask))
                     {
-                        Pickable pickable_item = obj_collider.GetComponent<Pickable>() ?? obj_collider.transform.parent?.GetComponent<Pickable>();
+                        Pickable pickable_item = obj_collider.GetComponent<Pickable>() ?? obj_collider.GetComponentInParent<Pickable>();
                         if (pickable_item != null)
                         {
                             string prefabname = pickable_item.name.Replace("(Clone)", "").Replace("Pickable_", "");
-                            if (!UnallowedGreenThumbPickables.Contains(prefabname))
-                            {
+                            if (!UnallowedGreenThumbPickables.Contains(prefabname)) {
                                 
                                 if (pickable_item.CanBePicked())
                                 {
-                                    EpicJewels.EJLog.LogDebug($"Autopicking: {prefabname}");
+                                    // EpicJewels.EJLog.LogDebug($"Autopicking: {prefabname}");
                                     pickable_item.Interact(Player.m_localPlayer, false, false);
                                 }
                             }

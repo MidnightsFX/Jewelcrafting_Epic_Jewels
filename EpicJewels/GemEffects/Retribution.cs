@@ -23,13 +23,13 @@ namespace EpicJewels.GemEffects
                 {
                     float roll = Random.value;
                     float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Retribution").Chance / 100);
-                    EpicJewels.EJLog.LogDebug($"Retribution chance roll: {roll} < {chance_max}");
+                    // EpicJewels.EJLog.LogDebug($"Retribution chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {
                         HitData retribution_hit = new HitData();
                         float hit_dmg = hit.GetTotalDamage();
                         retribution_hit.m_damage.m_damage = hit_dmg * (player.GetEffectPower<Config>("Retribution").Power / 100f);
-                        EpicJewels.EJLog.LogDebug($"Hit dmg {hit_dmg} Retribution returning damage {retribution_hit.m_damage.m_damage}");
+                        // EpicJewels.EJLog.LogDebug($"Hit dmg {hit_dmg} Retribution returning damage {retribution_hit.m_damage.m_damage}");
                         attacker.Damage(retribution_hit);
                     }  
                 }

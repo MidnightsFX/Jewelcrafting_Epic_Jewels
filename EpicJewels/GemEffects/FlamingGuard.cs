@@ -23,7 +23,7 @@ namespace EpicJewels.GemEffects
                 {
                     float roll = UnityEngine.Random.value;
                     float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Burning Guard").Chance / 100);
-                    EpicJewels.EJLog.LogDebug($"Burning Guard chance roll: {roll} < {chance_max}");
+                    // EpicJewels.EJLog.LogDebug($"Burning Guard chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {
                         HitData flaming_rebuke_hit = new HitData();

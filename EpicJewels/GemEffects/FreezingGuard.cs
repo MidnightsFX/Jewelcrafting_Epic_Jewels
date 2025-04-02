@@ -23,7 +23,7 @@ namespace EpicJewels.GemEffects
                 {
                     float roll = UnityEngine.Random.value;
                     float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Freezing Guard").Chance / 100);
-                    EpicJewels.EJLog.LogDebug($"Freezing guard chance roll: {roll} < {chance_max}");
+                    // EpicJewels.EJLog.LogDebug($"Freezing guard chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {
                         HitData frost_rebuke_hit = new HitData();

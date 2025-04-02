@@ -5,7 +5,7 @@ namespace EpicJewels.Common
     internal class Config
     {
         public static ConfigFile cfg;
-        // public static ConfigEntry<bool> EnableDebugMode;
+        public static ConfigEntry<bool> EnableItemTooltipDisplay;
 
         public Config(ConfigFile cfgref)
         {
@@ -17,10 +17,9 @@ namespace EpicJewels.Common
 
         private void CreateConfigValues(ConfigFile Config)
         {
-            // Debugmode
-            //EnableDebugMode = Config.Bind("Client config", "EnableDebugMode", false,
-            //    new ConfigDescription("Enables Debug logging for Recipe Manager. This is client side and is not syncd with the server.",
-            //    null));
+            EnableItemTooltipDisplay = Config.Bind("Client config", "EnableItemTooltipDisplay", true,
+               new ConfigDescription("Enables displaying some stat modifications on the item tooltip.",
+               null));
         }
     }
 }

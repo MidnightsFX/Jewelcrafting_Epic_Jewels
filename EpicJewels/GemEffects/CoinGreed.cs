@@ -33,16 +33,16 @@ namespace EpicJewels.GemEffects
                 if (__instance.m_lastHit == null) { return; }
                 if (__instance.m_lastHit.GetAttacker() != Player.m_localPlayer) { return; }
                 float coin_greed = Player.m_localPlayer.GetEffectPower<Config>("Coin Greed").Power;
-                EpicJewels.EJLog.LogDebug($"Coingreed enabled? {coin_greed > 0}");
+                // EpicJewels.EJLog.LogDebug($"Coingreed enabled? {coin_greed > 0}");
                 if (coin_greed > 0)
                 {
                     float greedChance = (Player.m_localPlayer.GetEffectPower<Config>("Coin Greed").Chance / 100);
                     float chance_roll = UnityEngine.Random.value;
-                    EpicJewels.EJLog.LogDebug($"Coingreed: {chance_roll} < {greedChance} = {chance_roll < greedChance}");
+                    // EpicJewels.EJLog.LogDebug($"Coingreed: {chance_roll} < {greedChance} = {chance_roll < greedChance}");
                     if (chance_roll < greedChance)
                     {
                         float greedAmount = UnityEngine.Random.Range(1, Math.Max(1, coin_greed));
-                        EpicJewels.EJLog.LogDebug($"coingreed drop {(int)greedAmount}");
+                        // EpicJewels.EJLog.LogDebug($"coingreed drop {(int)greedAmount}");
                         GameObject coin = UnityEngine.Object.Instantiate(ObjectDB.instance.GetItemPrefab("Coins"), __instance.gameObject.transform.position, __instance.gameObject.transform.rotation);
                         coin.GetComponent<ItemDrop>().m_itemData.m_stack = (int)greedAmount;
                     }

@@ -29,7 +29,7 @@ namespace EpicJewels.EffectHelpers
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertSwordsman.Config>("Expert Swordsman").Power;
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Swords skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Swords skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Spears:
@@ -37,7 +37,7 @@ namespace EpicJewels.EffectHelpers
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertSpearmaiden.Config>("Expert Spearmaiden").Power;
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Spears skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Spears skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Clubs:
@@ -45,7 +45,7 @@ namespace EpicJewels.EffectHelpers
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertSmasher.Config>("Expert Smasher").Power;
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Clubs skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Clubs skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Polearms:
@@ -53,7 +53,7 @@ namespace EpicJewels.EffectHelpers
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertPolearms.Config>("Expert Polearms").Power;
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Polearms skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Polearms skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.BloodMagic:
@@ -61,14 +61,14 @@ namespace EpicJewels.EffectHelpers
                     if (player.GetEffectPower<GemEffects.ExpertMage.Config>("Expert Mage").Power > 0)
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertMage.Config>("Expert Mage").Power;
-                        EpicJewels.EJLog.LogDebug($"Magic skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Magic skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Fishing:
                     if (player.GetEffectPower<GemEffects.ExpertFisher.Config>("Expert Fisher").Power > 0)
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertFisher.Config>("Expert Fisher").Power;
-                        EpicJewels.EJLog.LogDebug($"Fishing skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Fishing skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Knives:
@@ -76,7 +76,7 @@ namespace EpicJewels.EffectHelpers
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertDaggers.Config>("Expert Daggers").Power;
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Knives skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Knives skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Unarmed:
@@ -84,7 +84,7 @@ namespace EpicJewels.EffectHelpers
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertBrawler.Config>("Expert Brawler").Power;
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Unarmed skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Unarmed skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Axes:
@@ -92,14 +92,14 @@ namespace EpicJewels.EffectHelpers
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertAxemaster.Config>("Expert Axemaster").Power;
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Axes skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Axes skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Jump:
                     if (player.GetEffectPower<GemEffects.ExpertAcrobat.Config>("Expert Acrobat").Power > 0)
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertAcrobat.Config>("Expert Acrobat").Power;
-                        EpicJewels.EJLog.LogDebug($"Jump skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Jump skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.WoodCutting:
@@ -107,21 +107,21 @@ namespace EpicJewels.EffectHelpers
                     if (player.GetEffectPower<GemEffects.ExpertHarvester.Config>("Expert Harvester").Power > 0)
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertHarvester.Config>("Expert Harvester").Power;
-                        EpicJewels.EJLog.LogDebug($"Pickaxe & woodcutting skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Pickaxe & woodcutting skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Run:
                     if (player.GetEffectPower<GemEffects.ExpertSprinter.Config>("Expert Sprinter").Power > 0)
                     {
                         skill_increase += player.GetEffectPower<GemEffects.ExpertSprinter.Config>("Expert Sprinter").Power;
-                        EpicJewels.EJLog.LogDebug($"Run skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Run skill increase {skill_increase}");
                     }
                     break;
                 case SkillType.Crossbows:
                     if (player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power > 0)
                     {
                         skill_increase += player.GetEffectPower<GemEffects.WeaponMaster.Config>("Weapon Master").Power;
-                        EpicJewels.EJLog.LogDebug($"Crossbow skill increase {skill_increase}");
+                        //EpicJewels.EJLog.LogDebug($"Crossbow skill increase {skill_increase}");
                     }
                     break;
                 // These empty ones are already provided by base jewelcrafting
@@ -152,13 +152,12 @@ namespace EpicJewels.EffectHelpers
                     // skill_increase += wm_bonus // Shield bonus
                     skill_increase += player.GetEffectPower<GemEffects.ExpertAcrobat.Config>("Expert Acrobat").Power;
 
-                    EpicJewels.EJLog.LogDebug($"All skills increase {skill_increase}");
+                    // EpicJewels.EJLog.LogDebug($"All skills increase {skill_increase}");
                     break;
             }
 
-            float final_skill_increase = (skill_increase + 100) / 100;
             // EpicJewels.EJLog.LogDebug($"Total skill increase {final_skill_increase}");
-            return (current_skill_level * final_skill_increase);
+            return (current_skill_level * skill_increase);
         }
 
         // Modified from https://github.com/OrianaVenture/Randy_Vapok_ValheimMods/blob/main/EpicLoot/src/Magic/MagicItemEffects/AddSkillLevel.cs

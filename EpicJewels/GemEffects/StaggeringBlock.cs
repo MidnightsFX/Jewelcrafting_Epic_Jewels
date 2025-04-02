@@ -21,10 +21,10 @@ namespace EpicJewels.GemEffects
                 {
                     float roll = UnityEngine.Random.value;
                     float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Staggering Block").Power / 100);
-                    EpicJewels.EJLog.LogDebug($"Staggering block chance roll: {roll} < {chance_max}");
+                    // EpicJewels.EJLog.LogDebug($"Staggering block chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {
-                        EpicJewels.EJLog.LogDebug($"Staggering attacker");
+                        // EpicJewels.EJLog.LogDebug($"Staggering attacker");
                         attacker.AddStaggerDamage(999f, -hit.m_dir);
                     }  
                 }

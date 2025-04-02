@@ -31,7 +31,7 @@ namespace EpicJewels.GemEffects
                     // This equates to 12% at 1000 coins, with lvl 5 coinhoarder, at 
                     float coin_bonus = (float)(Math.Log10(coin_hoarder_powerlevel * inv_coins));
                     float damage_multiplier = (coin_bonus * 5.5f / 100f) + 1f;
-                    EpicJewels.EJLog.LogDebug($"Coinhorder bonus multipler {damage_multiplier} coin log bonus: {coin_bonus} inv coins: {inv_coins}");
+                    // EpicJewels.EJLog.LogDebug($"Coinhorder bonus multipler {damage_multiplier} coin log bonus: {coin_bonus} inv coins: {inv_coins}");
                     // We modify each of the various possible damage types, because 0 * 1.01 is still 0
                     // This ensures the total damage and each types get the bonus
                     hit.m_damage.m_blunt *= damage_multiplier;

@@ -28,7 +28,7 @@ namespace EpicJewels.GemEffects
                         if (thisVikingisWet)
                         {
                             float weapon_usage_stamina_multiplier = (100f / (player.GetEffectPower<Config>("Wet Worker").Power + 100f));
-                            EpicJewels.EJLog.LogDebug($"Wet Worker Stamina Reduction multipler: {weapon_usage_stamina_multiplier}");
+                            // EpicJewels.EJLog.LogDebug($"Wet Worker Stamina Reduction multipler: {weapon_usage_stamina_multiplier}");
                             __result *= weapon_usage_stamina_multiplier;
                         }
                     }

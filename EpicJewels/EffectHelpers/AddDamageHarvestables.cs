@@ -10,8 +10,14 @@ namespace EpicJewels.EffectHelpers
             if (hit.GetAttacker() is Player)
             {
                 float original_total_dmg = hit.m_damage.GetTotalDamage();
-                float added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
-                float added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
+                float added_pickaxe_dmg = 0;
+                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Chance >= UnityEngine.Random.value) {
+                    added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
+                }
+                float added_chop_dmg = 0;
+                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Chance >= UnityEngine.Random.value) {
+                    added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
+                }
 
                 if (Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power > 0 || Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0)
                 {

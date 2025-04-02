@@ -49,7 +49,7 @@ namespace EpicJewels.GemEffects
                         // Set this creatures lifetime
                         wolf.name = "Spirit Wolf";
                     }
-                    EpicJewels.EJLog.LogDebug($"checking for spawning spirit companion {recheck_spirit_spawn_timer} has companion? {have_spirit_companion} cooldown {cooldown_timer}");
+                    // EpicJewels.EJLog.LogDebug($"checking for spawning spirit companion {recheck_spirit_spawn_timer} has companion? {have_spirit_companion} cooldown {cooldown_timer}");
                     float dt = Time.deltaTime;
                     if (cooldown_timer > 0)
                     {
@@ -64,7 +64,7 @@ namespace EpicJewels.GemEffects
                         recheck_spirit_spawn_timer = 0;
                         if (Character.s_characters.Any(c => Vector3.Distance(Player.m_localPlayer.gameObject.transform.position, c.transform.position) < 100f && c.name == "Spirit Wolf"))
                         {
-                            EpicJewels.EJLog.LogDebug("Already have spirit wolf");
+                            // EpicJewels.EJLog.LogDebug("Already have spirit wolf");
                             have_spirit_companion = true;
                         }
                         else

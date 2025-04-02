@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using EpicJewels.Common;
+using HarmonyLib;
 using Jewelcrafting;
 using System;
 using System.Collections.Generic;
@@ -7,95 +8,83 @@ using UnityEngine;
 
 namespace EpicJewels.EffectHelpers
 {
-    [HarmonyPatch(typeof(HitData.DamageTypes), nameof(HitData.DamageTypes.GetTooltipString), typeof(Skills.SkillType))]
+    
     public static class ItemDisplay
     {
-        private static void Postfix(HitData.DamageTypes __instance, Skills.SkillType skillType, ref String __result)
+        [HarmonyPatch(typeof(ItemDrop.ItemData), nameof(ItemDrop.ItemData.GetTooltip), typeof(ItemDrop.ItemData), typeof(int), typeof(bool), typeof(float), typeof(int))]
+        public static class ItemToolTipDisplayEnhancer
         {
-            // Guard clause due to the postfixed method also having scenarios it can be called without the player defined
-            if (Player.m_localPlayer == null) {  return; }
-
-            // Will need to add a way to provide weapon information for damage types it currently doesn't have
-            Player.m_localPlayer.GetSkills().GetRandomSkillRange(out var min, out var max, skillType);
-            float total_dmg = __instance.GetTotalDamage();
-
-            // Build a list of damage effects which the current player has active.
-            // This allows us to add an entry to the damages listed for a weapon if one of the effects gives a bonus which the weapon does not already have
-            //Dictionary<string, int> damage = new Dictionary<string, int>();
-            //foreach (DmgEffect effect in Enum.GetValues(typeof(DmgEffect)))
-            //{
-            //    byte[] power_data = Player.m_localPlayer.m_nview.m_zdo.GetByteArray(effect.ToString().GetHashCode());
-            //    EpicJewels.EJLog.LogDebug($"Effect {effect} effect data: |{power_data}|");
-            //    if (power_data != null && power_data.Length > 0)
-            //    {
-            //        int dmg = BitConverter.ToInt32(power_data, 0);
-            //        damage.Add(effect.ToString(), dmg);
-            //    }
-            //}
-            Dictionary<String, DmgModDetails> player_damage_modifiers_active = DetermineCharacterDamageModifiers();
-
-            List<String> entry_lines = __result.Split('\n').ToList();
-            List<String> result_lines = new List<string> (entry_lines);
-            for (int i = 0; i < entry_lines.Count; i++)
+            private static void Postfix(ItemDrop.ItemData item, ref String __result)
             {
-                // Skip all the short lines, we don't care about them
-                if (entry_lines[i].Length < 17) {  continue; }
-                
-                string line_desc = entry_lines[i].Split(':')[0].Trim();
-                //EpicJewels.EJLog.LogDebug($"ItemDescription {entry_lines[i]} |{line_desc}|");
-                switch (line_desc)
+                if (Player.m_localPlayer == null || Player.m_localPlayer.IsItemEquiped(item) == false || Config.EnableItemTooltipDisplay.Value == false) { return; }
+
+                Player.m_localPlayer.GetSkills().GetRandomSkillRange(out var min, out var max, item.m_shared.m_skillType);
+                float total_dmg = item.m_shared.m_damages.GetTotalDamage();
+                Dictionary<String, DmgModDetails> player_damage_modifiers_active = DetermineCharacterDamageModifiers();
+
+                List<String> entry_lines = __result.Split('\n').ToList();
+                List<String> result_lines = new List<string>(entry_lines);
+                for (int i = 0; i < entry_lines.Count; i++)
                 {
-                    case "$inventory_damage":
-                        break;
-                    case "$inventory_blunt":
-                        if (player_damage_modifiers_active.ContainsKey("Add Blunt Damage"))
-                        {
-                            player_damage_modifiers_active["Add Blunt Damage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_blunt, min, max, player_damage_modifiers_active["Add Blunt Damage"].power); 
-                        }
-                        break;
-                    case "$inventory_slash":
-                        if (player_damage_modifiers_active.ContainsKey("Add Slash Damage"))
-                        {
-                            player_damage_modifiers_active["Add Slash Damage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_slash, min, max, player_damage_modifiers_active["Add Slash Damage"].power);
-                        }
-                        break;
-                    case "$inventory_pierce":
-                        if (player_damage_modifiers_active.ContainsKey("Add Pierce Damage"))
-                        {
-                            player_damage_modifiers_active["Add Pierce Damage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_pierce, min, max, player_damage_modifiers_active["Add Pierce Damage"].power);
-                        }
-                        break;
-                    case "$inventory_lightning":
-                        if (player_damage_modifiers_active.ContainsKey("Add Lightning Damage"))
-                        {
-                            player_damage_modifiers_active["Add Lightning Damage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_lightning, min, max, player_damage_modifiers_active["Add Lightning Damage"].power);
-                        }
-                        break;
-                    case "$inventory_spirit":
-                        if (player_damage_modifiers_active.ContainsKey("Add Spirit Damage"))
-                        {   
-                            player_damage_modifiers_active["Add Spirit Damage"].added = true;
-                            result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, __instance.m_spirit, min, max, player_damage_modifiers_active["Add Spirit Damage"].power);
-                        }
-                        break;
-                } 
-            }
+                    // Skip all the short lines, we don't care about them
+                    if (entry_lines[i].Length < 17) { continue; }
 
-            // Add damage values that we are currently 
-            foreach(var entry in player_damage_modifiers_active)
-            {
-                if (entry.Value.added == true) { continue; }
-                
-                result_lines.Add(BuildModifierExplainer(entry.Value.localizedName, total_dmg, min, max, entry.Value.power));
+                    string line_desc = entry_lines[i].Split(':')[0].Trim();
+                    //EpicJewels.EJLog.LogDebug($"ItemDescription {entry_lines[i]} | {line_desc}|");
+                    switch (line_desc)
+                    {
+                        case "$inventory_damage":
+                            break;
+                        case "$inventory_blunt":
+                            if (player_damage_modifiers_active.ContainsKey("Add Blunt Damage"))
+                            {
+                                player_damage_modifiers_active["Add Blunt Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_blunt, min, max, player_damage_modifiers_active["Add Blunt Damage"].power);
+                            }
+                            break;
+                        case "$inventory_slash":
+                            if (player_damage_modifiers_active.ContainsKey("Add Slash Damage"))
+                            {
+                                player_damage_modifiers_active["Add Slash Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_slash, min, max, player_damage_modifiers_active["Add Slash Damage"].power);
+                            }
+                            break;
+                        case "$inventory_pierce":
+                            if (player_damage_modifiers_active.ContainsKey("Add Pierce Damage"))
+                            {
+                                player_damage_modifiers_active["Add Pierce Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_pierce, min, max, player_damage_modifiers_active["Add Pierce Damage"].power);
+                            }
+                            break;
+                        case "$inventory_lightning":
+                            if (player_damage_modifiers_active.ContainsKey("Add Lightning Damage"))
+                            {
+                                player_damage_modifiers_active["Add Lightning Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_lightning, min, max, player_damage_modifiers_active["Add Lightning Damage"].power);
+                            }
+                            break;
+                        case "$inventory_spirit":
+                            if (player_damage_modifiers_active.ContainsKey("Add Spirit Damage"))
+                            {
+                                player_damage_modifiers_active["Add Spirit Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_spirit, min, max, player_damage_modifiers_active["Add Spirit Damage"].power);
+                            }
+                            break;
+                    }
+                }
+
+                // Add damage values that we are currently 
+                foreach (var entry in player_damage_modifiers_active)
+                {
+                    if (entry.Value.added == true) { continue; }
+
+                    result_lines.Add(BuildModifierExplainer(entry.Value.localizedName, total_dmg, min, max, entry.Value.power));
+                }
+                // Return our modified version of the item tooltip
+                string result_modified = string.Join("\n", result_lines.ToArray());
+                //EpicJewels.EJLog.LogDebug($"ItemDescription {result_modified}");
+                __result = result_modified;
             }
-            // Return our modified version of the item tooltip
-            string result_modified = string.Join("\n", result_lines.ToArray());
-            //EpicJewels.EJLog.LogDebug($"ItemDescription {result_modified}");
-            __result = result_modified;
         }
 
         class DmgModDetails
@@ -138,7 +127,7 @@ namespace EpicJewels.EffectHelpers
             string[] line_arr = current_line.Split(' ');
             //EpicJewels.EJLog.LogDebug($"Modifying {line_arr[1]}");
             // Change the damage text color to the specified one
-            float dmg = int.Parse(line_arr[1].Replace("<color=orange>", "").Replace("</color>", ""));
+            float dmg = int.Parse(line_arr[1].Replace("<color=#ffa500ff>", "").Replace("<color=orange>", "").Replace("</color>", ""));
             line_arr[1] = $"<color=purple>{(dmg + bonus_dmg).ToString("F1")}</color>";
             // Not sure if this will be more confusing or not, maybe just recoloring is enough
             // Add the sum of bonus damage
