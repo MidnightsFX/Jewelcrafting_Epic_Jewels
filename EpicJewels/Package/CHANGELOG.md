@@ -1,3 +1,9 @@
+ **0.9.16**
+ ---
+ ```
+ - Updated Chinese localization
+ ``` 
+
  **0.9.15**
  ---
  ```

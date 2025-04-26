@@ -1,3 +1,39 @@
+ **0.9.16**
+ ---
+ ```
+ - Updated Chinese localization
+ ``` 
+
+ **0.9.15**
+ ---
+ ```
+ - Fixed skill factor magnitude being too high or too low
+ - Fixed skill level not being applied in all cases
+ ``` 
+
+ **0.9.14**
+ ---
+ ```
+ - Fixed skill increase being exponential
+ ``` 
+
+ **0.9.13**
+ ---
+ ```
+ - Rebalances flat damage gems to be more in line with current jewelcrafting
+	- All flat damage gems now have a chance to activate, it is high, the but damage they add is low
+ - All skill bonus gems now add skill levels not percentages.
+ - Adds a client side configuration to enable/disable tooltip modifications that show damage predictions
+ - Adds a limiter to the hover tooltip that will prevent it showing changed stats for non-equipped items
+ ``` 
+
+ **0.9.12**
+ ---
+ ```
+ - Fixes Farmer not applying to Thistles
+ - Improved disallow list for Farmer
+ ``` 
+
  **0.9.11**
  ---
  ```
@@ -8,7 +44,7 @@
  ---
  ```
  - Updated Russian translation
- ```
+ ``` 
 
  **0.9.9**
  ---
