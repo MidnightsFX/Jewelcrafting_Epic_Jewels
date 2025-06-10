@@ -1,3 +1,9 @@
+ **0.9.17**
+ ---
+ ```
+ - Improves support for DedicatedServer mod
+ ``` 
+
  **0.9.16**
  ---
  ```

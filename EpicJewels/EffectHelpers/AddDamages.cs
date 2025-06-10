@@ -12,48 +12,49 @@ namespace EpicJewels.EffectHelpers
         {
             if (hit.GetAttacker() is Player)
             {
+                Player player = hit.GetAttacker() as Player;
                 float original_total_dmg = hit.m_damage.GetTotalDamage();
                 float random_element_value = Random.value;
                 float random_plain_value = Random.value;
                 float added_blunt_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Chance / 100f >= random_plain_value) {
-                    added_blunt_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Chance / 100f >= random_plain_value) {
+                    added_blunt_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Power / 100);
                 }
                 float added_slash_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("Add Slash Damage").Chance / 100f >= random_plain_value) {
-                    added_slash_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSlashDamage.Config>("Add Slash Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddSlashDamage.Config>("Add Slash Damage").Chance / 100f >= random_plain_value) {
+                    added_slash_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddSlashDamage.Config>("Add Slash Damage").Power / 100);
                 }
                 float added_pierce_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("Add Pierce Damage").Chance / 100f >= random_plain_value) {
-                    added_pierce_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPierceDamage.Config>("Add Pierce Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddPierceDamage.Config>("Add Pierce Damage").Chance / 100f >= random_plain_value) {
+                    added_pierce_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddPierceDamage.Config>("Add Pierce Damage").Power / 100);
                 }
-                // float added_true_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddStaggerDamage.Config>("AddTrueDamage").Power / 100);
+                // float added_true_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddStaggerDamage.Config>("AddTrueDamage").Power / 100);
                 float added_lightning_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("Add Lightning Damage").Chance / 100f >= random_element_value) {
-                    added_lightning_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddLightningDamage.Config>("Add Lightning Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddLightningDamage.Config>("Add Lightning Damage").Chance / 100f >= random_element_value) {
+                    added_lightning_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddLightningDamage.Config>("Add Lightning Damage").Power / 100);
                 }
                 float added_spirit_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Chance / 100f >= random_element_value) {
-                    added_spirit_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Chance / 100f >= random_element_value) {
+                    added_spirit_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddSpiritDamage.Config>("Add Spirit Damage").Power / 100);
                 }
                 float added_pickaxe_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Chance / 100f >= random_plain_value) {
-                    added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Chance / 100f >= random_plain_value) {
+                    added_pickaxe_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
                 }
                 float added_chop_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Chance / 100f >= random_plain_value) {
-                    added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Chance / 100f >= random_plain_value) {
+                    added_chop_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
                 }
                 
 
 
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power > 0 || Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0)
+                if (player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power > 0 || player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0)
                 {
-                    float eitr_cost = Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Cost;
-                    if (Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0) { eitr_cost += 5; }
-                    if (Player.m_localPlayer.HaveEitr(eitr_cost))
+                    float eitr_cost = player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Cost;
+                    if (player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0) { eitr_cost += 5; }
+                    if (player.HaveEitr(eitr_cost))
                     {
-                        float eitr_fused_powerup = ((Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power + Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power) / 100f) + 1f;
+                        float eitr_fused_powerup = ((player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power + player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power) / 100f) + 1f;
                         EpicJewels.EJLog.LogDebug($"Eitr powered attack powered up multiplier {eitr_fused_powerup} cost {eitr_cost}");
                         added_chop_dmg += hit.m_damage.m_chop * eitr_fused_powerup;
                         added_pickaxe_dmg += hit.m_damage.m_pickaxe * eitr_fused_powerup;
@@ -62,7 +63,7 @@ namespace EpicJewels.EffectHelpers
                         added_pierce_dmg += hit.m_damage.m_pierce * eitr_fused_powerup;
                         added_slash_dmg += hit.m_damage.m_slash * eitr_fused_powerup;
                         added_blunt_dmg += hit.m_damage.m_blunt * eitr_fused_powerup;
-                        Player.m_localPlayer.UseEitr(eitr_cost);
+                        player.UseEitr(eitr_cost);
                     } else {
                         EpicJewels.EJLog.LogDebug($"Eitr powered attack not triggered due to cost {eitr_cost}");
                     }
@@ -70,14 +71,14 @@ namespace EpicJewels.EffectHelpers
 
                 float sum_of_added_dmg = added_blunt_dmg + added_slash_dmg + added_pierce_dmg + added_lightning_dmg + added_spirit_dmg + added_pickaxe_dmg + added_chop_dmg;
 
-                float inferno_chance = Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Chance;
+                float inferno_chance = player.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Chance;
                 // Bonus from intenseFire
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.IntenseFire.Config>("Intense Fire").Power > 0) { inferno_chance = inferno_chance * 1.5f; }
+                if (player.GetEffectPower<GemEffects.IntenseFire.Config>("Intense Fire").Power > 0) { inferno_chance = inferno_chance * 1.5f; }
                 inferno_chance = inferno_chance / 100f; // Normalize to decimal value.
                 float inferno_activation_chance = Random.value;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0 && inferno_activation_chance < inferno_chance)
+                if (player.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power > 0 && inferno_activation_chance < inferno_chance)
                 {
-                    float added_fire_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power / 100);
+                    float added_fire_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.Inferno.Config>("Inferno").Power / 100);
                     hit.m_damage.m_fire += added_fire_dmg;
                     EpicJewels.EJLog.LogDebug($"Inferno activated, added fire damage: {added_fire_dmg}");
                 }

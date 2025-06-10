@@ -22,9 +22,9 @@ namespace EpicJewels.GemEffects
             {
                 if (__instance.m_character is Player player)
                 {
-                    if (Player.m_localPlayer.GetEffectPower<Config>("Wet Worker").Power > 0)
+                    if (player.GetEffectPower<Config>("Wet Worker").Power > 0)
                     {
-                        bool thisVikingisWet = Player.m_localPlayer.GetSEMan().HaveStatusEffect(wetstatus);
+                        bool thisVikingisWet = player.GetSEMan().HaveStatusEffect(wetstatus);
                         if (thisVikingisWet)
                         {
                             float weapon_usage_stamina_multiplier = (100f / (player.GetEffectPower<Config>("Wet Worker").Power + 100f));

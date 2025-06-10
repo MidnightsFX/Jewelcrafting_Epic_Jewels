@@ -9,27 +9,28 @@ namespace EpicJewels.EffectHelpers
         {
             if (hit.GetAttacker() is Player)
             {
+                Player player = hit.GetAttacker() as Player;
                 float original_total_dmg = hit.m_damage.GetTotalDamage();
                 float added_pickaxe_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Chance >= UnityEngine.Random.value) {
-                    added_pickaxe_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Chance >= UnityEngine.Random.value) {
+                    added_pickaxe_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddPickaxeDamage.Config>("Add Pickaxe Damage").Power / 100);
                 }
                 float added_chop_dmg = 0;
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Chance >= UnityEngine.Random.value) {
-                    added_chop_dmg = original_total_dmg * (Player.m_localPlayer.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
+                if (player.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Chance >= UnityEngine.Random.value) {
+                    added_chop_dmg = original_total_dmg * (player.GetEffectPower<GemEffects.AddChopDamage.Config>("Add Chop Damage").Power / 100);
                 }
 
-                if (Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power > 0 || Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0)
+                if (player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power > 0 || player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0)
                 {
-                    float eitr_cost = Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Cost;
-                    if (Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0) { eitr_cost += 5; }
-                    if (Player.m_localPlayer.HaveEitr(eitr_cost))
+                    float eitr_cost = player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Cost;
+                    if (player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0) { eitr_cost += 5; }
+                    if (player.HaveEitr(eitr_cost))
                     {
-                        float eitr_fused_powerup = ((Player.m_localPlayer.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power + Player.m_localPlayer.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power) / 100f);
+                        float eitr_fused_powerup = ((player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power + player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power) / 100f);
                         EpicJewels.EJLog.LogDebug($"Eitr powered attack powered up multiplier {eitr_fused_powerup} cost {eitr_cost}");
                         added_chop_dmg += hit.m_damage.m_chop * eitr_fused_powerup;
                         added_pickaxe_dmg += hit.m_damage.m_pickaxe * eitr_fused_powerup;
-                        Player.m_localPlayer.UseEitr(eitr_cost);
+                        player.UseEitr(eitr_cost);
                     }
                     else
                     {

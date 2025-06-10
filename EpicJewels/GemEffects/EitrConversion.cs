@@ -22,7 +22,7 @@ namespace EpicJewels.GemEffects
                 if (__instance is Player player && player.GetEffectPower<Config>("Eitr Conversion").Power > 0)
                 {
                     float roll = Random.value;
-                    float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Eitr Conversion").Chance / 100);
+                    float chance_max = (player.GetEffectPower<Config>("Eitr Conversion").Chance / 100);
                     // EpicJewels.EJLog.LogDebug($"Eitr Conversion chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {

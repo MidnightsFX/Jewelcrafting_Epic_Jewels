@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace EpicJewels.GemEffects
 {
@@ -23,11 +24,14 @@ namespace EpicJewels.GemEffects
         {
             public static void Prefix(Humanoid __instance, HitData hit, Character attacker)
             {
-                if (__instance.IsPlayer() && Player.m_localPlayer.GetEffectPower<Config>("Block Reduce Stamina").Power > 0)
-                {
-                    float block_stamina_multiplier = 100f / (100f + Player.m_localPlayer.GetEffectPower<Config>("Block Reduce Stamina").Power);
-                    // EpicJewels.EJLog.LogDebug($"Multiplying block stamina cost by {block_stamina_multiplier}");
-                    __instance.m_blockStaminaDrain *= block_stamina_multiplier;
+                if (__instance.IsPlayer()) {
+                    Player player = __instance as Player;
+                    if (player.GetEffectPower<Config>("Block Reduce Stamina").Power > 0) {
+                        float block_stamina_multiplier = 100f / (100f + player.GetEffectPower<Config>("Block Reduce Stamina").Power);
+                        // EpicJewels.EJLog.LogDebug($"Multiplying block stamina cost by {block_stamina_multiplier}");
+                        __instance.m_blockStaminaDrain *= block_stamina_multiplier;
+                    }
+                    
                 }
             }
         }

@@ -53,7 +53,7 @@ namespace EpicJewels.GemEffects
                     return;
                 }
                 // Being picked by the current player
-                if( character != null && character is Player && Player.m_localPlayer.GetEffectPower<Config>("Farmer").Power > 0) 
+                if( character != null && character is Player player && player.GetEffectPower<Config>("Farmer").Power > 0) 
                 {
                     string prefabname = __instance.m_itemPrefab.name.Replace("(Clone)","").Replace("Pickable_","");
                     if (UnallowedGreenThumbPickables.Contains(prefabname))
@@ -62,12 +62,12 @@ namespace EpicJewels.GemEffects
                         return;
                     }
                     float roll = UnityEngine.Random.value;
-                    float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Farmer").Chance / 100);
+                    float chance_max = (player.GetEffectPower<Config>("Farmer").Chance / 100);
                     // EpicJewels.EJLog.LogDebug($"Farmer chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {
                         int offset = 0;
-                        for (int i = 0; i < Player.m_localPlayer.GetEffectPower<Config>("Farmer").Power; i++)
+                        for (int i = 0; i < player.GetEffectPower<Config>("Farmer").Power; i++)
                         {
                             __instance.Drop(__instance.m_itemPrefab, offset++, 1);
                         }
@@ -86,24 +86,19 @@ namespace EpicJewels.GemEffects
             private static float current_tick_time = 0f;
             public static void Postfix(Player __instance)
             {
-                if (Player.m_localPlayer != null && __instance == Player.m_localPlayer && Player.m_localPlayer.GetEffectPower<Config>("Farmer").Power > 0)
-                {
-                    // We only want to do this silly expensive update once a second
+                if (__instance != null && __instance.GetEffectPower<Config>("Farmer").Power > 0) {
+                    // We only want to do this silly expensive update every half a second or so
                     // EpicJewels.EJLog.LogDebug($"Farmer autopick: {current_tick_time} > {last_update + 1f}");
                     current_tick_time += fdt;
-                    if (current_tick_time > (last_update + 1f)) { last_update = current_tick_time; } else { return; }
-                    foreach (Collider obj_collider in Physics.OverlapSphere(__instance.transform.position, 3f, pickableMask))
-                    {
+                    if (current_tick_time > (last_update + 0.5f)) { last_update = current_tick_time; } else { return; }
+                    foreach (Collider obj_collider in Physics.OverlapSphere(__instance.transform.position, 3f, pickableMask)) {
                         Pickable pickable_item = obj_collider.GetComponent<Pickable>() ?? obj_collider.GetComponentInParent<Pickable>();
-                        if (pickable_item != null)
-                        {
+                        if (pickable_item != null) {
                             string prefabname = pickable_item.name.Replace("(Clone)", "").Replace("Pickable_", "");
                             if (!UnallowedGreenThumbPickables.Contains(prefabname)) {
-                                
-                                if (pickable_item.CanBePicked())
-                                {
+                                if (pickable_item.CanBePicked()) {
                                     // EpicJewels.EJLog.LogDebug($"Autopicking: {prefabname}");
-                                    pickable_item.Interact(Player.m_localPlayer, false, false);
+                                    pickable_item.Interact(__instance, false, false);
                                 }
                             }
                         }

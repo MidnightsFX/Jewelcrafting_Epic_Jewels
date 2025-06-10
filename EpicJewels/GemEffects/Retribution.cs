@@ -22,7 +22,7 @@ namespace EpicJewels.GemEffects
                 if (__instance is Player player && player.GetEffectPower<Config>("Retribution").Power > 0 && __result == true)
                 {
                     float roll = Random.value;
-                    float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Retribution").Chance / 100);
+                    float chance_max = (player.GetEffectPower<Config>("Retribution").Chance / 100);
                     // EpicJewels.EJLog.LogDebug($"Retribution chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {

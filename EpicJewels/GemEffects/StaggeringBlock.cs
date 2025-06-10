@@ -20,7 +20,7 @@ namespace EpicJewels.GemEffects
                 if (__instance is Player player && player.GetEffectPower<Config>("Staggering Block").Power > 0 && __result == true && attacker.IsDead() == false)
                 {
                     float roll = UnityEngine.Random.value;
-                    float chance_max = (Player.m_localPlayer.GetEffectPower<Config>("Staggering Block").Power / 100);
+                    float chance_max = (player.GetEffectPower<Config>("Staggering Block").Power / 100);
                     // EpicJewels.EJLog.LogDebug($"Staggering block chance roll: {roll} < {chance_max}");
                     if (roll < chance_max)
                     {

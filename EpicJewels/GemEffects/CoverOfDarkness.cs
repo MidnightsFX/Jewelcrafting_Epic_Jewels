@@ -26,13 +26,14 @@ namespace EpicJewels.GemEffects
             {
                 if (hit.GetAttacker() is Player)
                 {
-                    if (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power > 0)
+                    Player player = hit.GetAttacker() as Player;
+                    if (player.GetEffectPower<Config>("Cover of Darkness").Power > 0)
                     {
-                        if (Random.value < (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Chance/ 100))
+                        if (Random.value < (player.GetEffectPower<Config>("Cover of Darkness").Chance/ 100))
                         {
-                            // EpicJewels.EJLog.LogDebug($"Cover of darkness triggered darkness power: {Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power}");
+                            // EpicJewels.EJLog.LogDebug($"Cover of darkness triggered darkness power: {player.GetEffectPower<Config>("Cover of Darkness").Power}");
                             int bat_stars = 1; // 1 = 0 stars, 2 = 1 star etc
-                            switch (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power)
+                            switch (player.GetEffectPower<Config>("Cover of Darkness").Power)
                             {
                                 // Ordering here increases stars based on the first power level curve point
                                 case float power when power > 70f:
@@ -45,8 +46,8 @@ namespace EpicJewels.GemEffects
                                     bat_stars = 2;
                                     break;
                             }
-                            if (spawnedBats.Count >= Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").MaxCount) {
-                                // EpicJewels.EJLog.LogDebug($"Cover of darkness max ({Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").MaxCount}) triggered, checking spawned bats liveliness.");
+                            if (spawnedBats.Count >= player.GetEffectPower<Config>("Cover of Darkness").MaxCount) {
+                                // EpicJewels.EJLog.LogDebug($"Cover of darkness max ({player.GetEffectPower<Config>("Cover of Darkness").MaxCount}) triggered, checking spawned bats liveliness.");
                                 List<ZDOID> alive_bats = new List<ZDOID>();
                                 foreach(ZDOID bat in spawnedBats)
                                 {
@@ -57,18 +58,18 @@ namespace EpicJewels.GemEffects
                                     }
                                 }
                                 spawnedBats = alive_bats;
-                                if (spawnedBats.Count >= Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").MaxCount) {
+                                if (spawnedBats.Count >= player.GetEffectPower<Config>("Cover of Darkness").MaxCount) {
                                     return; 
                                 }
                             }
 
                             // Spawn an extra bat above 90 power
-                            if (Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power > 90)
+                            if (player.GetEffectPower<Config>("Cover of Darkness").Power > 90)
                             {
-                                SpawnBat(bat_stars);
-                                SpawnBat(bat_stars);
+                                SpawnBat(player, bat_stars);
+                                SpawnBat(player, bat_stars);
                             } else {
-                                SpawnBat(bat_stars);
+                                SpawnBat(player, bat_stars);
                             }
                             
                         }
@@ -77,7 +78,7 @@ namespace EpicJewels.GemEffects
             }
         }
 
-        static void SpawnBat(int stars = 1)
+        static void SpawnBat( Player player, int stars = 1)
         {
             // Set the reference to a bat
             if (bat == null)
@@ -86,7 +87,7 @@ namespace EpicJewels.GemEffects
             }
 
             Quaternion rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
-            Vector3 player_location = Player.m_localPlayer.gameObject.transform.position;
+            Vector3 player_location = player.gameObject.transform.position;
             player_location.y += 1f; // spawn just above the player
             GameObject creature = Object.Instantiate(bat, player_location, rotation);
             Character creature_character = creature.GetComponent<Character>();
@@ -111,7 +112,7 @@ namespace EpicJewels.GemEffects
             // Set this creatures lifetime
             creature.AddComponent<CharacterTimedDestruction>();
             creature.GetComponent<CharacterTimedDestruction>().m_character = creature_character;
-            creature.GetComponent<CharacterTimedDestruction>().Trigger(Player.m_localPlayer.GetEffectPower<Config>("Cover of Darkness").Power);
+            creature.GetComponent<CharacterTimedDestruction>().Trigger(player.GetEffectPower<Config>("Cover of Darkness").Power);
             spawnedBats.Add(creature_character.GetZDOID());
         }
     }

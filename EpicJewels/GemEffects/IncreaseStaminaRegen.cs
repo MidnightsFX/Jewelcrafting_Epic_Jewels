@@ -22,9 +22,9 @@ namespace EpicJewels.GemEffects
         {
             public static void Postfix(SEMan __instance, ref float staminaMultiplier)
             {
-                if (__instance.m_character.IsPlayer() && Player.m_localPlayer.GetEffectPower<Config>("Increase Stamina Regen").Power > 0)
+                if (__instance.m_character is Player player && player != null && player.GetEffectPower<Config>("Increase Stamina Regen").Power > 0)
                 {
-                    float stamina_multiplier = (Player.m_localPlayer.GetEffectPower<Config>("Increase Stamina Regen").Power + 100) / 100;
+                    float stamina_multiplier = (player.GetEffectPower<Config>("Increase Stamina Regen").Power + 100) / 100;
                     // Super noisy
                     // EpicJewels.EJLog.LogDebug($"stamina regen multiplied by {stamina_multiplier}");
                     staminaMultiplier *= stamina_multiplier;

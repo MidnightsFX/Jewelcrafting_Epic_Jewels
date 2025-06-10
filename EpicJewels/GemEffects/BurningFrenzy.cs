@@ -20,13 +20,12 @@ namespace EpicJewels.GemEffects
         {
             private static void Prefix(HitData hit)
             {
-                if (hit.GetAttacker() is Player)
-                {
-                    bool thisVikingisOnFIRE = Player.m_localPlayer.GetSEMan().HaveStatusEffect(burningstatus);
+                if (hit.GetAttacker() is Player) {
+                    Player player = hit.GetAttacker() as Player;
+                    bool thisVikingisOnFIRE = player.GetSEMan().HaveStatusEffect(burningstatus);
                     // EpicJewels.EJLog.LogDebug($"Frenzy checking for burning viking {thisVikingisOnFIRE}");
-                    if (thisVikingisOnFIRE)
-                    {
-                        float onfire_damage_bonus = (100 + Player.m_localPlayer.GetEffectPower<Config>("Burning Frenzy").Power) / 100;
+                    if (thisVikingisOnFIRE) {
+                        float onfire_damage_bonus = (100 + player.GetEffectPower<Config>("Burning Frenzy").Power) / 100;
                         // EpicJewels.EJLog.LogDebug($"VikingOnFire Damage multiplier {onfire_damage_bonus}");
                         hit.m_damage.m_blunt *= onfire_damage_bonus;
                         hit.m_damage.m_pierce *= onfire_damage_bonus;

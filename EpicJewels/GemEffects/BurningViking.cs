@@ -18,7 +18,7 @@ namespace EpicJewels.GemEffects
         {
             private static void Postfix(Player __instance, ref float __result)
             {
-                bool thisVikingisOnFIRE = Player.m_localPlayer.GetSEMan().HaveStatusEffect(burningstatus);
+                bool thisVikingisOnFIRE = __instance.GetSEMan().HaveStatusEffect(burningstatus);
                 // EJLog.LogInfo($"Walking check for burning viking {thisVikingisOnFIRE}");
                 if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("Burning Viking").Power > 0)
                 {
@@ -33,7 +33,7 @@ namespace EpicJewels.GemEffects
         {
             private static void Postfix(Player __instance, ref float __result)
             {
-                bool thisVikingisOnFIRE = Player.m_localPlayer.GetSEMan().HaveStatusEffect(burningstatus);
+                bool thisVikingisOnFIRE = __instance.GetSEMan().HaveStatusEffect(burningstatus);
                 // EJLog.LogInfo($"Running check for burning viking {thisVikingisOnFIRE}");
                 if (thisVikingisOnFIRE && __instance.GetEffectPower<Config>("Burning Viking").Power > 0)
                 {

@@ -24,12 +24,22 @@ namespace EpicJewels.GemEffects
         {
             private static void Postfix(Player __instance, bool sensed, bool alerted)
             {
-                if (Player.m_localPlayer != null && Player.m_localPlayer.GetEffectPower<Config>("Combat Spirit").Power > 0 && __instance == Player.m_localPlayer && sensed && alerted)
+                if (__instance.GetEffectPower<Config>("Combat Spirit").Power > 0 && sensed && alerted)
                 {
-                    if (wolf == null)
+                    if (wolf == null && have_spirit_companion == false)
                     {
                         ZNetScene.instance.m_namedPrefabs.TryGetValue("Wolf".GetStableHashCode(), out var temp);
-                        wolf = temp;
+
+                        Quaternion rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
+                        Vector3 player_location = __instance.gameObject.transform.position;
+                        player_location.x += 1f; // spawn next to the player
+                        wolf = Object.Instantiate(temp, player_location, rotation);
+                        cooldown_timer = 120;
+                        have_spirit_companion = true;
+                        wolf.AddComponent<CharacterTimedDestruction>();
+                        Character spirit_char = wolf.GetComponent<Character>();
+                        wolf.GetComponent<CharacterTimedDestruction>().m_character = spirit_char;
+                        wolf.GetComponent<CharacterTimedDestruction>().Trigger(__instance.GetEffectPower<Config>("Combat Spirit").Power);
                         SkinnedMeshRenderer wolf_renderer = wolf.GetComponentInChildren<SkinnedMeshRenderer>();
                         wolf_renderer.material = EpicJewels.spiritCreature;
                         Object.Destroy(wolf.GetComponent<CharacterDrop>());
@@ -42,14 +52,14 @@ namespace EpicJewels.GemEffects
                         creature_metadata.m_health = 1000; //lox health, but not resistant
                         creature_metadata.m_deathEffects.m_effectPrefabs[1].m_enabled = false;
                         creature_metadata.m_deathEffects.m_effectPrefabs[0].m_enabled = false;
-                        if (creature_metadata != null)
-                        {
+                        creature_metadata.name = "EJ_spirit_wolf";
+                        if (creature_metadata != null) {
                             creature_metadata.m_faction = Character.Faction.Players;
                         }
                         // Set this creatures lifetime
                         wolf.name = "Spirit Wolf";
                     }
-                    // EpicJewels.EJLog.LogDebug($"checking for spawning spirit companion {recheck_spirit_spawn_timer} has companion? {have_spirit_companion} cooldown {cooldown_timer}");
+                    //EpicJewels.EJLog.LogDebug($"checking for spawning spirit companion {recheck_spirit_spawn_timer} has companion? {have_spirit_companion} cooldown {cooldown_timer}");
                     float dt = Time.deltaTime;
                     if (cooldown_timer > 0)
                     {
@@ -59,36 +69,16 @@ namespace EpicJewels.GemEffects
                         return;
                     }
                     // Reduce checks for spawned spirit wolf
-                    if (recheck_spirit_spawn_timer > 3)
-                    {
+                    if (recheck_spirit_spawn_timer > 3) {
                         recheck_spirit_spawn_timer = 0;
-                        if (Character.s_characters.Any(c => Vector3.Distance(Player.m_localPlayer.gameObject.transform.position, c.transform.position) < 100f && c.name == "Spirit Wolf"))
-                        {
-                            // EpicJewels.EJLog.LogDebug("Already have spirit wolf");
+                        if (Character.s_characters.Any(c => Vector3.Distance(__instance.gameObject.transform.position, c.transform.position) < 100f && c.name == "Spirit Wolf")) {
+                            EpicJewels.EJLog.LogDebug("Already have spirit wolf");
                             have_spirit_companion = true;
-                        }
-                        else
-                        {
+                        } else {
                             have_spirit_companion = false;
                         }
-                    } else
-                    {
+                    } else {
                         recheck_spirit_spawn_timer += Time.deltaTime;
-                    }
-                    
-
-                    if (have_spirit_companion == false)
-                    {
-                        Quaternion rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
-                        Vector3 player_location = Player.m_localPlayer.gameObject.transform.position;
-                        player_location.x += 1f; // spawn next to the player
-                        GameObject spirit = Object.Instantiate(wolf, player_location, rotation);
-                        cooldown_timer = 120;
-                        have_spirit_companion = true;
-                        spirit.AddComponent<CharacterTimedDestruction>();
-                        Character spirit_char = wolf.GetComponent<Character>();
-                        spirit.GetComponent<CharacterTimedDestruction>().m_character = spirit_char;
-                        spirit.GetComponent<CharacterTimedDestruction>().Trigger(Player.m_localPlayer.GetEffectPower<Config>("Combat Spirit").Power);
                     }
                 }
             }

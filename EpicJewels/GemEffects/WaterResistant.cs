@@ -21,16 +21,16 @@ namespace EpicJewels.GemEffects
         {
             public static bool Prefix(SEMan __instance, int nameHash)
             {
-                if (__instance.m_character.IsPlayer() && nameHash == wet_hash)
+                if (__instance.m_character.IsPlayer() && __instance.m_character is Player player && nameHash == wet_hash)
                 {
                     // Waterproof, never gets wet
-                    if (Player.m_localPlayer.GetEffectPower<Waterproof.Config>("Waterproof").Power > 0) { return false; }
-                    if (Player.m_localPlayer.GetEffectPower<Config>("Water Resistant").Power > 0)
+                    if (player.GetEffectPower<Waterproof.Config>("Waterproof").Power > 0) { return false; }
+                    if (player.GetEffectPower<Config>("Water Resistant").Power > 0)
                     {
                         // EpicJewels.EJLog.LogInfo($"Water Resistance activated.");
                         if (delayWetTill == 0)
                         {
-                            delayWetTill = Time.time + Player.m_localPlayer.GetEffectPower<Config>("Water Resistant").Power;
+                            delayWetTill = Time.time + player.GetEffectPower<Config>("Water Resistant").Power;
                             // EpicJewels.EJLog.LogDebug($"Set water resistance timeout: {delayWetTill}");
                             return false;
                         }
