@@ -72,6 +72,7 @@ Farmer:
   power:
     power: [1, 2, 3]
     chance: [15, 25, 35]
+    pickup: [1, 2, 3]
 Pierce Resistance:
   slot: chest
   gem: aquamarine

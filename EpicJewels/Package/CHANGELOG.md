@@ -1,3 +1,9 @@
+ **0.9.18**
+ ---
+ ```
+ - Adds scaling and configuration to how strong the farmer autopickup range is
+ ``` 
+
  **0.9.17**
  ---
  ```

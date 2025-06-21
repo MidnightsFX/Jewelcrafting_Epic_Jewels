@@ -14,6 +14,7 @@ namespace EpicJewels.GemEffects
         {
             [AdditivePowerAttribute] public float Power;
             [AdditivePowerAttribute] public float Chance;
+            [AdditivePowerAttribute] public float Pickup;
         }
 
         static List<String> UnallowedGreenThumbPickables = new List<String>() { 
@@ -86,12 +87,12 @@ namespace EpicJewels.GemEffects
             private static float current_tick_time = 0f;
             public static void Postfix(Player __instance)
             {
-                if (__instance != null && __instance.GetEffectPower<Config>("Farmer").Power > 0) {
+                if (__instance != null && __instance.GetEffectPower<Config>("Farmer").Pickup > 0) {
                     // We only want to do this silly expensive update every half a second or so
                     // EpicJewels.EJLog.LogDebug($"Farmer autopick: {current_tick_time} > {last_update + 1f}");
                     current_tick_time += fdt;
                     if (current_tick_time > (last_update + 0.5f)) { last_update = current_tick_time; } else { return; }
-                    foreach (Collider obj_collider in Physics.OverlapSphere(__instance.transform.position, 3f, pickableMask)) {
+                    foreach (Collider obj_collider in Physics.OverlapSphere(__instance.transform.position, (2f + __instance.GetEffectPower<Config>("Farmer").Pickup), pickableMask)) {
                         Pickable pickable_item = obj_collider.GetComponent<Pickable>() ?? obj_collider.GetComponentInParent<Pickable>();
                         if (pickable_item != null) {
                             string prefabname = pickable_item.name.Replace("(Clone)", "").Replace("Pickable_", "");
