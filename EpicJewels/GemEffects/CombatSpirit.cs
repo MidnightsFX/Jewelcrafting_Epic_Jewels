@@ -72,7 +72,7 @@ namespace EpicJewels.GemEffects
                     if (recheck_spirit_spawn_timer > 3) {
                         recheck_spirit_spawn_timer = 0;
                         if (Character.s_characters.Any(c => Vector3.Distance(__instance.gameObject.transform.position, c.transform.position) < 100f && c.name == "Spirit Wolf")) {
-                            EpicJewels.EJLog.LogDebug("Already have spirit wolf");
+                            // EpicJewels.EJLog.LogDebug("Already have spirit wolf");
                             have_spirit_companion = true;
                         } else {
                             have_spirit_companion = false;

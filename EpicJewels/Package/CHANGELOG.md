@@ -1,3 +1,15 @@
+ **0.9.20**
+ ---
+ ```
+ - Fixes for Damage tooltip modification error
+ ``` 
+
+ **0.9.19**
+ ---
+ ```
+ - Fixes block effects only taking damage taken into account, not total blocked damage
+ ``` 
+
  **0.9.18**
  ---
  ```

@@ -4,6 +4,7 @@ using Jewelcrafting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace EpicJewels.EffectHelpers
@@ -125,9 +126,19 @@ namespace EpicJewels.EffectHelpers
         {
             float bonus_dmg = total_dmg * (bonus_power / 100);
             string[] line_arr = current_line.Split(' ');
-            //EpicJewels.EJLog.LogDebug($"Modifying {line_arr[1]}");
+            //EpicJewels.EJLog.LogInfo($"Modifying ({current_line}) {line_arr[1]}");
             // Change the damage text color to the specified one
-            float dmg = int.Parse(line_arr[1].Replace("<color=#ffa500ff>", "").Replace("<color=orange>", "").Replace("</color>", ""));
+            Match match = Regex.Match(line_arr[1], @"(?<=>)(\d\d)(?=<)");
+            if (match.Success == false) {
+                return current_line;
+            }
+            // EpicJewels.EJLog.LogDebug($"Match {match.Value}");
+
+            int dmg;
+            bool parsed = int.TryParse(match.Value, out dmg);
+            if (parsed == false) {
+                return current_line; 
+            }
             line_arr[1] = $"<color=purple>{(dmg + bonus_dmg).ToString("F1")}</color>";
             // Not sure if this will be more confusing or not, maybe just recoloring is enough
             // Add the sum of bonus damage

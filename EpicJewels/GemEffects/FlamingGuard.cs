@@ -16,6 +16,12 @@ namespace EpicJewels.GemEffects
         [HarmonyPatch(typeof(Humanoid), nameof(Humanoid.BlockAttack))]
         private static class FlamingBlock_Patch
         {
+            static HitData originalHit = null;
+            private static void Prefix(HitData hit)
+            {
+                originalHit = new HitData(damage: hit.GetTotalDamage());
+            }
+
             private static int burningstatus = "Burning".GetStableHashCode();
             private static void Postfix(Humanoid __instance, HitData hit, Character attacker, ref bool __result)
             {
@@ -27,8 +33,9 @@ namespace EpicJewels.GemEffects
                     if (roll < chance_max)
                     {
                         HitData flaming_rebuke_hit = new HitData();
-                        flaming_rebuke_hit.m_damage.m_fire = (player.GetEffectPower<Config>("Burning Guard").Power / 100) * hit.m_damage.GetTotalDamage();
-                        attacker.ApplyDamage(flaming_rebuke_hit, true, true);
+                        flaming_rebuke_hit.m_damage.m_fire = (player.GetEffectPower<Config>("Burning Guard").Power / 100) * originalHit.m_damage.GetTotalDamage();
+                        // EpicJewels.EJLog.LogDebug($"Hit dmg {originalHit} FlamingGuard returning damage {flaming_rebuke_hit.m_damage.m_fire}");
+                        attacker.Damage(flaming_rebuke_hit);
                         attacker.m_seman.AddStatusEffect(burningstatus, true, 1, player.m_skills.GetSkill(Skills.SkillType.Blocking).m_level);
                     }
                 }
