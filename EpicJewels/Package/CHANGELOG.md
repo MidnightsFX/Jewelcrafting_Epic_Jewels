@@ -1,3 +1,9 @@
+ **0.9.21**
+ ---
+ ```
+ - Improves damage tooltip preview, adds support for visualizing damage added by coinhoarder
+ ``` 
+
  **0.9.20**
  ---
  ```

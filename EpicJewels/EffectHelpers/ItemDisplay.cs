@@ -21,7 +21,7 @@ namespace EpicJewels.EffectHelpers
 
                 Player.m_localPlayer.GetSkills().GetRandomSkillRange(out var min, out var max, item.m_shared.m_skillType);
                 float total_dmg = item.m_shared.m_damages.GetTotalDamage();
-                Dictionary<String, DmgModDetails> player_damage_modifiers_active = DetermineCharacterDamageModifiers();
+                Dictionary<String, DmgModDetails> pdm_active = DetermineCharacterDamageModifiers();
 
                 List<String> entry_lines = __result.Split('\n').ToList();
                 List<String> result_lines = new List<string>(entry_lines);
@@ -31,53 +31,79 @@ namespace EpicJewels.EffectHelpers
                     if (entry_lines[i].Length < 17) { continue; }
 
                     string line_desc = entry_lines[i].Split(':')[0].Trim();
-                    //EpicJewels.EJLog.LogDebug($"ItemDescription {entry_lines[i]} | {line_desc}|");
+                    EpicJewels.EJLog.LogDebug($"ItemDescription {entry_lines[i]} | {line_desc}|");
                     switch (line_desc)
                     {
                         case "$inventory_damage":
                             break;
-                        case "$inventory_blunt":
-                            if (player_damage_modifiers_active.ContainsKey("Add Blunt Damage"))
+                        case "$inventory_fire":
+                            if (pdm_active.ContainsKey("Coin Hoarder")) {
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_blunt, min, max, 0f, pdm_active["Coin Hoarder"].power);
+                            }
+                            break;
+                        case "$inventory_poison":
+                            if (pdm_active.ContainsKey("Coin Hoarder")) {
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_blunt, min, max, 0f, pdm_active["Coin Hoarder"].power);
+                            }
+                            break;
+                        case "$inventory_frost":
+                            if (pdm_active.ContainsKey("Coin Hoarder"))
                             {
-                                player_damage_modifiers_active["Add Blunt Damage"].added = true;
-                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_blunt, min, max, player_damage_modifiers_active["Add Blunt Damage"].power);
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_blunt, min, max, 0f, pdm_active["Coin Hoarder"].power);
+                            }
+                            break;
+                        case "$inventory_blunt":
+                            if (pdm_active.ContainsKey("Add Blunt Damage"))
+                            {
+                                pdm_active["Add Blunt Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_blunt, min, max, pdm_active["Add Blunt Damage"].power, pdm_active["Coin Hoarder"].power);
+                            } else if (pdm_active.ContainsKey("Coin Hoarder")) {
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_blunt, min, max, 0f, pdm_active["Coin Hoarder"].power);
                             }
                             break;
                         case "$inventory_slash":
-                            if (player_damage_modifiers_active.ContainsKey("Add Slash Damage"))
+                            if (pdm_active.ContainsKey("Add Slash Damage"))
                             {
-                                player_damage_modifiers_active["Add Slash Damage"].added = true;
-                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_slash, min, max, player_damage_modifiers_active["Add Slash Damage"].power);
+                                pdm_active["Add Slash Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_slash, min, max, pdm_active["Add Slash Damage"].power, pdm_active["Coin Hoarder"].power);
+                            } else if (pdm_active.ContainsKey("Coin Hoarder")) {
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_slash, min, max, 0f, pdm_active["Coin Hoarder"].power);
                             }
                             break;
                         case "$inventory_pierce":
-                            if (player_damage_modifiers_active.ContainsKey("Add Pierce Damage"))
+                            if (pdm_active.ContainsKey("Add Pierce Damage"))
                             {
-                                player_damage_modifiers_active["Add Pierce Damage"].added = true;
-                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_pierce, min, max, player_damage_modifiers_active["Add Pierce Damage"].power);
+                                pdm_active["Add Pierce Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_pierce, min, max, pdm_active["Add Pierce Damage"].power, pdm_active["Coin Hoarder"].power);
+                            } else if (pdm_active.ContainsKey("Coin Hoarder")) {
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_pierce, min, max, 0f, pdm_active["Coin Hoarder"].power);
                             }
                             break;
                         case "$inventory_lightning":
-                            if (player_damage_modifiers_active.ContainsKey("Add Lightning Damage"))
+                            if (pdm_active.ContainsKey("Add Lightning Damage"))
                             {
-                                player_damage_modifiers_active["Add Lightning Damage"].added = true;
-                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_lightning, min, max, player_damage_modifiers_active["Add Lightning Damage"].power);
+                                pdm_active["Add Lightning Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_lightning, min, max, pdm_active["Add Lightning Damage"].power, pdm_active["Coin Hoarder"].power);
+                            } else if (pdm_active.ContainsKey("Coin Hoarder")) {
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_lightning, min, max, 0f, pdm_active["Coin Hoarder"].power);
                             }
                             break;
                         case "$inventory_spirit":
-                            if (player_damage_modifiers_active.ContainsKey("Add Spirit Damage"))
+                            if (pdm_active.ContainsKey("Add Spirit Damage"))
                             {
-                                player_damage_modifiers_active["Add Spirit Damage"].added = true;
-                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_spirit, min, max, player_damage_modifiers_active["Add Spirit Damage"].power);
+                                pdm_active["Add Spirit Damage"].added = true;
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_spirit, min, max, pdm_active["Add Spirit Damage"].power, pdm_active["Coin Hoarder"].power);
+                            } else if (pdm_active.ContainsKey("Coin Hoarder")) {
+                                result_lines[i] = AddModifierExplainer(entry_lines[i], total_dmg, item.m_shared.m_damages.m_spirit, min, max, 0f, pdm_active["Coin Hoarder"].power);
                             }
                             break;
                     }
                 }
 
                 // Add damage values that we are currently 
-                foreach (var entry in player_damage_modifiers_active)
+                foreach (var entry in pdm_active)
                 {
-                    if (entry.Value.added == true) { continue; }
+                    if (entry.Value.added == true || entry.Key == "Coin Hoarder") { continue; }
 
                     result_lines.Add(BuildModifierExplainer(entry.Value.localizedName, total_dmg, min, max, entry.Value.power));
                 }
@@ -119,16 +145,20 @@ namespace EpicJewels.EffectHelpers
             {
                 set_damage_modifiers.Add("Add Blunt Damage", new DmgModDetails() { added = false, localizedName = "$inventory_blunt", power = Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Add Blunt Damage").Power });
             }
+            if (Player.m_localPlayer.GetEffectPower<GemEffects.AddBluntDamage.Config>("Coin Hoarder").Power > 0)
+            {
+                set_damage_modifiers.Add("Coin Hoarder", new DmgModDetails() { added = false, power = GemEffects.CoinHoarder.CoinHoarderBonusCalc(Player.m_localPlayer) });
+            }
             return set_damage_modifiers;
         }
 
-        private static string AddModifierExplainer(string current_line, float total_dmg, float m_dmg_value, float min, float max, float bonus_power)
+        private static string AddModifierExplainer(string current_line, float total_dmg, float m_dmg_value, float min, float max, float bonus_power, float coinhoarder_mult = 1f)
         {
             float bonus_dmg = total_dmg * (bonus_power / 100);
             string[] line_arr = current_line.Split(' ');
             //EpicJewels.EJLog.LogInfo($"Modifying ({current_line}) {line_arr[1]}");
             // Change the damage text color to the specified one
-            Match match = Regex.Match(line_arr[1], @"(?<=>)(\d\d)(?=<)");
+            Match match = Regex.Match(line_arr[1], @"(?<=>)(\d+)(?=<)");
             if (match.Success == false) {
                 return current_line;
             }
@@ -139,12 +169,12 @@ namespace EpicJewels.EffectHelpers
             if (parsed == false) {
                 return current_line; 
             }
-            line_arr[1] = $"<color=purple>{(dmg + bonus_dmg).ToString("F1")}</color>";
+            line_arr[1] = $"<color=purple>{((dmg + bonus_dmg) * coinhoarder_mult).ToString("F1")}</color>";
             // Not sure if this will be more confusing or not, maybe just recoloring is enough
             // Add the sum of bonus damage
-            line_arr[1] += $" <color=purple>[+{bonus_dmg.ToString("F1")}]</color>";
+            line_arr[1] += $" <color=purple>[+{(bonus_dmg + (coinhoarder_mult * dmg - dmg)).ToString("F1")}]</color>";
 
-            line_arr[2] = $"<color=purple>({Mathf.RoundToInt((m_dmg_value + bonus_dmg ) * min)}-{Mathf.RoundToInt((m_dmg_value + bonus_dmg) * max)})";
+            line_arr[2] = $"<color=purple>({Mathf.RoundToInt((m_dmg_value + bonus_dmg + (coinhoarder_mult * dmg - dmg)) * min)}-{Mathf.RoundToInt((m_dmg_value + bonus_dmg + (coinhoarder_mult * dmg - dmg)) * max)})";
             //EpicJewels.EJLog.LogDebug($"Result {line_arr[1]}");
             return string.Join(" ", line_arr);
         }
