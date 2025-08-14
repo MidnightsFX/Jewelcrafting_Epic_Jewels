@@ -1,3 +1,10 @@
+ **0.9.22**
+ ---
+ ```
+ - Damage tooltip supports spellsword
+ - Fixes damage trying to find coinhoarder
+ ``` 
+
  **0.9.21**
  ---
  ```
