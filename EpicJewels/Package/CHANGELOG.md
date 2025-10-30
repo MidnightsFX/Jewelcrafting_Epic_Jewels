@@ -1,3 +1,9 @@
+ **0.9.24**
+ ---
+ ```
+ - Fixes Eitr Fused/Spellblade damage calculation adding more damage than intended
+ ``` 
+
  **0.9.23**
  ---
  ```

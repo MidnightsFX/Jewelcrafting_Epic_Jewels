@@ -13,6 +13,7 @@ namespace EpicJewels.GemEffects
             [AdditivePowerAttribute] public float Chance;
         }
 
+        [HarmonyPriority(Priority.High)]
         [HarmonyPatch(typeof(Humanoid), nameof(Humanoid.BlockAttack))]
         private static class FlamingBlock_Patch
         {

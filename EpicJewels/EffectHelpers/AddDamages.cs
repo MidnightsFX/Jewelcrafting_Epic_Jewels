@@ -54,7 +54,7 @@ namespace EpicJewels.EffectHelpers
                     if (player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power > 0) { eitr_cost += 5; }
                     if (player.HaveEitr(eitr_cost))
                     {
-                        float eitr_fused_powerup = ((player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power + player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power) / 100f) + 1f;
+                        float eitr_fused_powerup = ((player.GetEffectPower<GemEffects.EitrFused.Config>("Eitr Fused").Power + player.GetEffectPower<GemEffects.Spellsword.Config>("Spellsword").Power) / 100f);
                         // EpicJewels.EJLog.LogDebug($"Eitr powered attack powered up multiplier {eitr_fused_powerup} cost {eitr_cost}");
                         added_chop_dmg += hit.m_damage.m_chop * eitr_fused_powerup;
                         added_pickaxe_dmg += hit.m_damage.m_pickaxe * eitr_fused_powerup;
